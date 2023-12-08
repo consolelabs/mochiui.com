@@ -13,9 +13,9 @@
     "postinstall": "npx husky install"
   },
   "dependencies": {
-    "@mochi-ui/core": "^0.7.0",
-    "@mochi-ui/icons": "^0.4.0",
-    "@mochi-ui/theme": "^0.8.0",
+    "@mochi-ui/core": "^0.8.0",
+    "@mochi-ui/icons": "^0.5.0",
+    "@mochi-ui/theme": "^0.9.0",
     "clsx": "^2.0.0",
     "next": "14.0.3",
     "next-plausible": "^3.12.0",
