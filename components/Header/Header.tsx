@@ -73,7 +73,7 @@ export const Header = () => {
             <MobileNav navItems={mobileNavItems} />
           </>
         }
-        className="!bg-transparent max-w-8xl w-full mx-auto !border-none"
+        className="!bg-transparent !max-w-8xl w-full mx-auto !border-none"
       />
     </div>
   )
