@@ -20,7 +20,7 @@ export const Hero = ({
   heroImgUrl,
 }: HeroProps) => {
   return (
-    <div
+    <section
       className={clsx(
         'bg-black min-h-[500px] h-max relative flex justify-center items-center overflow-hidden',
         className,
@@ -32,7 +32,7 @@ export const Hero = ({
         }}
         className="h-full w-full bg-cover bg-center absolute top-0 -right-24"
       />
-      <div className="w-full max-w-[1000px] absolute p-4">
+      <div className="section-container w-full absolute p-4 xl:p-0">
         <div
           className={clsx(
             'w-full md:w-1/2 flex flex-col gap-6 md:gap-8',
@@ -62,6 +62,6 @@ export const Hero = ({
           ) : null}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
