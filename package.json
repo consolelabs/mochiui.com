@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "serve": "npx serve ./dist",
     "build": "next build",
     "start": "next start",
     "format": "prettier --write \"**/*.{ts,tsx,md}\" --cache",
@@ -12,6 +13,10 @@
     "postinstall": "npx husky install"
   },
   "dependencies": {
+    "@mochi-ui/core": "^0.7.0",
+    "@mochi-ui/icons": "^0.4.0",
+    "@mochi-ui/theme": "^0.8.0",
+    "clsx": "^2.0.0",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18"
