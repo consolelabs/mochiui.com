@@ -2,8 +2,6 @@ import { Heading, Typography } from '@mochi-ui/core'
 import clsx from 'clsx'
 import { Fragment, ReactNode } from 'react'
 
-const config = require('../../next.config')
-
 type HeroProps = {
   title: string
   description: string
@@ -30,8 +28,7 @@ export const Hero = ({
     >
       <div
         style={{
-          backgroundImage:
-            heroImgUrl ?? `url("${config.basePath}/img/hero-banner.png")`,
+          backgroundImage: heroImgUrl ?? 'url("/img/hero-banner.png")',
         }}
         className="h-full w-full bg-cover bg-center absolute top-0 -right-24"
       />
