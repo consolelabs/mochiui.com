@@ -1,4 +1,4 @@
-import { Heading, Typography } from '@mochi-ui/core'
+import { Typography } from '@mochi-ui/core'
 import clsx from 'clsx'
 import { Fragment, ReactNode } from 'react'
 
@@ -35,16 +35,17 @@ export const Hero = ({
       <div className="section-container w-full absolute p-4 xl:p-0">
         <div
           className={clsx(
-            'w-full md:w-1/2 flex flex-col gap-6 md:gap-8',
+            'max-w-full w-[480px] md:max-w-[50%] flex flex-col gap-6 md:gap-8',
             contentClassName,
           )}
         >
-          <Heading
-            as="h2"
-            className="text-white text-[64px] font-medium leading-tight drop-shadow-md"
+          <Typography
+            level="h2"
+            className="text-white text-[64px] leading-tight drop-shadow-md"
+            fontWeight="md"
           >
             {title}
-          </Heading>
+          </Typography>
 
           <Typography
             level="p2"

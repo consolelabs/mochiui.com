@@ -13,7 +13,7 @@ export const CallToAction = (props: CallToActionProps) => {
   return (
     <section className={clsx('px-4', className)}>
       <div className="section-container flex flex-col justify-between items-start md:items-center gap-6 md:flex-row">
-        <div className="flex flex-col gap-4 w-full md:w-1/2">
+        <div className="flex flex-col gap-4 w-full md:w-[480px] md:max-w-[50%]">
           {title}
           {description}
         </div>
