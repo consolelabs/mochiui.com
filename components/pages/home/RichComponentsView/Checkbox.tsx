@@ -31,8 +31,8 @@ export const CheckboxShowcase = () => {
   return (
     <div className="flex flex-col gap-6">
       {checkedType.map((d, index) => (
-        <div key={index} className="flex gap-6">
-          <div className="flex items-center gap-2">
+        <div key={index} className="flex flex-wrap gap-4 md:gap-6">
+          <div className="flex items-center gap-1 md:gap-2">
             <Checkbox
               id={`check-type-${index}-discord`}
               defaultChecked={index === 0 && d.checked}
@@ -89,7 +89,7 @@ export const CheckboxShowcase = () => {
         </div>
       ))}
 
-      <div className="flex gap-6">
+      <div className="flex gap-4 md:gap-6">
         {appearances.map((a) => (
           <div key={a} className="flex gap-4">
             <Checkbox appearance={a} size="lg" defaultChecked />

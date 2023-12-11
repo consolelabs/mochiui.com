@@ -45,7 +45,7 @@ export default function Home() {
         />
 
         <GridContent
-          className="my-14 md:my-[88px]"
+          className="my-16 md:my-[88px]"
           data={[
             {
               icon: <TipColored className="w-10 h-10" />,
@@ -72,8 +72,10 @@ export default function Home() {
 
         <RichComponents />
 
+        <div className="section-container h-[1px] bg-neutral-200 my-16 md:my-[88px]" />
+
         <CallToAction
-          className="mb-14 md:mb-[88px]"
+          className="mb-16 md:mb-[88px]"
           title={
             <Typography
               level="h3"

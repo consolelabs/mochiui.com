@@ -1,4 +1,4 @@
-import { Heading, Typography } from '@mochi-ui/core'
+import { Typography } from '@mochi-ui/core'
 import clsx from 'clsx'
 import { Fragment, ReactNode } from 'react'
 
@@ -39,12 +39,13 @@ export const Hero = ({
             contentClassName,
           )}
         >
-          <Heading
-            as="h2"
-            className="text-white text-[64px] font-medium leading-tight drop-shadow-md"
+          <Typography
+            level="h2"
+            className="text-white text-[64px] leading-tight drop-shadow-md"
+            fontWeight="md"
           >
             {title}
-          </Heading>
+          </Typography>
 
           <Typography
             level="p2"
