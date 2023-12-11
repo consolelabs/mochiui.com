@@ -26,8 +26,7 @@ export default function Home() {
       <main>
         <Hero
           title="Mochi UI Kit"
-          description="Help designers and developers create eye-catching and adaptable
-            products using different Web3 frameworks."
+          description="Help designers and developers create eye-catching and adaptable products using different Web3 frameworks."
           actions={[
             <a
               key="get-started-action"
@@ -60,12 +59,12 @@ export default function Home() {
             {
               icon: <BagColored className="w-10 h-10" />,
               title: 'Customizable',
-              body: 'Make it easy for developers to update UI elements as design trends and user needs change.',
+              body: 'Simplify UI element modifications for changing design trends and user preferences.',
             },
             {
               icon: <PayLinkColored className="w-10 h-10" />,
               title: 'Easy integration',
-              body: 'Organizes code in a clear way, making it easier to work on complex web3 apps.',
+              body: 'Organizes code in a structure, making it easier to integrate with complex web3 apps.',
             },
           ]}
         />
