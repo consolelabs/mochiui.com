@@ -8,6 +8,7 @@
         "component": true,
         "html": true
       }
-    ]
+    ],
+    "react/jsx-curly-brace-presence": "error"
   }
 }

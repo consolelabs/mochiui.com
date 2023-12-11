@@ -6,8 +6,8 @@ export const Logo = (props: Partial<ImageProps>) => {
 
   return (
     <Image
-      src={src ?? '/img/mochi-ui-logo.png'}
-      alt={'Mochi UI Logo'}
+      src={src ?? '/img/logo-with-text.png'}
+      alt="Mochi UI Logo"
       width={130}
       height={40}
       priority
