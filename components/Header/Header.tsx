@@ -4,13 +4,14 @@ import { useEffect, useState } from 'react'
 import { Logo } from '../Logo'
 
 const desktopNavItems = [
-  <Button
-    variant="link"
+  <a
     key="components-button"
-    className="!text-white !font-medium !pl-0 !pr-1"
+    href="https://ds.console.so/?path=/docs/disclosure-accordion--docs"
   >
-    Components
-  </Button>,
+    <Button variant="link" className="!text-white !font-medium !pl-0 !pr-1">
+      Components
+    </Button>
+  </a>,
   <a
     key="github-link"
     href="https://github.com/consolelabs/mochi-ui"
@@ -24,39 +25,43 @@ const desktopNavItems = [
   <div key="divider">
     <div className="w-[1px] h-6 bg-neutral-800" />
   </div>,
-  <Button variant="solid" key="get-started-button" className="!font-medium">
-    Get Started
-  </Button>,
+  <a key="get-started-button" href="https://ds.console.so">
+    <Button variant="solid" className="!font-medium">
+      Get Started
+    </Button>
+  </a>,
 ]
 
 const mobileNavItems = [
-  <div key="components-button" className="w-full">
+  <a
+    key="components-button"
+    href="https://ds.console.so/?path=/docs/disclosure-accordion--docs"
+    className="block"
+  >
     <Button variant="link" color="neutral" className="!font-medium !pl-0 !pr-1">
       Components
     </Button>
-  </div>,
-  <div key="github-link" className="w-full">
-    <a
-      href="https://github.com/consolelabs/mochi-ui"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Button
-        variant="link"
-        color="neutral"
-        className="!font-medium !pl-1 !pr-0"
-      >
-        GitHub
-      </Button>
-    </a>
-  </div>,
-  <Button
-    variant="solid"
-    key="get-started-button"
-    className="!font-medium w-full"
+  </a>,
+  <a
+    key="github-link"
+    href="https://github.com/consolelabs/mochi-ui"
+    className="block"
+    target="_blank"
+    rel="noopener noreferrer"
   >
-    Get Started
-  </Button>,
+    <Button variant="link" color="neutral" className="!font-medium !px-0">
+      GitHub
+    </Button>
+  </a>,
+  <a
+    key="get-started-button"
+    href="https://ds.console.so"
+    className="w-full inline-block"
+  >
+    <Button variant="solid" className="!font-medium w-full">
+      Get Started
+    </Button>
+  </a>,
 ]
 
 export const Header = () => {
@@ -84,7 +89,7 @@ export const Header = () => {
       <div className="relative">
         <div
           className={clsx(
-            'h-24 w-full bg-gradient-to-b from-gray-900 to-transparent absolute top-0 transition-opacity duration-200 z-50',
+            'h-24 w-full bg-gradient-to-b from-gray-900 to-transparent absolute top-0 transition-opacity duration-300 z-50',
             {
               'opacity-0': isScrolledToContent,
               'opacity-100': !isScrolledToContent,
@@ -93,7 +98,7 @@ export const Header = () => {
         />
         <div
           className={clsx(
-            'h-full w-full bg-gradient-to-b from-gray-900 to-gray-900 absolute top-0 transition-opacity duration-200 z-50',
+            'h-full w-full bg-gradient-to-b from-gray-900 to-gray-900 absolute top-0 transition-opacity duration-300 z-50',
             {
               'opacity-0': !isScrolledToContent,
               'opacity-100': isScrolledToContent,
@@ -112,7 +117,7 @@ export const Header = () => {
               <DesktopNav navItems={desktopNavItems} />
               <MobileNav
                 navItems={mobileNavItems}
-                toggleIconClassName="!text-white"
+                toggleIconClassName="!text-neutral-500"
               />
             </>
           }

@@ -7,6 +7,7 @@ import {
   ProfileShieldColored,
   TipColored,
 } from '@mochi-ui/icons'
+import Head from 'next/head'
 import { CallToAction } from '../components/CallToAction'
 import { GridContent } from '../components/GridContent'
 import { Header } from '../components/Header'
@@ -15,6 +16,10 @@ import { Hero } from '../components/Hero'
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Mochi UI</title>
+      </Head>
+
       <Header />
 
       <main>
@@ -23,9 +28,15 @@ export default function Home() {
           description="Help designers and developers create eye-catching and adaptable
             products using different Web3 frameworks."
           actions={[
-            <Button key="get-started-action">
-              Get Started <ArrowRightLine />
-            </Button>,
+            <a
+              key="get-started-action"
+              href="https://ds.console.so"
+              className="inline-block"
+            >
+              <Button>
+                Get Started <ArrowRightLine />
+              </Button>
+            </a>,
             <Button color="white" key="preview-action">
               Preview Online
             </Button>,
@@ -80,9 +91,15 @@ export default function Home() {
             </Typography>
           }
           actions={[
-            <Button key="get-started-action">
-              Get Started <ArrowRightLine />
-            </Button>,
+            <a
+              key="get-started-action"
+              href="https://ds.console.so"
+              className="inline-block"
+            >
+              <Button>
+                Get Started <ArrowRightLine />
+              </Button>
+            </a>,
             <Button color="white" key="preview-action">
               Preview Online
             </Button>,
@@ -97,8 +114,14 @@ export default function Home() {
           {
             title: 'Resources',
             links: [
-              { href: '/', text: 'Components' },
-              { href: '/', text: 'GitHub' },
+              {
+                href: 'https://ds.console.so/?path=/docs/disclosure-accordion--docs',
+                text: 'Components',
+              },
+              {
+                href: 'https://github.com/consolelabs/mochi-ui',
+                text: 'GitHub',
+              },
               { href: '/', text: 'Community' },
             ],
           },
@@ -106,7 +129,10 @@ export default function Home() {
             title: 'Help',
             links: [
               { href: '/', text: 'Bug Report' },
-              { href: '/', text: 'Issues' },
+              {
+                href: 'https://github.com/consolelabs/mochi-ui/issues',
+                text: 'Issues',
+              },
             ],
           },
         ]}
