@@ -12,6 +12,7 @@ import { CallToAction } from '../components/CallToAction'
 import { GridContent } from '../components/GridContent'
 import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
+import { RichComponents } from '../components/pages/home/RichComponentsView'
 
 export default function Home() {
   return (
@@ -68,6 +69,8 @@ export default function Home() {
             },
           ]}
         />
+
+        <RichComponents />
 
         <CallToAction
           className="mb-14 md:mb-[88px]"

@@ -89,7 +89,7 @@ export const Header = () => {
       <div className="relative">
         <div
           className={clsx(
-            'h-24 w-full bg-gradient-to-b from-gray-900 to-transparent absolute top-0 transition-opacity duration-300 z-50',
+            'h-24 pointer-events-none w-full bg-gradient-to-b from-gray-900 to-transparent absolute top-0 transition-opacity duration-300 z-50',
             {
               'opacity-0': isScrolledToContent,
               'opacity-100': !isScrolledToContent,
