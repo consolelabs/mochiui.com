@@ -32,7 +32,7 @@ export default function Home() {
       <main>
         <Hero
           title="Mochi UI Kit"
-          description="Help designers and developers create eye-catching and adaptable products using different Web3 frameworks."
+          description="Help designers and developers create eye-catching and adaptable products using different Web3 frameworks effortlessly."
           actions={[
             <a
               key="get-started-action"
@@ -54,13 +54,13 @@ export default function Home() {
           data={[
             {
               icon: <TipColored className="w-10 h-10" />,
-              title: 'Quick access',
+              title: 'Optimized performance',
               body: 'By optimizing component performance, developers can create smooth and engaging user experiences.',
             },
             {
               icon: <ProfileShieldColored className="w-10 h-10" />,
               title: 'Cross-platform',
-              body: 'Works with many tools, so you can use the same UI parts for different apps. This makes it easy to reuse code and promote interoperability.',
+              body: 'Save time and enhance interoperability effortlessly by reusing code while keeping the consistency across platforms.',
             },
             {
               icon: <BagColored className="w-10 h-10" />,
@@ -91,7 +91,7 @@ export default function Home() {
               fontWeight="md"
               className="leading-tight !text-neutral-900"
             >
-              Organized, reusable components
+              Compatible, structured, and reusable components
             </Typography>
           }
           description={
@@ -100,8 +100,8 @@ export default function Home() {
               fontWeight="sm"
               className="!text-neutral-600"
             >
-              Start using our design system and create stunning, adaptable web3
-              products.
+              Create stunning, user friendly and compatible with all platform
+              effortlessly.
             </Typography>
           }
           actions={[

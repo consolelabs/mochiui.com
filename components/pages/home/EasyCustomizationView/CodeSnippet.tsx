@@ -119,11 +119,13 @@ export const CodeSnippet = () => {
 
   return (
     <div className="w-full h-[500px] lg:h-auto lg:w-[calc(100%-32px-496px)]">
-      <div className="flex h-full flex-col rounded-2xl bg-neutral-800">
-        <div className="flex items-center justify-between p-6 md:p-8 !pb-2">
+      <div className="relative flex h-full flex-col rounded-2xl bg-neutral-800 py-6 md:py-8">
+        <div className="absolute h-4 w-full left-0 top-14 md:top-16 bg-gradient-to-t from-transparent to-neutral-800" />
+
+        <div className="flex items-center justify-between px-6 md:px-8 !pb-2">
           <Typography
             level="p6"
-            className="text-[13px]"
+            className="!text-[13px]"
             fontWeight="md"
             color="textTertiary"
           >
@@ -142,6 +144,8 @@ export const CodeSnippet = () => {
             <code className="language-javascript">{demoCode}</code>
           </pre>
         </div>
+
+        <div className="absolute h-4 w-full left-0 bottom-6 md:bottom-8 bg-gradient-to-b from-transparent to-neutral-800" />
       </div>
     </div>
   )
