@@ -40,7 +40,7 @@ export const RichComponents = ({ className }: { className?: string }) => {
     <section className={clsx('px-4', className)}>
       <div className="section-container">
         <Typography level="h3" className="mb-8 tracking-tight leading-tight">
-          Rich components
+          Various components
         </Typography>
         <div className="flex flex-col md:flex-row gap-4 md:gap-8 justify-stretch">
           <div className="flex flex-row md:flex-col gap-2 overflow-auto w-full md:w-[280px] shrink-0 h-full">
