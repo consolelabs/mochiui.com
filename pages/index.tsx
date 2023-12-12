@@ -8,7 +8,6 @@ import {
   TipColored,
 } from '@mochi-ui/icons'
 import Head from 'next/head'
-import { useState, useEffect } from 'react'
 import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
 import { GridContent } from '../components/GridContent'
@@ -19,13 +18,7 @@ import { DesignGuide } from '../components/pages/home/DesignGuideView'
 import { CallToAction } from '../components/CallToAction'
 
 export default function Home() {
-  const [isSSR, setIsSSR] = useState(true)
-
-  useEffect(() => {
-    setIsSSR(false)
-  }, [])
-
-  return !isSSR ? (
+  return (
     <>
       <Head>
         <title>Mochi UI Kit</title>
@@ -172,5 +165,5 @@ export default function Home() {
         ]}
       />
     </>
-  ) : null
+  )
 }
