@@ -17,8 +17,7 @@ import {
   MailLine,
   WalletSolid,
 } from '@mochi-ui/icons'
-import { useEffect } from 'react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const socialAuths = [
   {
@@ -63,10 +62,10 @@ const MochiUIModal = () => {
   }, [])
 
   return !isSSR ? (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center bg-white h-screen">
       <Modal defaultOpen>
         <ModalTrigger asChild>
-          <Button className="mt-1">Open Modal</Button>
+          <Button>Open Modal</Button>
         </ModalTrigger>
         <ModalContent showCloseBtn>
           <div className="overflow-hidden rounded-lg relative p-3 w-[calc(100vw-32px)] max-w-[400px]">
