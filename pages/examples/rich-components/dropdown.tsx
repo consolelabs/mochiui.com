@@ -9,7 +9,7 @@ const MochiUIModal = () => {
   }, [])
 
   return !isSSR ? (
-    <div className="h-[500px] flex justify-center p-6 pt-12">
+    <div className="h-[450px] md:h-[478px] flex justify-center p-4 md:p-6 pt-12">
       <DropdownShowcase />
     </div>
   ) : null

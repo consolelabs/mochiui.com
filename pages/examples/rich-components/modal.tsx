@@ -9,7 +9,7 @@ const MochiUIModal = () => {
   }, [])
 
   return !isSSR ? (
-    <div className="h-[500px] flex justify-center items-center">
+    <div className="h-[450px] md:h-[478px] p-4 md:p-6 flex justify-center items-center">
       <ModalShowcase />
     </div>
   ) : null

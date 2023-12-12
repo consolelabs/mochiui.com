@@ -61,7 +61,7 @@ const socialAuths = [
   },
 ]
 
-const MochiUIModal = () => {
+export const MochiUIModal = () => {
   return (
     <Modal>
       <ModalTrigger asChild>
