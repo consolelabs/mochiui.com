@@ -29,7 +29,7 @@ const checkedType: {
 
 export const CheckboxShowcase = () => {
   return (
-    <div className="h-full w-full flex p-6 justify-center items-center">
+    <div className="h-full w-full flex p-4 md:p-6 justify-center items-center">
       <div className="flex flex-col gap-6">
         {checkedType.map((d, index) => (
           <div key={index} className="flex flex-wrap gap-4 md:gap-6">

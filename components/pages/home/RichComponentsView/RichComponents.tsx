@@ -3,23 +3,28 @@ import { useState } from 'react'
 import { ButtonsShowcase } from './Buttons'
 import { CheckboxShowcase } from './Checkbox'
 import clsx from 'clsx'
+import { AccordionShowcase } from './Accordion'
+import { CardShowcase } from './Card'
 
 export const RichComponents = ({ className }: { className?: string }) => {
   const [idx, setIdx] = useState(0)
 
   const tabData = [
     {
+      title: 'Accordion',
+      content: <AccordionShowcase />,
+    },
+    {
       title: 'Buttons',
       content: <ButtonsShowcase />,
     },
     {
-      title: 'Modal',
-      content: (
-        <iframe
-          src="/examples/rich-components/modal"
-          className="w-full h-full"
-        />
-      ),
+      title: 'Card',
+      content: <CardShowcase />,
+    },
+    {
+      title: 'Checkbox',
+      content: <CheckboxShowcase />,
     },
     {
       title: 'Dropdown',
@@ -31,8 +36,13 @@ export const RichComponents = ({ className }: { className?: string }) => {
       ),
     },
     {
-      title: 'Checkbox',
-      content: <CheckboxShowcase />,
+      title: 'Modal',
+      content: (
+        <iframe
+          src="/examples/rich-components/modal"
+          className="w-full h-full"
+        />
+      ),
     },
   ]
 
@@ -51,7 +61,7 @@ export const RichComponents = ({ className }: { className?: string }) => {
                 variant="outline"
                 color={index === idx ? 'primary' : 'neutral'}
                 className={clsx(
-                  '!h-max !py-2 md:!py-6 !px-4 md:!px-6 !shadow-none !justify-start !font-medium !text-sm md:!text-lg !text-neutral-900',
+                  '!h-max md:!h-[73px] !py-2 md:!py-6 !px-4 md:!px-6 !shadow-none !justify-start !font-medium !text-sm md:!text-lg !text-neutral-900',
                   {
                     'bg-white': index !== idx,
                   },
@@ -63,7 +73,9 @@ export const RichComponents = ({ className }: { className?: string }) => {
           </div>
 
           <div className="flex-1 bg-neutral-100 rounded-lg overflow-hidden">
-            <div className="w-full h-[500px]">{tabData[idx].content}</div>
+            <div className="w-full h-[450px] md:h-[478px] overflow-auto">
+              {tabData[idx].content}
+            </div>
           </div>
         </div>
       </div>

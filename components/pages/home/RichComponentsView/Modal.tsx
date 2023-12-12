@@ -2,11 +2,10 @@ import {
   Modal,
   ModalTrigger,
   ModalContent,
-  ModalTitle,
-  ModalDescription,
   Button,
+  Typography,
 } from '@mochi-ui/core'
-import { CheckCircleOutlined } from '@mochi-ui/icons'
+import Image from 'next/image'
 
 export const ModalShowcase = () => {
   return (
@@ -14,17 +13,22 @@ export const ModalShowcase = () => {
       <ModalTrigger asChild>
         <Button>Open Modal</Button>
       </ModalTrigger>
-      <ModalContent className="space-y-2 text-center max-w-sm">
-        <div className="mb-8 flex flex-col gap-5 items-center">
-          <CheckCircleOutlined className="text-4xl" />
-          <div>
-            <ModalTitle className="mb-2">Network Confirmation</ModalTitle>
-            <ModalDescription>
-              ETH selected as the transfer network. Few platforms support the
-              ETH network. Please confirm that the receiving platform supports
-              this network.
-            </ModalDescription>
-          </div>
+      <ModalContent className="space-y-2 text-center sm:w-[400px]">
+        <div className="mb-8">
+          <Image
+            src="/img/macbook.png"
+            alt="Mochi UI Logo"
+            width={350}
+            height={200}
+            priority
+          />
+          <Typography level="h6" fontWeight="md" className="mt-5 mb-2">
+            Welcome to Mochi
+          </Typography>
+          <Typography level="p5" className="!text-neutral-600">
+            We&rsquo;re glad to have you onboard. Here are some quick tips to
+            get you up and running.
+          </Typography>
         </div>
         <div className="flex gap-3">
           <ModalTrigger asChild>

@@ -17,7 +17,7 @@ const buttonVariants: ButtonProps['variant'][] = [
 
 export const ButtonsShowcase = () => {
   return (
-    <div className="h-full w-full flex p-6 justify-center items-center">
+    <div className="h-full w-full flex p-4 md:p-6 justify-center items-center">
       <div>
         <div className="flex gap-4 flex-wrap items-center">
           {buttonVariants.map((variant) => (

@@ -2,22 +2,31 @@ import {
   DropdownMenu,
   DropdownMenuTrigger,
   DropdownMenuContent,
-  DropdownMenuLabel,
-  DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuSub,
-  DropdownMenuSubTrigger,
-  DropdownMenuPortal,
-  DropdownMenuSubContent,
-  DropdownMenuRadioGroup,
-  Avatar,
-  DropdownRadioItemProps,
-  DropdownMenuRadioItem,
   Button,
+  TextFieldRoot,
+  TextFieldDecorator,
+  TextFieldInput,
+  Checkbox,
+  Label,
+  Badge,
+  BadgeProps,
 } from '@mochi-ui/core'
 import { SolidDotSolid } from '@mochi-ui/icons'
+import Magnifier from '@mochi-ui/icons/line/magnifier'
 import { useState } from 'react'
+
+const rolesData = [
+  { label: 'Admin', value: 'admin', appearance: 'primary' },
+  { label: 'Mochi Bot', value: 'mochi-bot', appearance: 'secondary' },
+  { label: 'VC Roles', value: 'vc-roles', appearance: 'success' },
+  {
+    label: 'In a voice channel',
+    value: 'in-a-voice-channel',
+    appearance: 'black',
+  },
+  { label: 'Smod', value: 'smod', appearance: 'warning' },
+]
 
 export const DropdownShowcase = () => {
   const [radioSelected, setRadioSelected] = useState('third')
@@ -28,82 +37,37 @@ export const DropdownShowcase = () => {
         <Button>Open Dropdown</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
-        <DropdownMenuLabel>My Account</DropdownMenuLabel>
-        <DropdownMenuGroup>
-          <DropdownMenuItem rightExtra="⇧⌘P">
-            Keyboard shortcuts
+        <TextFieldRoot>
+          <TextFieldDecorator>
+            <Magnifier />
+          </TextFieldDecorator>
+          <TextFieldInput placeholder="Search a role" />
+        </TextFieldRoot>
+        {rolesData.map((role) => (
+          <DropdownMenuItem
+            wrapperClassName="!gap-0"
+            key={role.value}
+            rightExtra={
+              <Checkbox
+                id={role.value}
+                checked={radioSelected === role.value}
+              />
+            }
+            onClick={() => setRadioSelected(role.value)}
+          >
+            <Label htmlFor={role.value} className="pr-3">
+              <Badge
+                className="!normal-case w-max"
+                appearance={role.appearance as BadgeProps['appearance']}
+                label={
+                  <>
+                    <SolidDotSolid />
+                    {role.label}
+                  </>
+                }
+              />
+            </Label>
           </DropdownMenuItem>
-        </DropdownMenuGroup>
-        <DropdownMenuSeparator />
-        <DropdownMenuGroup>
-          <DropdownMenuItem>Team</DropdownMenuItem>
-          <DropdownMenuSub>
-            <DropdownMenuSubTrigger>Invite users</DropdownMenuSubTrigger>
-            <DropdownMenuPortal>
-              <DropdownMenuSubContent>
-                <DropdownMenuRadioGroup
-                  value={radioSelected}
-                  onChange={(val) => setRadioSelected(val)}
-                >
-                  {(
-                    [
-                      {
-                        children: 'Console Labs',
-                        subtitle: (
-                          <span className="flex gap-1 items-center">
-                            Lvl 450 <SolidDotSolid /> 145 Boosts
-                          </span>
-                        ),
-                        leftIcon: <Avatar src="https://mochi.gg/logo.png" />,
-                        isLeftIconAvatar: true,
-                        value: 'first',
-                      },
-                      {
-                        children: 'Techie Story',
-                        subtitle: (
-                          <span className="flex gap-1 items-center">
-                            Lvl 450 <SolidDotSolid /> 145 Boosts
-                          </span>
-                        ),
-                        leftIcon: <Avatar src="https://mochi.gg/logo.png" />,
-                        isLeftIconAvatar: true,
-                        value: 'second',
-                      },
-                      {
-                        children: 'Dwarves, LLC',
-                        subtitle: (
-                          <span className="flex gap-1 items-center">
-                            Lvl 450 <SolidDotSolid /> 145 Boosts
-                          </span>
-                        ),
-                        leftIcon: <Avatar src="https://mochi.gg/logo.png" />,
-                        isLeftIconAvatar: true,
-                        value: 'third',
-                      },
-                      {
-                        children: 'Superteam Vietnam',
-                        subtitle: (
-                          <span className="flex gap-1 items-center">
-                            Lvl 450 <SolidDotSolid /> 145 Boosts
-                          </span>
-                        ),
-                        leftIcon: <Avatar src="https://mochi.gg/logo.png" />,
-                        isLeftIconAvatar: true,
-                        value: 'forth',
-                      },
-                    ] as DropdownRadioItemProps[]
-                  ).map((props, index) => (
-                    <DropdownMenuRadioItem key={index} {...props} />
-                  ))}
-                </DropdownMenuRadioGroup>
-              </DropdownMenuSubContent>
-            </DropdownMenuPortal>
-          </DropdownMenuSub>
-          <DropdownMenuItem>New Team</DropdownMenuItem>
-        </DropdownMenuGroup>
-        <DropdownMenuSeparator />
-        {['Github', 'Support'].map((key) => (
-          <DropdownMenuItem key={key}>{key}</DropdownMenuItem>
         ))}
       </DropdownMenuContent>
     </DropdownMenu>
