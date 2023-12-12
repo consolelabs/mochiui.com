@@ -16,7 +16,7 @@ export const RichComponents = ({ className }: { className?: string }) => {
       title: 'Modal',
       content: (
         <iframe
-          src="/examples/rich-components-modal"
+          src="/examples/rich-components/modal"
           className="w-full h-full"
         />
       ),
@@ -25,7 +25,7 @@ export const RichComponents = ({ className }: { className?: string }) => {
       title: 'Dropdown',
       content: (
         <iframe
-          src="/examples/rich-components-dropdown"
+          src="/examples/rich-components/dropdown"
           className="w-full h-full"
         />
       ),

@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useState } from 'react'
-import { DropdownShowcase } from '../../components/pages/home/RichComponentsView'
+import { DropdownShowcase } from '../../../components/pages/home/RichComponentsView'
 
 const MochiUIModal = () => {
   const [isSSR, setIsSSR] = useState(true)
