@@ -9,10 +9,10 @@ export default function Document() {
         <meta content="#E88B88" name="theme-color" />
         <meta content="summary" name="twitter:card" />
         <meta content="/img/thumbnail.png" property="og:image" />
-        <meta content="Mochi UI" property="og:site_name" />
-        <meta content="Mochi UI" property="og:title" />
+        <meta content="Mochi UI Kit" property="og:site_name" />
+        <meta content="Mochi UI Kit" property="og:title" />
         <meta
-          content="Beautiful and accessible React UI library for building web3 application"
+          content="Stunning and accessible React UI library for web3 application!"
           name="description"
         />
 

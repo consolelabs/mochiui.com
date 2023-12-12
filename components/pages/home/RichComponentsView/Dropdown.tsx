@@ -23,7 +23,7 @@ export const DropdownShowcase = () => {
   const [radioSelected, setRadioSelected] = useState('third')
 
   return (
-    <DropdownMenu>
+    <DropdownMenu defaultOpen>
       <DropdownMenuTrigger asChild>
         <Button>Open Dropdown</Button>
       </DropdownMenuTrigger>

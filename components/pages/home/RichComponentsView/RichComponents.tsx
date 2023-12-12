@@ -1,9 +1,6 @@
 import { Button, Typography } from '@mochi-ui/core'
 import { useState } from 'react'
 import { ButtonsShowcase } from './Buttons'
-import { motion } from 'framer-motion'
-import { ModalShowcase } from './Modal'
-import { DropdownShowcase } from './Dropdown'
 import { CheckboxShowcase } from './Checkbox'
 import clsx from 'clsx'
 
@@ -17,11 +14,15 @@ export const RichComponents = ({ className }: { className?: string }) => {
     },
     {
       title: 'Modal',
-      content: <ModalShowcase />,
+      content: (
+        <iframe src="/examples/mochi-ui-modal" className="w-full h-full" />
+      ),
     },
     {
       title: 'Dropdown',
-      content: <DropdownShowcase />,
+      content: (
+        <iframe src="/examples/mochi-ui-dropdown" className="w-full h-full" />
+      ),
     },
     {
       title: 'Checkbox',
@@ -55,18 +56,8 @@ export const RichComponents = ({ className }: { className?: string }) => {
             ))}
           </div>
 
-          <div className="flex-1 min-h-[500px] flex p-6 justify-center items-center bg-neutral-100 rounded-lg">
-            <motion.div
-              key={`${tabData[idx].title}-showcase`}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.6,
-                ease: [0, 0.71, 0.2, 1.01],
-              }}
-            >
-              {tabData[idx].content}
-            </motion.div>
+          <div className="flex-1 bg-neutral-100 rounded-lg overflow-hidden">
+            <div className="w-full h-[500px]">{tabData[idx].content}</div>
           </div>
         </div>
       </div>

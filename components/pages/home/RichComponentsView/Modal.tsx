@@ -10,7 +10,7 @@ import { CheckCircleOutlined } from '@mochi-ui/icons'
 
 export const ModalShowcase = () => {
   return (
-    <Modal>
+    <Modal defaultOpen>
       <ModalTrigger asChild>
         <Button>Open Modal</Button>
       </ModalTrigger>
