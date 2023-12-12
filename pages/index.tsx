@@ -9,9 +9,11 @@ import {
 } from '@mochi-ui/icons'
 import Head from 'next/head'
 import { CallToAction } from '../components/CallToAction'
+import { Divider } from '../components/Divider'
 import { GridContent } from '../components/GridContent'
 import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
+import { EasyCustomization } from '../components/pages/home/EasyCustomizationView/EasyCustomization'
 import { RichComponents } from '../components/pages/home/RichComponentsView'
 
 export default function Home() {
@@ -75,7 +77,11 @@ export default function Home() {
 
         <RichComponents />
 
-        <div className="section-container h-[1px] bg-neutral-200 my-16 md:my-[88px]" />
+        <Divider />
+
+        <EasyCustomization />
+
+        <Divider />
 
         <CallToAction
           className="mb-16 md:mb-[88px]"
@@ -130,13 +136,16 @@ export default function Home() {
                 href: 'https://github.com/consolelabs/mochi-ui',
                 text: 'GitHub',
               },
-              { href: '/', text: 'Community' },
+              { href: 'https://discord.gg/Y2vvH9rQE4', text: 'Community' },
             ],
           },
           {
             title: 'Help',
             links: [
-              { href: '/', text: 'Bug Report' },
+              {
+                href: 'https://github.com/consolelabs/mochi-ui/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=',
+                text: 'Bug Report',
+              },
               {
                 href: 'https://github.com/consolelabs/mochi-ui/issues',
                 text: 'Issues',

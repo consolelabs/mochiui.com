@@ -15,13 +15,19 @@ export const RichComponents = ({ className }: { className?: string }) => {
     {
       title: 'Modal',
       content: (
-        <iframe src="/examples/mochi-ui-modal" className="w-full h-full" />
+        <iframe
+          src="/examples/rich-components/modal"
+          className="w-full h-full"
+        />
       ),
     },
     {
       title: 'Dropdown',
       content: (
-        <iframe src="/examples/mochi-ui-dropdown" className="w-full h-full" />
+        <iframe
+          src="/examples/rich-components/dropdown"
+          className="w-full h-full"
+        />
       ),
     },
     {
@@ -33,7 +39,7 @@ export const RichComponents = ({ className }: { className?: string }) => {
   return (
     <section className={clsx('px-4', className)}>
       <div className="section-container">
-        <Typography level="h3" className="mb-8 tracking-tight">
+        <Typography level="h3" className="mb-8 tracking-tight leading-tight">
           Rich components
         </Typography>
         <div className="flex flex-col md:flex-row gap-4 md:gap-8 justify-stretch">

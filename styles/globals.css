@@ -1,3 +1,5 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,4 +22,8 @@ body {
   max-width: 1008px !important;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hljs {
+  background-color: transparent !important;
 }
