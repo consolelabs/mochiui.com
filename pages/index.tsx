@@ -8,13 +8,14 @@ import {
   TipColored,
 } from '@mochi-ui/icons'
 import Head from 'next/head'
-import { CallToAction } from '../components/CallToAction'
-import { Divider } from '../components/Divider'
-import { GridContent } from '../components/GridContent'
 import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
-import { EasyCustomization } from '../components/pages/home/EasyCustomizationView/EasyCustomization'
+import { GridContent } from '../components/GridContent'
+import { Divider } from '../components/Divider'
 import { RichComponents } from '../components/pages/home/RichComponentsView'
+import { EasyCustomization } from '../components/pages/home/EasyCustomizationView'
+import { DesignGuide } from '../components/pages/home/DesignGuideView'
+import { CallToAction } from '../components/CallToAction'
 
 export default function Home() {
   return (
@@ -50,7 +51,7 @@ export default function Home() {
         />
 
         <GridContent
-          className="my-16 md:my-[88px]"
+          className="my-16 md:my-[88px] min-h-max md:min-h-[250px]"
           data={[
             {
               icon: <TipColored className="w-10 h-10" />,
@@ -83,8 +84,10 @@ export default function Home() {
 
         <Divider />
 
+        <DesignGuide className="pb-16 md:pb-[88px]" />
+
         <CallToAction
-          className="mb-16 md:mb-[88px]"
+          className="my-16 md:my-[88px]"
           title={
             <Typography
               level="h3"
@@ -136,7 +139,7 @@ export default function Home() {
                 href: 'https://github.com/consolelabs/mochi-ui',
                 text: 'GitHub',
               },
-              { href: 'https://discord.gg/Y2vvH9rQE4', text: 'Community' },
+              { href: 'https://discord.gg/3d2FdBG2My', text: 'Community' },
             ],
           },
           {
@@ -155,7 +158,7 @@ export default function Home() {
         ]}
         social={[
           {
-            href: 'https://discord.gg/Y2vvH9rQE4',
+            href: 'https://discord.gg/3d2FdBG2My',
             Icon: Discord,
             title: 'Discord',
           },

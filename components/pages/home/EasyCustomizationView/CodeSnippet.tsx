@@ -24,8 +24,7 @@ import {
   MailLine,
   WalletSolid,
 } from '@mochi-ui/icons'
-import { useEffect } from 'react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const socialAuths = [
   {
