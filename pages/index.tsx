@@ -18,7 +18,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Mochi UI</title>
+        <title>Mochi UI Kit</title>
+        <meta
+          content="Stunning and accessible React UI library for web3 application!"
+          name="description"
+        />
       </Head>
 
       <Header />
