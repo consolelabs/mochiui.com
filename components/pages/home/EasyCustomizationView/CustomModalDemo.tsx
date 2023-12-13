@@ -14,7 +14,7 @@ import {
 export const CustomModalDemo = () => {
   return (
     <div className="shrink-0 grow w-full max-w-full lg:max-w-[488px] p-4 lg:p-6 flex justify-center items-center lg:w-max bg-blue-200 rounded-2xl">
-      <Card className="!p-6 max-w-[400px] shadow-lg">
+      <Card className="!p-6 max-w-[400px] lg:max-w-full shadow-lg">
         <Typography
           level="h5"
           fontWeight="md"

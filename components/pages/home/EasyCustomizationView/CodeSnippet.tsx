@@ -10,7 +10,7 @@ import { WalletSolid, DiscordColored, TelegramColored, X, GoogleColored, Faceboo
 
 export const CustomModalDemo = () => {
   return (
-    <Card className="!p-6 max-w-[400px] shadow-lg">
+    <Card className="!p-6 max-w-[400px] lg:max-w-full shadow-lg">
       <Typography
         level="h5"
         fontWeight="md"
