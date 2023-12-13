@@ -39,7 +39,14 @@
     chalk "^2.4.2"
     js-tokens "^4.0.0"
 
-"@babel/runtime@^7.13.10", "@babel/runtime@^7.17.2", "@babel/runtime@^7.23.2":
+"@babel/runtime@^7.13.10", "@babel/runtime@^7.17.2":
+  version "7.23.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.6.tgz#c05e610dc228855dc92ef1b53d07389ed8ab521d"
+  integrity sha512-zHd0eUrf5GZoOWVCXp6koAKQTfZV07eit6bGPmJgnZdnSAvvZee6zniW2XMF7Cmc4ISOOnPy3QaSiIJGJkVEDQ==
+  dependencies:
+    regenerator-runtime "^0.14.0"
+
+"@babel/runtime@^7.23.2":
   version "7.23.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.5.tgz#11edb98f8aeec529b82b211028177679144242db"
   integrity sha512-NdUTHcPe4C99WxPub+K9l9tK5/lV4UXIoaHSYgzco9BCyjKAAwzdBI+wWtYqHt7LJdbo74ZjRPJgzVweq1sz0w==
@@ -778,91 +785,101 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@mochi-ui/accordion@0.1.10":
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/accordion/-/accordion-0.1.10.tgz#ee50f70b0c8bb7277b87a95d284459f3cecc3853"
-  integrity sha512-iWP91l6lmWhF114qLTSzjseR2fZGYXP46AxUAubjv9hg9Nu/fmOpLunEdENoBjsqC5Ez5G5BmcC2NLhBVVCMTQ==
+"@mochi-ui/accordion@0.1.12":
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/accordion/-/accordion-0.1.12.tgz#f61ef6209b94a8befacb62c8b0ed9517b25d7dcb"
+  integrity sha512-ZxPrdkn89lkMFYVqtmyEPgOlIJh8P51+I/oL4aZfbLd+laacygqzSFcANxnO2ex5woGGIfBhI4RFt9ya/PC+Cg==
   dependencies:
-    "@mochi-ui/icons" "0.5.0"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/icons" "0.6.0"
+    "@mochi-ui/theme" "0.11.0"
     "@radix-ui/react-accordion" "^1.1.2"
     class-variance-authority "^0.7.0"
     clsx "^2.0.0"
 
-"@mochi-ui/action-bar@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/action-bar/-/action-bar-0.1.0.tgz#869c520ed036bdc7c71fa821bc2759a41ca49922"
-  integrity sha512-jK8Zw7/yt5Xb04sJnksnWQc1SjV5GRTCs/FdSW6l5pruRmVxYGy7c3Lh2CNnJuvQPPZeNunHxtd4wRmwaywxLw==
+"@mochi-ui/action-bar@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/action-bar/-/action-bar-0.1.2.tgz#b9b6a0dcdfc9e7b8248a7394eb485610bff1bb10"
+  integrity sha512-5+S1mfukCEnwcANP1WeIGg58jJu7VsovjSo/F6fz+f7Amb3S0nxlg6g6y/6dwlabBdL2rpSMZF2h6w/HvL++eg==
   dependencies:
-    "@mochi-ui/alert" "1.2.0"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/alert" "1.2.2"
+    "@mochi-ui/theme" "0.11.0"
     "@radix-ui/react-popover" "^1.0.7"
     clsx "^2.0.0"
 
-"@mochi-ui/alert@1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/alert/-/alert-1.2.0.tgz#dbcddfaa91f63244380f5686873dca42be0ea980"
-  integrity sha512-0MbwLouOs1fycaH2g7mKO+kRejqQFJ3xZeU4Xr+aqRwYYMUlQJNlyqUonhRyOGKu+w4OZfTuimdQ6LrNZjOaXw==
+"@mochi-ui/alert@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/alert/-/alert-1.2.2.tgz#d0f8f5622a838cb0a43db2aebdfb9fdcfe54f631"
+  integrity sha512-ad2i6iUDiuNNi6ylgIxgHkdd9qctdfGh+3kuu9O/ZpAvbwKgWzH+QbRz5K1d4s0FHezUol4HRyDz+uRmWeQ+sw==
   dependencies:
-    "@mochi-ui/button" "0.4.6"
-    "@mochi-ui/icon-button" "0.4.7"
-    "@mochi-ui/icons" "0.5.0"
+    "@mochi-ui/button" "0.4.8"
+    "@mochi-ui/icon-button" "0.4.9"
+    "@mochi-ui/icons" "0.6.0"
     "@mochi-ui/polymorphic" "0.0.3"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
     "@radix-ui/react-slot" "^1.0.2"
     class-variance-authority "^0.7.0"
     clsx "^2.0.0"
 
-"@mochi-ui/avatar@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/avatar/-/avatar-0.1.0.tgz#549c74ff9caa0027ff80f927ee962e06acfd1277"
-  integrity sha512-Ae+WtU9K3Uz6BoRm2Rwy7wJUVj6VjXYmVuezZRmIWv2oVcwQkOs62ZSS0hgOJlkCR5wZw4DWThCWWtebiXcZ4Q==
+"@mochi-ui/avatar@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/avatar/-/avatar-0.1.2.tgz#353856d9cfae63e4bb0b2ae4e99a31db3a786dc2"
+  integrity sha512-eB609ADcOdukkCr3Orkd52DBuqFhFoV8hxwKOWMdx4ygmfZ0h7hLfWRtQDmDIOqEndK+NmolHNCW0P06CG7vsA==
   dependencies:
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
     "@radix-ui/react-avatar" "^1.0.4"
     class-variance-authority "^0.7.0"
     clsx "^2.0.0"
 
-"@mochi-ui/badge@0.2.9":
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/badge/-/badge-0.2.9.tgz#8dd50d20a2091118f14338462bde38687a1485cf"
-  integrity sha512-uwMU2EaLx1c/WSOftZ9I3LMIHUL6cu9qILLA5++9mrRe9io83+sQe0Yt3mFjzuJP2tJmiPQinYpaeo4r1zmuKw==
+"@mochi-ui/badge@0.2.11":
+  version "0.2.11"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/badge/-/badge-0.2.11.tgz#80cd2c6e3a1a66b830fdfcfea91ba1919bcc1b07"
+  integrity sha512-EmVpGPtdp8uiJdny3EyPkV5KmQ8M00lGFvmqiAZU782HKtIyek0AhTTZnoDtnV5tBaUT6k3SshirKfnwfdFIEQ==
   dependencies:
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
     class-variance-authority "^0.7.0"
     clsx "^2.0.0"
 
-"@mochi-ui/button@0.4.6":
-  version "0.4.6"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/button/-/button-0.4.6.tgz#402c5b75975664db9798235036284d4ebea6cc0c"
-  integrity sha512-vvgnaXHSW+MSocj3GGHZboT6c0f6L9Pg6YBBooGt16GBhrPJbsUChnwQEUsO81/rNZJu/JXtXI5/0AD7WDJihw==
+"@mochi-ui/button@0.4.8":
+  version "0.4.8"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/button/-/button-0.4.8.tgz#80bb9f7f834b0febcdc0cf4cc21119cf779689d0"
+  integrity sha512-WQ8tyGzHPgYauSKGS7wkRuQJUhbOYN9MrBLWDxpmZagXVitcMzsHQ6aUj2dDwChqbKWpl+RVX8B+YXE17CUktg==
   dependencies:
-    "@mochi-ui/icons" "0.5.0"
+    "@mochi-ui/icons" "0.6.0"
     "@mochi-ui/polymorphic" "0.0.3"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
     class-variance-authority "^0.7.0"
     clsx "^2.0.0"
 
-"@mochi-ui/checkbox@0.1.10":
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/checkbox/-/checkbox-0.1.10.tgz#119484821a62aef383d9122b3b820e4c60742a83"
-  integrity sha512-CXo+ksBwEfhdYswjtbHytd2HYi2KlxL7HArnuj5i2R4WNGjJ3HdUvww/CZmneINDrtsqUh9bHDSGJu2WfjRliQ==
+"@mochi-ui/card@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/card/-/card-0.1.0.tgz#ae3db9c88fefcf38ad2630275c1a95dfadaebae1"
+  integrity sha512-SzjEFpxYWXJ/Wgxkv8l0Qr22TtyruirsbF+tbc70kTT+SlLUXusHJoPbfHs18JYOpzJyZuTskOprB9RWOSY5+w==
   dependencies:
-    "@mochi-ui/icons" "0.5.0"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/polymorphic" "0.0.3"
+    "@mochi-ui/theme" "0.11.0"
+    class-variance-authority "^0.7.0"
+    clsx "^2.0.0"
+
+"@mochi-ui/checkbox@0.1.12":
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/checkbox/-/checkbox-0.1.12.tgz#20efc8b7bd5dc7c6c20f245d4c4b761aaf984572"
+  integrity sha512-XA+IJasC9oDrBwBOqFuWiVmXwJ4Tkgn0oFVnh6FqN0Y+p/nwXgAKCJEGQh5GEcIz6NQz7fPQGrfTWCVKV+eiEQ==
+  dependencies:
+    "@mochi-ui/icons" "0.6.0"
+    "@mochi-ui/theme" "0.11.0"
     "@radix-ui/react-checkbox" "^1.0.4"
     class-variance-authority "^0.7.0"
 
-"@mochi-ui/connect-wallet-widget@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/connect-wallet-widget/-/connect-wallet-widget-0.0.2.tgz#9917544aa975d5db7398b491a54376f6d095d64a"
-  integrity sha512-RykH1HJl+5D+2ClOIeyfxq2QeeUTIR9aQoWQ2a60deNfa3N+4RWnBbIocVxcBa+K7qEQT+wxnJG0gU2j54LOtQ==
+"@mochi-ui/connect-wallet-widget@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/connect-wallet-widget/-/connect-wallet-widget-0.0.4.tgz#9da150cbf0f678d4edde3e5e6d7b95bd61386ba4"
+  integrity sha512-LoKYWQA6r8XOQYlc06EajG5y1hufo4LS9P8j4WP0VPzEXjD/nqPomcZdnZIWksE+MM8QQNaS/RqqNM/RQAS4uA==
   dependencies:
-    "@mochi-ui/button" "0.4.6"
-    "@mochi-ui/dropdown" "0.1.10"
-    "@mochi-ui/icons" "0.5.0"
-    "@mochi-ui/tabs" "0.1.10"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/button" "0.4.8"
+    "@mochi-ui/dropdown" "0.1.12"
+    "@mochi-ui/icons" "0.6.0"
+    "@mochi-ui/tabs" "0.1.12"
+    "@mochi-ui/theme" "0.11.0"
     "@solana/web3.js" "^1.74.0"
     browser-string-hexer "^1.0.0"
     bs58 "^5.0.0"
@@ -872,78 +889,78 @@
     ethers "^5.7.0"
     mipd "^0.0.5"
 
-"@mochi-ui/content-editable@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/content-editable/-/content-editable-1.0.1.tgz#0c8b9c4623ce9b3bdd3e50cf771b813df28b1cc3"
-  integrity sha512-ugwt3VFT/Ju7ZPfO4gdyTG91aiWYA3k9JPigR6d/9ymsIEuMMUupaRMfYTpXTr2qBoHV/wiijY/g69jkm/JZog==
+"@mochi-ui/content-editable@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/content-editable/-/content-editable-1.1.0.tgz#1bd990b2d6e78dadb1eb81c9dc8d2ab59d874bf0"
+  integrity sha512-2bliX0M3jmUUij3JsxEqvqYSsLcPkWKTiGV/wK6I1rmDB9DREzome4NjB5hZ3/VUvMerEut+/eG6NCZ1u2Jmpw==
   dependencies:
-    "@mochi-ui/icons" "0.5.0"
-    "@mochi-ui/theme" "0.9.0"
+    "@dwarvesf/react-utils" "^0.4.1"
+    "@mochi-ui/icons" "0.6.0"
+    "@mochi-ui/theme" "0.11.0"
     class-variance-authority "^0.7.0"
     clsx "^2.0.0"
 
-"@mochi-ui/core@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/core/-/core-0.8.0.tgz#28605049d40e473ed36a3ae3225cd90438ccf261"
-  integrity sha512-WzIo9FOulzShStOX3z/CsUHlY21towj3wdzJh1QlSqJujkjHYYTc32a7MIPwA8Sk+zh/93qig4GrI+m8FvKVvA==
+"@mochi-ui/core@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/core/-/core-0.10.0.tgz#caec6c52738e202b284431b81c6f1dfea1f88ad9"
+  integrity sha512-Y9M6y+cq82tUrzQEPvxGoTefp9P/ETLdjFxC9DVG58cSo2+gwy3dSgOoRr5Mc04uUsr8R2rMQRenmQy4nkiKxA==
   dependencies:
-    "@mochi-ui/accordion" "0.1.10"
-    "@mochi-ui/action-bar" "0.1.0"
-    "@mochi-ui/alert" "1.2.0"
-    "@mochi-ui/avatar" "0.1.0"
-    "@mochi-ui/badge" "0.2.9"
-    "@mochi-ui/button" "0.4.6"
-    "@mochi-ui/checkbox" "0.1.10"
-    "@mochi-ui/connect-wallet-widget" "0.0.2"
-    "@mochi-ui/content-editable" "1.0.1"
-    "@mochi-ui/dropdown" "0.1.10"
-    "@mochi-ui/footer" "0.1.1"
-    "@mochi-ui/form" "0.1.7"
-    "@mochi-ui/heading" "0.0.6"
-    "@mochi-ui/icon-button" "0.4.7"
-    "@mochi-ui/icons" "0.5.0"
-    "@mochi-ui/input" "0.2.7"
-    "@mochi-ui/input-field" "0.1.11"
-    "@mochi-ui/label" "0.1.7"
-    "@mochi-ui/layout" "0.1.7"
-    "@mochi-ui/list" "0.0.20"
-    "@mochi-ui/login-widget" "0.1.11"
-    "@mochi-ui/logo" "0.1.7"
-    "@mochi-ui/modal" "0.2.9"
-    "@mochi-ui/page-content" "0.1.7"
-    "@mochi-ui/page-header" "0.2.7"
-    "@mochi-ui/popover" "0.2.8"
-    "@mochi-ui/profile-badge" "0.1.8"
-    "@mochi-ui/section-list" "0.0.19"
-    "@mochi-ui/select" "0.1.9"
-    "@mochi-ui/sidebar" "0.1.0"
-    "@mochi-ui/skeleton" "1.0.0"
-    "@mochi-ui/switch" "0.0.18"
-    "@mochi-ui/table" "0.3.5"
-    "@mochi-ui/theme" "0.9.0"
-    "@mochi-ui/toast" "0.1.0"
+    "@mochi-ui/accordion" "0.1.12"
+    "@mochi-ui/action-bar" "0.1.2"
+    "@mochi-ui/alert" "1.2.2"
+    "@mochi-ui/avatar" "0.1.2"
+    "@mochi-ui/badge" "0.2.11"
+    "@mochi-ui/button" "0.4.8"
+    "@mochi-ui/card" "0.1.0"
+    "@mochi-ui/checkbox" "0.1.12"
+    "@mochi-ui/connect-wallet-widget" "0.0.4"
+    "@mochi-ui/content-editable" "1.1.0"
+    "@mochi-ui/dropdown" "0.1.12"
+    "@mochi-ui/footer" "0.1.3"
+    "@mochi-ui/form" "0.1.9"
+    "@mochi-ui/icon-button" "0.4.9"
+    "@mochi-ui/icons" "0.6.0"
+    "@mochi-ui/input" "0.2.9"
+    "@mochi-ui/label" "0.1.9"
+    "@mochi-ui/layout" "0.1.9"
+    "@mochi-ui/list" "0.0.22"
+    "@mochi-ui/login-widget" "0.1.13"
+    "@mochi-ui/logo" "0.1.9"
+    "@mochi-ui/modal" "0.2.11"
+    "@mochi-ui/page-content" "0.1.9"
+    "@mochi-ui/page-header" "0.2.9"
+    "@mochi-ui/popover" "0.2.10"
+    "@mochi-ui/profile-badge" "0.1.10"
+    "@mochi-ui/section-list" "0.0.21"
+    "@mochi-ui/select" "0.1.11"
+    "@mochi-ui/sidebar" "0.1.2"
+    "@mochi-ui/skeleton" "1.0.2"
+    "@mochi-ui/switch" "0.0.20"
+    "@mochi-ui/table" "0.4.1"
+    "@mochi-ui/theme" "0.11.0"
+    "@mochi-ui/toast" "0.1.2"
     "@mochi-ui/toggle-button" "0.1.1"
-    "@mochi-ui/tooltip" "0.2.7"
-    "@mochi-ui/top-bar" "0.1.6"
+    "@mochi-ui/tooltip" "0.2.9"
+    "@mochi-ui/top-bar" "0.1.8"
     "@mochi-ui/typography" "0.0.7"
 
-"@mochi-ui/dropdown@0.1.10":
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/dropdown/-/dropdown-0.1.10.tgz#7ae7b54be10e9375741278abf11207d83f60480f"
-  integrity sha512-hq4CJVd2+L3PiWfp1xqSfrQTUyPxO95h7XbpECMAztwaO6JUagloR28I3fF11eG7sEBZrmG3EMMjv9sO2Nx1yQ==
+"@mochi-ui/dropdown@0.1.12":
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/dropdown/-/dropdown-0.1.12.tgz#dd3a9774cb4a1eae5b8ce5505b81f0bf12cc162b"
+  integrity sha512-zp0QvF+wdlZnvYqAgVkYVr3pp8qzLetAyrKBY/DJLrwBnCGzZfdWROarSv85aotkHGWraVurPRtDOHWaYpsupw==
   dependencies:
-    "@mochi-ui/icons" "0.5.0"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/icons" "0.6.0"
+    "@mochi-ui/theme" "0.11.0"
     "@radix-ui/react-dropdown-menu" "^2.0.6"
     class-variance-authority "^0.7.0"
     clsx "^2.0.0"
 
-"@mochi-ui/footer@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/footer/-/footer-0.1.1.tgz#e2609da7672e9ad18b707b74e02de5d9c2452f4a"
-  integrity sha512-hguKll8gRfN9FLYiy8KyyeF+zpWp1L/TJWE8C0VOzdq5wvOk98fNy8i+d8jE+MROZ4YhDFegVkZc+wZq5zZ48w==
+"@mochi-ui/footer@0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/footer/-/footer-0.1.3.tgz#799c78e1a9ec801ce35eaed49b72ed18a406f9da"
+  integrity sha512-/jet2F9EGS1iLkzAsPKqcxXDA4x0yBfv2oWdqBTC2oBQOR9i0qIH2kQ1LrdCJTYgn2xGDlfmvmbt4zNTp5aVaw==
   dependencies:
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
     "@mochi-ui/typography" "0.0.7"
 
 "@mochi-ui/form-context@0.1.1":
@@ -951,97 +968,82 @@
   resolved "https://registry.yarnpkg.com/@mochi-ui/form-context/-/form-context-0.1.1.tgz#76f2afabf1d836c6a39f748ef9915b85876a5512"
   integrity sha512-bV/m+w+lq9SFJDLOnXhNPqiSppucQdsB9dtYRuQeqiJ/nRcLZRvOO6eFPFWmmOmf4o30v3RxwBdRWwa0tY75QQ==
 
-"@mochi-ui/form@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/form/-/form-0.1.7.tgz#cbfad11cea7e7e140643ca6f8cdf14bb58984ccb"
-  integrity sha512-IRWWLcUVQQn5r8qCL0NkHbMz4NcUKJd2uqMLbBTFd1rHOmGmKCfkrO42vCaGBPmDrKfIfLb1sC7LxqZyxNBx+w==
+"@mochi-ui/form@0.1.9":
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/form/-/form-0.1.9.tgz#e7523c16d384ca3094e9bd9e133e9ce97de0873d"
+  integrity sha512-35qP44xqfd0ohSBS6gr4IAs8imPdK+m+/Vl+2WNLHKTDD2xJb19EMeOg6i4yKKdecH/BAdTZox89dXf3W5xWvA==
   dependencies:
     "@mochi-ui/form-context" "0.1.1"
-    "@mochi-ui/label" "0.1.7"
+    "@mochi-ui/label" "0.1.9"
     "@mochi-ui/polymorphic" "0.0.3"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
     class-variance-authority "^0.7.0"
     clsx "^2.0.0"
 
-"@mochi-ui/heading@0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/heading/-/heading-0.0.6.tgz#4dd9eb68dbee4246f94ca4a5f0c7e77b5c567bf9"
-  integrity sha512-3Nw9GIR/oB44xkYGLYJJaagZSOSXqJ3FbGdbqQyisAT5/xXqyYGdzx7hENtGxsw8Tg77qyrgHZEWHxL5/89ccQ==
-
-"@mochi-ui/icon-button@0.4.7", "@mochi-ui/icon-button@^0.4.7":
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/icon-button/-/icon-button-0.4.7.tgz#509128e3fd00100d6b4d2e409fcca6373f40ad52"
-  integrity sha512-uKJqDM2b5A3CdofJ6uHEF9axk3L+YkUtApOLx6Knp+yKCf3Rb9zHKcC3EO3beef1Ve7qO3Q3sqaznVwYMBEgWA==
+"@mochi-ui/icon-button@0.4.9", "@mochi-ui/icon-button@^0.4.9":
+  version "0.4.9"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/icon-button/-/icon-button-0.4.9.tgz#1476c6df9083a8ce1fc5f90902fab65699771a1d"
+  integrity sha512-7Bj3ejgSeDyE6M3QxW9f3VqHqTojw7DMpmgqxUVf+9w4EdkUsje+ivqyrkDG9AispX9xZJrZEqV4j4esdne7sQ==
   dependencies:
-    "@mochi-ui/icons" "0.5.0"
+    "@mochi-ui/icons" "0.6.0"
     "@mochi-ui/polymorphic" "0.0.3"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
     class-variance-authority "^0.7.0"
 
-"@mochi-ui/icons@0.5.0", "@mochi-ui/icons@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/icons/-/icons-0.5.0.tgz#4a60f6ac30095cdec2d6ab405cc912209f52104f"
-  integrity sha512-A/u1ZSkxmfq7Z2z6yQb6PjTTOnmBcc9CdVetMrVKeuEahO+HKYUQ8D4nAAKkIXHMIuZK2WOm938N83SZa4iOAg==
+"@mochi-ui/icons@0.6.0", "@mochi-ui/icons@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/icons/-/icons-0.6.0.tgz#c7df9b2657854f7dfd67571264b4283f07d807d5"
+  integrity sha512-hnJktB3ob2l8JaxyE9nsVUcLma3shnA0goI8fwTwlqWU/Tb5wVekzysuD6dIEWlmxJsjKvjxcwEGedK4cna6dg==
 
-"@mochi-ui/input-field@0.1.11":
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/input-field/-/input-field-0.1.11.tgz#a213cf311ce4a0d059f16835a9cacb2355e6f7dc"
-  integrity sha512-2bN512RTDNr+P+hFhNvBNBC5db+9GW1otIpwk+FLvjO1O4T6+70LePFusX1WsJNiTG/GCo8pw6VEdrr4hhMKRA==
-  dependencies:
-    "@mochi-ui/theme" "0.9.0"
-    class-variance-authority "^0.7.0"
-    clsx "^2.0.0"
-
-"@mochi-ui/input@0.2.7":
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/input/-/input-0.2.7.tgz#de913ac12c5b71410c3024a4602a17320446ad1b"
-  integrity sha512-VC0AWt//WEkriBx7tGvS998k+ZZDpHAJsDrfTeAp+GXuvL/fS9jhHrxfmWfsfbWz4f3Pt0rlVhQssOYDlpc1yg==
+"@mochi-ui/input@0.2.9":
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/input/-/input-0.2.9.tgz#4c7a6768c8de9df0bd9170f0f53fd203aa1b6b7e"
+  integrity sha512-VkU/osD7AKfjGGbSuuy449SvKn86ghs9YYb7gV0yHPHuRs+9ddcbWe7hr3Btx9QKTLIWYLuyFVxGL2/KpKgk1w==
   dependencies:
     "@mochi-ui/form-context" "0.1.1"
     "@mochi-ui/polymorphic" "0.0.3"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
     class-variance-authority "^0.7.0"
 
-"@mochi-ui/label@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/label/-/label-0.1.7.tgz#f4ad826367eeb64e930cd6659e4cbe647f49bc07"
-  integrity sha512-E6SKmOocAPOuD1WdvbFeea1EYIqkIKrCAuXHJDYiGapDyMC9ndb9MLdGrCCMB1MQG/XUk7mxHbtSBbuNj91btw==
+"@mochi-ui/label@0.1.9":
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/label/-/label-0.1.9.tgz#8a8165ab539ec144acff1bc0afdfff7c53dbeb7d"
+  integrity sha512-9sfe861jeotZRX4mRXuZzvIXTD+e45qTQ37g2WJv5QC4CA7tvBYEVEkmoaBVyN9tJU0bp3VRG56ubn8jkye8pQ==
   dependencies:
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
     "@radix-ui/react-label" "^2.0.2"
 
-"@mochi-ui/layout@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/layout/-/layout-0.1.7.tgz#b62fc674bdc4e312640dd6fbe5cb0018df411276"
-  integrity sha512-ufZxJitr8haTWX1FMUedyXh+0dUDTiaRMduiniLHWwlksMV1OrmXTIHvsVvjnhPKFkncCsI/TS2jrknenkW95w==
+"@mochi-ui/layout@0.1.9":
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/layout/-/layout-0.1.9.tgz#a26fef33fdedb7a8e687e1080cc41e15789fb18f"
+  integrity sha512-MZO/dxVu8NsgdcWbtKGBDIxNorRLC5rh7EVMkr6/aFDvbgpSWBBMzbCUHvx78FrS+QnMHMnDcpWyllVa/eMRGg==
   dependencies:
-    "@mochi-ui/sidebar" "0.1.0"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/sidebar" "0.1.2"
+    "@mochi-ui/theme" "0.11.0"
 
-"@mochi-ui/list@0.0.20":
-  version "0.0.20"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/list/-/list-0.0.20.tgz#13dda4673842ee33d846fe9cfe9baab98e8b7eac"
-  integrity sha512-L+ypQtfTxptrbRPUy3Jpzy5jnjLo51Ghh8RuzgI9VJcYN3eToytqHIOJQv6WMSrslTsuOhJlmYqi9uSShJ5k7w==
+"@mochi-ui/list@0.0.22":
+  version "0.0.22"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/list/-/list-0.0.22.tgz#67e19cf6484a6bc7e77fe344c7aef191ee88dee8"
+  integrity sha512-iSx4gTmYkQMnfIuJXFfs/2l8pEligoP97sTvuuPD2JaJdhL32DxAB7sbgNwQ7qrzHfUukoz3o5RDVhGK0o8ouw==
   dependencies:
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
     "@radix-ui/react-scroll-area" "^1.0.5"
     class-variance-authority "^0.7.0"
 
-"@mochi-ui/login-widget@0.1.11":
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/login-widget/-/login-widget-0.1.11.tgz#c579bff001f16f4cc53e6fb0df16329c9834da79"
-  integrity sha512-gwa8VfzDjjJaOkpK2ryQzh9gzc1NMGu++456X0+9Qts6UEpDTbtmAGirXF6OtIVX9OtNL5uS4dW5n7uRJUYjnA==
+"@mochi-ui/login-widget@0.1.13":
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/login-widget/-/login-widget-0.1.13.tgz#3dc77baa51b943f55b1ca00dd89c8cd0e7c03712"
+  integrity sha512-J3aYeBuHYaXgAm9PoVJbIpV4aLrtR7QnWuSY/eVOEUP0j3b7tTZ//PHgl4RvCN1THSvb96c21FRhr/4EnQwCig==
   dependencies:
     "@consolelabs/mochi-rest" "^5.1.2"
     "@consolelabs/mochi-ui" "^16.0.2"
-    "@mochi-ui/button" "0.4.6"
-    "@mochi-ui/connect-wallet-widget" "0.0.2"
-    "@mochi-ui/dropdown" "0.1.10"
-    "@mochi-ui/heading" "0.0.6"
-    "@mochi-ui/icon-button" "^0.4.7"
-    "@mochi-ui/icons" "0.5.0"
-    "@mochi-ui/tabs" "0.1.10"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/button" "0.4.8"
+    "@mochi-ui/connect-wallet-widget" "0.0.4"
+    "@mochi-ui/dropdown" "0.1.12"
+    "@mochi-ui/icon-button" "^0.4.9"
+    "@mochi-ui/icons" "0.6.0"
+    "@mochi-ui/tabs" "0.1.12"
+    "@mochi-ui/theme" "0.11.0"
     "@mochi-ui/typography" "^0.0.7"
     "@radix-ui/react-dialog" "^1.0.5"
     "@solana/web3.js" "^1.74.0"
@@ -1056,37 +1058,37 @@
     use-reducer-async "^2.1.1"
     zustand "^4.4.7"
 
-"@mochi-ui/logo@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/logo/-/logo-0.1.7.tgz#1ea4535ccd782278a1274891b054db9c42aefd0e"
-  integrity sha512-zRfEXvTdoerCWF/2ZBUxUtdlBDD7nflJrmaJrPJuUTBkhAbtVtP8q8fmBYNPUHPvv6Im632MpkNT8EyAfC8wmg==
+"@mochi-ui/logo@0.1.9":
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/logo/-/logo-0.1.9.tgz#410f9c0f291f46d50821cf9128227cdce5549dc6"
+  integrity sha512-eG0abWhDlXmnVgjxHyvEpOtY394eLUubSIOqrDs5k9ukpSpIaTonfIBx723m3bwmyaMJOjwLcxtJipnUVzrKhQ==
   dependencies:
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
 
-"@mochi-ui/modal@0.2.9":
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/modal/-/modal-0.2.9.tgz#3912646e43c97d2f59a03e00b16cc60f064a7b1f"
-  integrity sha512-j4JHBXDEPkAE+mStdMT0hiaVZnT2VHF9/yHTTNRTGuQJCT4Aa9UklqkeFJoXdK3IezsjgJwKPPFItr2XsS5Nhw==
+"@mochi-ui/modal@0.2.11":
+  version "0.2.11"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/modal/-/modal-0.2.11.tgz#6b1b6f14d84e507e4cc5b317716525401321807c"
+  integrity sha512-x40GlxkwKCYVOWN71+OW4Un9NFdnOnz6wzlrPJsOXaFr1c1HKp4Pxvhlyc4Rxk5iyJ8YWGOCu0gDPbrJr+pwTQ==
   dependencies:
-    "@mochi-ui/icons" "0.5.0"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/icons" "0.6.0"
+    "@mochi-ui/theme" "0.11.0"
     "@radix-ui/react-dialog" "^1.0.5"
 
-"@mochi-ui/page-content@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/page-content/-/page-content-0.1.7.tgz#e17591cf5afb14d01fd61f41c5d378e8f02cf9d5"
-  integrity sha512-gQL1mRm//DCuGvmzAH9kt5e/PXti6aLz8E9ZXs5LtRk+wR/ngz79HE6KkJrDD2UGMGsyu2Zi61Z15Q31bPKxCg==
+"@mochi-ui/page-content@0.1.9":
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/page-content/-/page-content-0.1.9.tgz#3409271dc63f06799846e3af5cb77709b3ad703c"
+  integrity sha512-QKZ2ckTY//1ZhY0hGzLT1VUy9w6R5vN7LsK7OTvQXmmn/4PxBJ3xnz+mZLVU8923oupdEvz6ptwkFlXJBnj/ng==
   dependencies:
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
 
-"@mochi-ui/page-header@0.2.7":
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/page-header/-/page-header-0.2.7.tgz#77e1271d5120b8649a81baf0e74fe461dfb4d488"
-  integrity sha512-gCK6jdqTpN9voB2bKG0R+CvQ7iAfSCWAQQzbY5AR4MeEQ2opwXWn2rrn6UTrNsIq++88m4UB63yHXw78m3F6Ng==
+"@mochi-ui/page-header@0.2.9":
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/page-header/-/page-header-0.2.9.tgz#30c98e8019f3d9440bdc794cbbd83d4c64cba2e5"
+  integrity sha512-p5QBPchiJoStYKsYQnGbo7GFUWWWRBiK9WK5QbvIzdgvjgPQSTAoV3nJFbgHV8CtPwunj3QVGrw4wLqSp/Wstg==
   dependencies:
-    "@mochi-ui/icon-button" "0.4.7"
-    "@mochi-ui/icons" "0.5.0"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/icon-button" "0.4.9"
+    "@mochi-ui/icons" "0.6.0"
+    "@mochi-ui/theme" "0.11.0"
     "@mochi-ui/typography" "0.0.7"
 
 "@mochi-ui/polymorphic@0.0.3":
@@ -1094,113 +1096,114 @@
   resolved "https://registry.yarnpkg.com/@mochi-ui/polymorphic/-/polymorphic-0.0.3.tgz#aa4738583be877028e432b9b71f4ef2ed89c4d92"
   integrity sha512-r6C80vh1N+0wyXEeK6cZ5h9PRrZjLrG3XqINQmGjm52z7hTn3hqgEeb+RHzJynK6GdCmhOcUb1U4dHODRvQPSg==
 
-"@mochi-ui/popover@0.2.8":
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/popover/-/popover-0.2.8.tgz#2cc64a591d72439a0b74c269cff3bfb7501c85bf"
-  integrity sha512-jIam1F9HB6Vjv5XeqdwLOMRGLQYGFKuOUcfNYZGvpKa0k6SNSl8CVRvX/RbGmzbGtb6S+WZsjJ/jbQJSVpxo+Q==
+"@mochi-ui/popover@0.2.10":
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/popover/-/popover-0.2.10.tgz#e0891bcc1c407276b80c180d3041da5afe765ad9"
+  integrity sha512-HePORqn1uDcqJB/ojqqIjGa/1Vk8AmzK1FQoonEq2yhlRMtw2BMmzoeiTuIFrP2qlbRVEH9z3l81qQvg2KHdug==
   dependencies:
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
     "@radix-ui/react-popover" "^1.0.7"
     class-variance-authority "^0.7.0"
     clsx "^2.0.0"
 
-"@mochi-ui/profile-badge@0.1.8":
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/profile-badge/-/profile-badge-0.1.8.tgz#3f39294720f7c7ab21f4bd5f9d7ef07998f53dab"
-  integrity sha512-jj5KfV5S2+UWf1UqSVjn9pZc4LeAPxwC0ujv4lGJRyEHDEAM3+P4vGnECddU+L4o4cSlF5Lxz4obJoNFT8JVEg==
+"@mochi-ui/profile-badge@0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/profile-badge/-/profile-badge-0.1.10.tgz#c7520339f6e879122d8a11c1ca609f5cb2887d94"
+  integrity sha512-JAk3i9v3qL2AAX1gwspDZisIxfNv6sdIyOTSu3bmgqD/xNZr0eRNnSzETpHMPXZ29hTbwS+pWdUB0M3guMBMvg==
   dependencies:
-    "@mochi-ui/avatar" "0.1.0"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/avatar" "0.1.2"
+    "@mochi-ui/theme" "0.11.0"
 
-"@mochi-ui/section-list@0.0.19":
-  version "0.0.19"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/section-list/-/section-list-0.0.19.tgz#fab788f6b704e3e70d58f7fd4d82f844daef5d1d"
-  integrity sha512-KURJFW1MBdhMpEsqycdczVTh1OFXovrVVhOriK22kl6Sp0+ARI+D+N7Co6gQM2A0vAnVQPu/gMRMAxpC5PfQ2w==
+"@mochi-ui/section-list@0.0.21":
+  version "0.0.21"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/section-list/-/section-list-0.0.21.tgz#1740991745fe3e8d318459a5c820e19e4294211e"
+  integrity sha512-3Yt4JfsNg4QSgvWl4dtl/0ik26rixMGmdW36JeqtP748+PAO7u78WTJNBfHPFcAAESczxJXBrNayhI/KQx/zcQ==
   dependencies:
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
     "@radix-ui/react-scroll-area" "^1.0.5"
     clsx "^2.0.0"
 
-"@mochi-ui/select@0.1.9":
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/select/-/select-0.1.9.tgz#1a8a6164ec9a503a8597b8ac46cd606095590f41"
-  integrity sha512-HK/gIFGzWIeGaG9IJ5B8Fq3Z8HDAd8iiqIEZuF19KwixbhI9JSIizPlhIQarEX6lvtJUBeZyZleKERYUQLqGAQ==
+"@mochi-ui/select@0.1.11":
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/select/-/select-0.1.11.tgz#a9df1e4b8c0c4ecd7a38e3481295441b2a1d07df"
+  integrity sha512-bh6jZDLKLryhiDUez13AXdv4tSB0KVpwvy+XJlcz45d9xGJ9Nb5o/JhCWXJthzcDOjGq+9nl7nwZgGi6lBVY2Q==
   dependencies:
-    "@mochi-ui/icons" "0.5.0"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/icons" "0.6.0"
+    "@mochi-ui/theme" "0.11.0"
     "@radix-ui/react-select" "^2.0.0"
     class-variance-authority "^0.7.0"
     clsx "^2.0.0"
 
-"@mochi-ui/sidebar@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/sidebar/-/sidebar-0.1.0.tgz#82e04745bfef1af6888487d99d169d11997f40fd"
-  integrity sha512-u9WiIqql2NHiQNEFF5EIsAcMJmw+TW4tR+MaU7SvjCAK6haytNegjdhCYFIeS88d+iQKzohI89tVfGTHkOYbYw==
+"@mochi-ui/sidebar@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/sidebar/-/sidebar-0.1.2.tgz#8fc311a14f8e7c8c948e7270a54841fe74654d0d"
+  integrity sha512-UjkuyI+JWr/8QNKKRYtoju81VTKbgxGn1vDDtDKR+nyNaiR/PY2OBAhDsqt1YkNZwSt3+dIZPX+COm0Y84n79Q==
   dependencies:
-    "@mochi-ui/accordion" "0.1.10"
-    "@mochi-ui/icons" "0.5.0"
-    "@mochi-ui/theme" "0.9.0"
-    "@mochi-ui/tooltip" "0.2.7"
+    "@mochi-ui/accordion" "0.1.12"
+    "@mochi-ui/icons" "0.6.0"
+    "@mochi-ui/theme" "0.11.0"
+    "@mochi-ui/tooltip" "0.2.9"
     "@mochi-ui/typography" "0.0.7"
     class-variance-authority "^0.7.0"
     clsx "^2.0.0"
 
-"@mochi-ui/skeleton@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/skeleton/-/skeleton-1.0.0.tgz#5b070ca13cb0f35d82fa5236c7ff355e4487182b"
-  integrity sha512-qe4F/8oTdv9kBfQHDM/f2bnAD5LwpZe6mXqqEMDHybgp1HOg2FaguSlFNLhNwJsJPKzst3ydxwHvWjKjhrTirA==
+"@mochi-ui/skeleton@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/skeleton/-/skeleton-1.0.2.tgz#57effa8a85df830fcb8ef6f4525c776439ecd39d"
+  integrity sha512-lzcNPcaCHDUGdLZlOtmHEezzr/JKYbWpkAylXrEwGxMR8ZvcNhd+Rd3W0E+VBkX9mQFv9TabXLY68Y+5W1gpeQ==
   dependencies:
-    "@mochi-ui/icons" "0.5.0"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/icons" "0.6.0"
+    "@mochi-ui/theme" "0.11.0"
     class-variance-authority "^0.7.0"
     clsx "^2.0.0"
 
-"@mochi-ui/switch@0.0.18":
-  version "0.0.18"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/switch/-/switch-0.0.18.tgz#9c6a3a26fae7024d838383f0636e211590ff3b20"
-  integrity sha512-P4q+V61fh3yMDBdLag8F9/Vqj+POZ/XDgykHQA70HlUW0ysnIXWmvDwuCxW6YQLEuu4mvV5a5tdNDt+1ybia3Q==
+"@mochi-ui/switch@0.0.20":
+  version "0.0.20"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/switch/-/switch-0.0.20.tgz#566a221e87473d80c5fa16aa394df504b95826bb"
+  integrity sha512-TKMxuw92kP4sWCBrBa1TUcHA+7vMNICv2x+EUr3v347NlxBLRMy9nLuUdTCuwH9KiWN2PLAs3zqvKQiVPXt7ew==
   dependencies:
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
     "@radix-ui/react-switch" "^1.0.3"
     class-variance-authority "^0.7.0"
     clsx "^2.0.0"
 
-"@mochi-ui/table@0.3.5":
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/table/-/table-0.3.5.tgz#7114f8c4f0d712bc47068280f842acf2415920f9"
-  integrity sha512-ESrhOfLUHizHh58OGGvJ4vYQgKGjAlWbwJGt29oZFH8IGv039Hqt3E8wsZFB6KhCQbUG0p/MZpMLL4SoJd6gOw==
+"@mochi-ui/table@0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/table/-/table-0.4.1.tgz#faf8c0a15aeee8434d01fdf9af7459c7a6057a0f"
+  integrity sha512-TJkno8UyOIfRyaCsMD1oPak5l+FofhseIb4kwWY0iDyWBS/3i2AsBRkRZcGb5tTAh58TAkl0jRWKRyu2zZwqaw==
   dependencies:
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/skeleton" "1.0.2"
+    "@mochi-ui/theme" "0.11.0"
     "@tanstack/react-table" "^8.10.7"
 
-"@mochi-ui/tabs@0.1.10":
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/tabs/-/tabs-0.1.10.tgz#e851f39968daa0991597cd8dcade0b5e99508e89"
-  integrity sha512-ZublxeloSEvJ6XPl+CIQM0n/7NZh08E8tpD2XBcMQcH/pJPX8kNC+jJ3/oYqmy5wOEuVLIl7OZveDGXBux+pIw==
+"@mochi-ui/tabs@0.1.12":
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/tabs/-/tabs-0.1.12.tgz#f125029e863a97d59c5a97f78a681b66e3aa3cdb"
+  integrity sha512-n/BC6XQw44uCdLbaoOS7//ejhrVov1xRh8TVEaPLF86eF1ZCi3v27GRba8leI7365lXNDAZlcjQC/XutGlDwpA==
   dependencies:
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
     "@radix-ui/react-tabs" "^1.0.4"
     class-variance-authority "^0.7.0"
     clsx "^2.0.0"
 
-"@mochi-ui/theme@0.9.0", "@mochi-ui/theme@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/theme/-/theme-0.9.0.tgz#3cb3f86080b792b53349893b1169cc3cb23eaa2c"
-  integrity sha512-riTM2wpW3R2FcdBqP3iULsNsLNcF0FMxu69Q6u7jUcu3dmhvtcgU5uxuWip9srRYIpeCBF0Fsyre54tan/ngjg==
+"@mochi-ui/theme@0.11.0", "@mochi-ui/theme@^0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/theme/-/theme-0.11.0.tgz#8c6a6dc7a68f5e9c57fc9aa82c1b70d9d8137f15"
+  integrity sha512-MnnY6RVW1NCXmarv7Jk4vhwH0LoSY8twiL4wJ3yCsA8Si54Mdu2hN9xea0ySYnaOteA5bcEW7J0J2M/Aa2jhnA==
   dependencies:
     class-variance-authority "^0.7.0"
     clsx "^2.0.0"
     color "^4.2.3"
     flat "^6.0.1"
 
-"@mochi-ui/toast@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/toast/-/toast-0.1.0.tgz#791262541bb47ff3e03b3d2b6f3e43b80e419112"
-  integrity sha512-2jCF5y14WvEdbuo8GlHxcPzInYbNMvG/zMfR0ShJd/OZev5PnSXrFA0RfOANX443gO3arCOnD10UYnlCoQKXig==
+"@mochi-ui/toast@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/toast/-/toast-0.1.2.tgz#1b0c15db3d38d047dcb18cd352ac1638fb96a0fc"
+  integrity sha512-T2Hf4YytGko4S/dRl6++oQ3QQMc93a/cviCGUaa0Kid8lwZgCMKsRqrMPi+nuMl01eQ9BDNbqGnCjVdAg7XZVw==
   dependencies:
-    "@mochi-ui/alert" "1.2.0"
+    "@mochi-ui/alert" "1.2.2"
     "@mochi-ui/polymorphic" "0.0.3"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
     "@radix-ui/react-slot" "^1.0.2"
     "@radix-ui/react-toast" "^1.1.5"
     class-variance-authority "^0.7.0"
@@ -1215,25 +1218,25 @@
     class-variance-authority "^0.7.0"
     clsx "^2.0.0"
 
-"@mochi-ui/tooltip@0.2.7":
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/tooltip/-/tooltip-0.2.7.tgz#c16710068c17e65cbadbb5635ea975cf4410585d"
-  integrity sha512-HHTsUSVsICvqGPmeTSS4n7Z9rOk0E8tCqSwBE21LtQctSG2klKlg6Yv8lZhGZ4yhxk3QDB/JUorfchxjumnYpA==
+"@mochi-ui/tooltip@0.2.9":
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/tooltip/-/tooltip-0.2.9.tgz#f77b3d1101ea98322b411378512f48b43553a90d"
+  integrity sha512-PqVCos5g41PsPv6+8MySdmq10YtktpXf772/wgCeII9oCep4xoTKpXrX/EAX0aQ69ojsBzCpLnGVFYj29AL7oA==
   dependencies:
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/theme" "0.11.0"
     "@radix-ui/react-tooltip" "^1.0.7"
     class-variance-authority "^0.7.0"
 
-"@mochi-ui/top-bar@0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@mochi-ui/top-bar/-/top-bar-0.1.6.tgz#0c97ca919a0e0b750253eb3fe44a74e89a801b34"
-  integrity sha512-BwD/1qOT7w/EPNeFg3Qy6s7Ex2VCPi9jIiwxbmbNUbWjl7amhZbFmNrzY2NMq+xoV/bqeXImFYt/MeGSqbDSjA==
+"@mochi-ui/top-bar@0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@mochi-ui/top-bar/-/top-bar-0.1.8.tgz#1ead3be5c772c2d78d942a4de2aa4d7c4067e3e5"
+  integrity sha512-65a2OLW6M6BQMqDNn0Bdm9Y+o4VSuAkKAUtDg7Pvz0s/Fkn3xM0CpPTn3WV0Y/hPkCubnfuZeqCEVnxw02cBWA==
   dependencies:
     "@dwarvesf/react-hooks" "^0.8.1"
-    "@mochi-ui/icon-button" "0.4.7"
-    "@mochi-ui/icons" "0.5.0"
-    "@mochi-ui/list" "0.0.20"
-    "@mochi-ui/theme" "0.9.0"
+    "@mochi-ui/icon-button" "0.4.9"
+    "@mochi-ui/icons" "0.6.0"
+    "@mochi-ui/list" "0.0.22"
+    "@mochi-ui/theme" "0.11.0"
 
 "@mochi-ui/typography@0.0.7", "@mochi-ui/typography@^0.0.7":
   version "0.0.7"
@@ -1300,17 +1303,29 @@
   resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-14.0.3.tgz#27b623612b1d0cea6efe0a0d31aa1a335fc99647"
   integrity sha512-ERhKPSJ1vQrPiwrs15Pjz/rvDHZmkmvbf/BjPN/UCOI++ODftT0GtasDPi0j+y6PPJi5HsXw+dpRaXUaw4vjuQ==
 
-"@noble/curves@1.2.0", "@noble/curves@^1.2.0", "@noble/curves@~1.2.0":
+"@noble/curves@1.2.0", "@noble/curves@~1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@noble/curves/-/curves-1.2.0.tgz#92d7e12e4e49b23105a2555c6984d41733d65c35"
   integrity sha512-oYclrNgRaM9SsBUBVbb8M6DTV7ZHRTKugureoYEncY5c65HOmRzvSiTE3y5CYaPYJA/GVkrhXEoF0M3Ya9PMnw==
   dependencies:
     "@noble/hashes" "1.3.2"
 
-"@noble/hashes@1.3.2", "@noble/hashes@^1.3.1", "@noble/hashes@~1.3.0", "@noble/hashes@~1.3.2":
+"@noble/curves@^1.2.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@noble/curves/-/curves-1.3.0.tgz#01be46da4fd195822dab821e72f71bf4aeec635e"
+  integrity sha512-t01iSXPuN+Eqzb4eBX0S5oubSqXbK/xXa1Ne18Hj8f9pStxztHCE2gfboSp/dZRLSqfuLpRK2nDXDK+W9puocA==
+  dependencies:
+    "@noble/hashes" "1.3.3"
+
+"@noble/hashes@1.3.2":
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.3.2.tgz#6f26dbc8fbc7205873ce3cee2f690eba0d421b39"
   integrity sha512-MVC8EAQp7MvEcm30KWENFjgR+Mkmf+D189XJTkFIlwohU5hcBbn1ZkKq7KVTi2Hme3PMGF390DaL52beVrIihQ==
+
+"@noble/hashes@1.3.3", "@noble/hashes@^1.3.1", "@noble/hashes@~1.3.0", "@noble/hashes@~1.3.2":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.3.3.tgz#39908da56a4adc270147bb07968bf3b16cfe1699"
+  integrity sha512-V7/fPHgl+jsVPXqqeOzT8egNj2iBIVt+ECeMMG8TdcnTikP3oaBtUVqpT/gYCR68aEBJSF+XbYUxStjbFMqIIA==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -1855,9 +1870,9 @@
   integrity sha512-2/U3GXA6YiPYQDLGwtGlnNgKYBSwCFIHf8Y9LUY5VATHdtbLlU0Y1R3QoBnT0aB4qv/BEiVVsj7LJXoQCgJ2vA==
 
 "@scure/base@~1.1.0", "@scure/base@~1.1.2":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@scure/base/-/base-1.1.3.tgz#8584115565228290a6c6c4961973e0903bb3df2f"
-  integrity sha512-/+SgoRjLq7Xlf0CWuLHq2LUZeL/w65kfzAPG5NH9pcmBhs+nunQTn4gvdwgMTIXnt9b2C/1SeL2XiysZEyIC9Q==
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@scure/base/-/base-1.1.4.tgz#cb6a3552ee15595d9864a0a4e89ffcd21ebe8c39"
+  integrity sha512-wznebWtt+ejH8el87yuD4i9xLSbYZXf1Pe4DY0o/zq/eg5I0VQVXVbFs6XIM0pNVCJ/uE3t5wI9kh90mdLUxtw==
 
 "@scure/bip32@1.3.2":
   version "1.3.2"
@@ -2960,7 +2975,7 @@ cli-truncate@^4.0.0:
     slice-ansi "^5.0.0"
     string-width "^7.0.0"
 
-client-only@0.0.1:
+client-only@0.0.1, client-only@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/client-only/-/client-only-0.0.1.tgz#38bba5d403c41ab150bff64a95c85013cf73bca1"
   integrity sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==
@@ -4049,7 +4064,7 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
 
-fsevents@^2.3.2, fsevents@~2.3.2:
+fsevents@~2.3.2:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
   integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
@@ -7005,6 +7020,14 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
+swr@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/swr/-/swr-2.2.4.tgz#03ec4c56019902fbdc904d78544bd7a9a6fa3f07"
+  integrity sha512-njiZ/4RiIhoOlAaLYDqwz5qH/KZXVilRLvomrx83HjzCWTfa+InyfAjv05PSFxnmLzZkNO9ZfvgoqzAaEI4sGQ==
+  dependencies:
+    client-only "^0.0.1"
+    use-sync-external-store "^1.2.0"
+
 tailwindcss@^3.3.0:
   version "3.3.6"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.3.6.tgz#4dd7986bf4902ad385d90d45fd4b2fa5fab26d5f"
@@ -7388,7 +7411,7 @@ use-sidecar@^1.1.2:
     detect-node-es "^1.1.0"
     tslib "^2.0.0"
 
-use-sync-external-store@1.2.0:
+use-sync-external-store@1.2.0, use-sync-external-store@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
   integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
@@ -7607,9 +7630,9 @@ ws@^7.4.5:
   integrity sha512-F+P9Jil7UiSKSkppIiD94dN07AwvFixvLIj1Og1Rl9GGMuNipJnV9JzjD6XuqmAeiswGvUmNLjr5cFuXwNS77Q==
 
 ws@^8.5.0:
-  version "8.15.0"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-8.15.0.tgz#db080a279260c5f532fc668d461b8346efdfcf86"
-  integrity sha512-H/Z3H55mrcrgjFwI+5jKavgXvwQLtfPCUEp6pi35VhoB0pfcHnSoyuTzkBEZpzq49g1193CUEwIvmsjcotenYw==
+  version "8.15.1"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.15.1.tgz#271ba33a45ca0cc477940f7f200cd7fba7ee1997"
+  integrity sha512-W5OZiCjXEmk0yZ66ZN82beM5Sz7l7coYxpRkzS+p9PP+ToQry8szKh+61eNktr7EA9DOwvFGhfC605jDHbP6QQ==
 
 y18n@^5.0.5, y18n@^5.0.8:
   version "5.0.8"

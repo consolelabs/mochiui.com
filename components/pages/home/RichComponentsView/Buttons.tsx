@@ -28,13 +28,13 @@ export const ButtonsShowcase = () => {
         </div>
 
         <div className="mt-4 flex gap-4 flex-wrap items-center">
-          <IconButton>
+          <IconButton label="Search button">
             <MagnifierLine />
           </IconButton>
           <Button>
             <MagnifierLine /> Search
           </Button>
-          <IconButton disabled>
+          <IconButton label="Loading button" disabled>
             <ThreeDotLoading />
           </IconButton>
           <Button disabled>

@@ -1,20 +1,31 @@
-import { DesktopNav, TopBar, Button, Badge, MobileNav } from '@mochi-ui/core'
+import {
+  DesktopNav,
+  TopBar,
+  Button,
+  Badge,
+  MobileNav,
+  Skeleton,
+} from '@mochi-ui/core'
 import clsx from 'clsx'
+import { useMemo } from 'react'
 import { useEffect, useState } from 'react'
+import {
+  COMPONENTS_LINK,
+  DOCS_LINK,
+  MOCHI_GITHUB_LINK,
+} from '../../constants/url'
+import { useFetchNPMData } from '../../hooks/useFetchNPMData'
 import { Logo } from '../Logo'
 
 const desktopNavItems = [
-  <a
-    key="components-button"
-    href="https://ds.console.so/?path=/docs/disclosure-accordion--docs"
-  >
+  <a key="components-button" href={COMPONENTS_LINK}>
     <Button variant="link" className="!text-white !font-medium !pl-0 !pr-1">
       Components
     </Button>
   </a>,
   <a
     key="github-link"
-    href="https://github.com/consolelabs/mochi-ui"
+    href={MOCHI_GITHUB_LINK}
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -25,7 +36,7 @@ const desktopNavItems = [
   <div key="divider">
     <div className="w-[1px] h-6 bg-neutral-800" />
   </div>,
-  <a key="get-started-button" href="https://ds.console.so">
+  <a key="get-started-button" href={DOCS_LINK}>
     <Button variant="solid" className="!font-medium">
       Get Started
     </Button>
@@ -33,18 +44,14 @@ const desktopNavItems = [
 ]
 
 const mobileNavItems = [
-  <a
-    key="components-button"
-    href="https://ds.console.so/?path=/docs/disclosure-accordion--docs"
-    className="block"
-  >
+  <a key="components-button" href={COMPONENTS_LINK} className="block">
     <Button variant="link" color="neutral" className="!font-medium !pl-0 !pr-1">
       Components
     </Button>
   </a>,
   <a
     key="github-link"
-    href="https://github.com/consolelabs/mochi-ui"
+    href={MOCHI_GITHUB_LINK}
     className="block"
     target="_blank"
     rel="noopener noreferrer"
@@ -53,11 +60,7 @@ const mobileNavItems = [
       GitHub
     </Button>
   </a>,
-  <a
-    key="get-started-button"
-    href="https://ds.console.so"
-    className="w-full inline-block"
-  >
+  <a key="get-started-button" href={DOCS_LINK} className="w-full inline-block">
     <Button variant="solid" className="!font-medium w-full">
       Get Started
     </Button>
@@ -66,6 +69,18 @@ const mobileNavItems = [
 
 export const Header = () => {
   const [isScrolledToContent, setIsScrolledToContent] = useState(false)
+
+  const { data, isLoading } = useFetchNPMData()
+
+  const latestVersion = useMemo(() => {
+    if (isLoading || !data) {
+      return ''
+    }
+
+    const versions = Object.keys(data?.versions || {})
+
+    return versions.length ? versions[versions.length - 1] : ''
+  }, [data, isLoading])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -109,7 +124,14 @@ export const Header = () => {
           leftSlot={
             <div className="flex items-center gap-4">
               <Logo />
-              <Badge label="v1.0" className="!text-blue-300 !bg-blue-1000" />
+              {latestVersion ? (
+                <Badge
+                  label={`v${latestVersion}`}
+                  className="!text-blue-300 !bg-blue-1000"
+                />
+              ) : (
+                <Skeleton className="!rounded-full h-[22px] w-14" />
+              )}
             </div>
           }
           rightSlot={
