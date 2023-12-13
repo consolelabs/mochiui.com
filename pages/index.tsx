@@ -27,6 +27,7 @@ import {
   MOCHI_GITHUB_ISSUES_LINK,
   MOCHI_GITHUB_LINK,
 } from '../constants/url'
+import { Roadmap } from '../components/pages/home/RoadmapView'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -116,6 +117,8 @@ export default function Home() {
         <Divider />
 
         <DesignGuide className="pb-16 md:pb-[88px]" />
+
+        <Roadmap className="py-16 md:py-[88px]" />
 
         <CallToAction
           className="my-16 md:my-[88px]"
