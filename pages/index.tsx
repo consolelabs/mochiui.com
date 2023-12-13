@@ -159,6 +159,7 @@ export default function Home() {
         />
 
         <Footer
+          className="!pt-4"
           copyrightText="Copyright © 2023 Console Labs, All rights reserved"
           logo={<Logo className="!h-9 !w-9" />}
           nav={[

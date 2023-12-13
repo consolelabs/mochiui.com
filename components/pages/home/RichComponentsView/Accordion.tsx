@@ -17,38 +17,38 @@ import clsx from 'clsx'
 const accordionData = [
   {
     value: '1',
-    leftIcon: <QuestsSolid />,
+    leftIcon: <QuestsSolid className="!text-neutral-800" />,
     title: 'Quests',
     content: ['Bounty Hunt', 'DeFi Adventure'],
   },
   {
     value: '2',
-    leftIcon: <GameSolid />,
+    leftIcon: <GameSolid className="!text-neutral-800" />,
     title: 'Game Store',
     content: ['PodTown', 'Tripple Pod', 'Lottery Tower'],
   },
   {
     value: '3',
-    leftIcon: <Discord />,
+    leftIcon: <Discord className="!text-neutral-800" />,
     title: 'Server Management',
     content: ['Server 1', 'Server 2', 'Server 3'],
   },
   {
     value: '4',
-    leftIcon: <AddUserSolid />,
+    leftIcon: <AddUserSolid className="!text-neutral-800" />,
     title: 'Invite Friends',
     content: ['Facebook friends', 'Contacts'],
   },
   {
     value: '5',
-    leftIcon: <StarSolid />,
+    leftIcon: <StarSolid className="!text-neutral-800" />,
     title: 'Feedback',
     content:
       "Whether you're fixing bugs or enhancing documentation, your contributions are immensely valuable.",
   },
   {
     value: '6',
-    leftIcon: <ShieldDoneSolid />,
+    leftIcon: <ShieldDoneSolid className="!text-neutral-800" />,
     title: 'Terms and Policies',
     content: ['Terms of Service', 'Privacy Policies'],
   },

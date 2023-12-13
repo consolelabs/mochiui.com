@@ -5,55 +5,48 @@ import { useEffect } from 'react'
 
 import hljs from 'highlight.js/lib/common'
 
-const demoCode = `import { Button,  IconButton,  Modal,  ModalContent,  ModalTrigger,  Typography } from '@mochi-ui/core'
-import { DiscordColored,  TelegramColored,  X,  GoogleColored,  FacebookColored,  SlackColored,  Github,  MailLine,  WalletSolid } from '@mochi-ui/icons'
-import { useEffect, useState } from 'react'
+const demoCode = `import { Card, Typography, IconButton, Button } from '@mochi-ui/core'
+import { WalletSolid, DiscordColored, TelegramColored, X, GoogleColored, FacebookColored, SlackColored, Github, MailLine } from '@mochi-ui/icons'
 
-export const MochiUIModal = () => {
+export const CustomModalDemo = () => {
   return (
-    <Modal>
-      <ModalTrigger asChild>
-        <Button>Open Modal</Button>
-      </ModalTrigger>
-      <ModalContent showCloseBtn>
-        <div className="overflow-hidden rounded-lg relative p-3 w-[400px]">
-          <Typography
-            level="h5"
-            fontWeight="md"
-            color="neutral"
-            className="text-center"
-          >
-            Welcome back!
-          </Typography>
-          <Typography level="p5" color="neutral" className="text-center">
-            Great to see you again! Sign in your account to continue.
-          </Typography>
-          <div className="flex flex-col gap-8 mt-8 text-center">
-            <div className="grid grid-cols-4 grid-rows-2 gap-4 mx-auto text-3xl w-fit">
-              {socialAuths.map((item) => (
-                <IconButton
-                  type="button"
-                  key={item.name}
-                  variant="outline"
-                  color="info"
-                  size="lg"
-                  className="!p-2"
-                >
-                  {item.icon}
-                </IconButton>
-              ))}
-            </div>
-            <Typography level="p5" color="neutral">
-              Or connect with an extension wallet
-            </Typography>
-            <Button size="lg">
-              <WalletSolid className="text-xl" />
-              Connect Wallet
-            </Button>
-          </div>
+    <Card className="!p-6 max-w-[400px] lg:max-w-full shadow-lg">
+      <Typography
+        level="h5"
+        fontWeight="md"
+        color="neutral"
+        className="text-center"
+      >
+        Welcome back!
+      </Typography>
+      <Typography level="p5" color="neutral" className="text-center">
+        Great to see you again! Sign in your account to continue.
+      </Typography>
+      <div className="flex flex-col gap-8 mt-8 text-center">
+        <div className="grid grid-cols-4 grid-rows-2 gap-4 mx-auto text-3xl w-fit">
+          {socialAuths.map((item) => (
+            <IconButton
+              type="button"
+              key={item.name}
+              variant="outline"
+              color="info"
+              size="lg"
+              className="!p-2"
+              label={\`Sign in with \${item.name}\`}
+            >
+              {item.icon}
+            </IconButton>
+          ))}
         </div>
-      </ModalContent>
-    </Modal>
+        <Typography level="p5" color="neutral">
+          Or connect with an extension wallet
+        </Typography>
+        <Button size="lg">
+          <WalletSolid className="text-xl" />
+          Connect Wallet
+        </Button>
+      </div>
+    </Card>
   )
 }
 
@@ -68,7 +61,7 @@ const socialAuths = [
   },
   {
     name: 'twitter',
-    icon: <X className="w-7 h-7" />,
+    icon: <X className="w-7 h-7 text-black" />,
   },
   {
     name: 'gmail',
@@ -88,7 +81,7 @@ const socialAuths = [
   },
   {
     name: 'mail',
-    icon: <MailLine className="w-7 h-7" />,
+    icon: <MailLine className="w-7 h-7 text-black" />,
   },
 ]`
 
@@ -123,7 +116,7 @@ export const CodeSnippet = () => {
         </div>
         <div className="h-full overflow-auto px-6 md:px-8">
           <pre className="!bg-transparent !m-0 !pt-0 !pb-2 !text-sm static language-javascript">
-            <code className="language-javascript">{demoCode}</code>
+            <code className="language-javascript !px-0">{demoCode}</code>
           </pre>
         </div>
 
