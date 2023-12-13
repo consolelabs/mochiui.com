@@ -12,6 +12,7 @@ import {
   StarSolid,
   ShieldDoneSolid,
 } from '@mochi-ui/icons'
+import clsx from 'clsx'
 
 const accordionData = [
   {
@@ -62,10 +63,15 @@ export const AccordionShowcase = () => {
         className="bg-white !w-[250px]"
         defaultValue="2"
       >
-        {accordionData.map((d) => (
+        {accordionData.map((d, index) => (
           <AccordionItem key={d.value} value={d.value}>
             <AccordionTrigger leftIcon={d.leftIcon}>{d.title}</AccordionTrigger>
-            <AccordionContent hasPadding className="border-b">
+            <AccordionContent
+              hasPadding
+              className={clsx('border-b -ml-2 -mr-2 px-12', {
+                'border-none': index === accordionData.length - 1,
+              })}
+            >
               {typeof d.content === 'string' ? (
                 d.content
               ) : (

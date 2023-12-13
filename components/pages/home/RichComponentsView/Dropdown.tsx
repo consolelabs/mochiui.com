@@ -4,71 +4,75 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   Button,
-  TextFieldRoot,
-  TextFieldDecorator,
-  TextFieldInput,
-  Checkbox,
-  Label,
-  Badge,
-  BadgeProps,
+  ProfileBadge,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  Switch,
 } from '@mochi-ui/core'
-import { SolidDotSolid } from '@mochi-ui/icons'
-import Magnifier from '@mochi-ui/icons/line/magnifier'
-import { useState } from 'react'
-
-const rolesData = [
-  { label: 'Admin', value: 'admin', appearance: 'primary' },
-  { label: 'Mochi Bot', value: 'mochi-bot', appearance: 'secondary' },
-  { label: 'VC Roles', value: 'vc-roles', appearance: 'success' },
-  {
-    label: 'In a voice channel',
-    value: 'in-a-voice-channel',
-    appearance: 'black',
-  },
-  { label: 'Smod', value: 'smod', appearance: 'warning' },
-]
+import {
+  AddUserSolid,
+  EyeShowSolid,
+  ShieldDoneSolid,
+  UserSolid,
+} from '@mochi-ui/icons'
+import { useEffect, useState } from 'react'
 
 export const DropdownShowcase = () => {
-  const [radioSelected, setRadioSelected] = useState('third')
+  const [isOpened, setIsOpened] = useState(false)
+  const [switchState, setSwitchState] = useState(false)
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsOpened(true)
+    })
+
+    return () => {
+      clearTimeout(timeout)
+    }
+  }, [])
 
   return (
-    <DropdownMenu defaultOpen>
+    <DropdownMenu open={isOpened} onOpenChange={() => setIsOpened(!isOpened)}>
       <DropdownMenuTrigger asChild>
-        <Button>Open Dropdown</Button>
+        <Button variant="link" className="!px-0">
+          <ProfileBadge
+            avatar="/img/user-avatar.png"
+            name="Kathryn Murphy"
+            platform=""
+          />
+        </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
-        <TextFieldRoot>
-          <TextFieldDecorator>
-            <Magnifier />
-          </TextFieldDecorator>
-          <TextFieldInput placeholder="Search a role" />
-        </TextFieldRoot>
-        {rolesData.map((role) => (
-          <DropdownMenuItem
-            wrapperClassName="!gap-0"
-            key={role.value}
-            rightExtra={
-              <Checkbox
-                id={role.value}
-                checked={radioSelected === role.value}
-              />
-            }
-            onClick={() => setRadioSelected(role.value)}
-          >
-            <Label htmlFor={role.value} className="pr-3">
-              <Badge
-                className="!normal-case w-max"
-                appearance={role.appearance as BadgeProps['appearance']}
-                label={
-                  <>
-                    <SolidDotSolid />
-                    {role.label}
-                  </>
-                }
-              />
-            </Label>
-          </DropdownMenuItem>
-        ))}
+      <DropdownMenuContent className="max-h-[645px] overflow-y-auto">
+        <DropdownMenuLabel leftIcon={<UserSolid />}>Profile</DropdownMenuLabel>
+
+        <DropdownMenuItem hasPaddingLeft>Overview</DropdownMenuItem>
+
+        <DropdownMenuItem hasPaddingLeft>Settings</DropdownMenuItem>
+
+        <DropdownMenuItem leftIcon={<EyeShowSolid />}>
+          View Options
+        </DropdownMenuItem>
+
+        <DropdownMenuItem
+          hasPaddingLeft
+          rightExtra={<Switch checked={switchState} />}
+          onClick={(e) => {
+            e.preventDefault()
+            setSwitchState(!switchState)
+          }}
+        >
+          Dark Mode
+        </DropdownMenuItem>
+
+        <DropdownMenuSeparator />
+
+        <DropdownMenuItem leftIcon={<AddUserSolid />}>
+          Invite Friends
+        </DropdownMenuItem>
+
+        <DropdownMenuItem leftIcon={<ShieldDoneSolid />}>
+          Terms and Policies
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   )

@@ -16,8 +16,35 @@ import { RichComponents } from '../components/pages/home/RichComponentsView'
 import { EasyCustomization } from '../components/pages/home/EasyCustomizationView'
 import { DesignGuide } from '../components/pages/home/DesignGuideView'
 import { CallToAction } from '../components/CallToAction'
+import { Inter } from 'next/font/google'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
+import {
+  COMPONENTS_LINK,
+  DOCS_LINK,
+  MOCHI_DISCORD_LINK,
+  MOCHI_GITHUB_BUG_REPORT_LINK,
+  MOCHI_GITHUB_ISSUES_LINK,
+  MOCHI_GITHUB_LINK,
+} from '../constants/url'
+
+const inter = Inter({ subsets: ['latin'] })
+
+const previewRoutes = [
+  '/examples/rich-components/dropdown',
+  '/examples/rich-components/modal',
+  '/examples/customization/modal',
+]
 
 export default function Home() {
+  const { prefetch } = useRouter()
+
+  useEffect(() => {
+    previewRoutes.forEach((route) => {
+      prefetch(route)
+    })
+  }, [prefetch])
+
   return (
     <>
       <Head>
@@ -28,25 +55,29 @@ export default function Home() {
         />
       </Head>
 
-      <Header />
+      <main className={inter.className}>
+        <Header />
 
-      <main>
         <Hero
           title="Mochi UI Kit"
           description="Help designers and developers create eye-catching and adaptable products using different Web3 frameworks effortlessly."
           actions={[
             <a
               key="get-started-action"
-              href="https://ds.console.so"
+              href={DOCS_LINK}
               className="inline-block"
             >
               <Button>
                 Get Started <ArrowRightLine />
               </Button>
             </a>,
-            <Button color="white" key="preview-action">
-              Preview Online
-            </Button>,
+            <a
+              key="preview-action"
+              href={COMPONENTS_LINK}
+              className="inline-block"
+            >
+              <Button color="white">Preview Online</Button>
+            </a>,
           ]}
         />
 
@@ -110,60 +141,64 @@ export default function Home() {
           actions={[
             <a
               key="get-started-action"
-              href="https://ds.console.so"
+              href={DOCS_LINK}
               className="inline-block"
             >
               <Button>
                 Get Started <ArrowRightLine />
               </Button>
             </a>,
-            <Button color="white" key="preview-action">
-              Preview Online
-            </Button>,
+            <a
+              key="preview-action"
+              href={COMPONENTS_LINK}
+              className="inline-block"
+            >
+              <Button color="white">Preview Online</Button>
+            </a>,
+          ]}
+        />
+
+        <Footer
+          copyrightText="Copyright © 2023 Console Labs, All rights reserved"
+          logo={<Logo className="!h-9 !w-9" />}
+          nav={[
+            {
+              title: 'Resources',
+              links: [
+                {
+                  href: COMPONENTS_LINK,
+                  text: 'Components',
+                },
+                {
+                  href: MOCHI_GITHUB_LINK,
+                  text: 'GitHub',
+                },
+                { href: MOCHI_DISCORD_LINK, text: 'Community' },
+              ],
+            },
+            {
+              title: 'Help',
+              links: [
+                {
+                  href: MOCHI_GITHUB_BUG_REPORT_LINK,
+                  text: 'Bug Report',
+                },
+                {
+                  href: MOCHI_GITHUB_ISSUES_LINK,
+                  text: 'Issues',
+                },
+              ],
+            },
+          ]}
+          social={[
+            {
+              href: MOCHI_DISCORD_LINK,
+              Icon: Discord,
+              title: 'Discord',
+            },
           ]}
         />
       </main>
-
-      <Footer
-        copyrightText="Copyright © 2023 Console Labs, All rights reserved"
-        logo={<Logo className="!h-9 !w-9" />}
-        nav={[
-          {
-            title: 'Resources',
-            links: [
-              {
-                href: 'https://ds.console.so/?path=/docs/disclosure-accordion--docs',
-                text: 'Components',
-              },
-              {
-                href: 'https://github.com/consolelabs/mochi-ui',
-                text: 'GitHub',
-              },
-              { href: 'https://discord.gg/3d2FdBG2My', text: 'Community' },
-            ],
-          },
-          {
-            title: 'Help',
-            links: [
-              {
-                href: 'https://github.com/consolelabs/mochi-ui/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=',
-                text: 'Bug Report',
-              },
-              {
-                href: 'https://github.com/consolelabs/mochi-ui/issues',
-                text: 'Issues',
-              },
-            ],
-          },
-        ]}
-        social={[
-          {
-            href: 'https://discord.gg/3d2FdBG2My',
-            Icon: Discord,
-            title: 'Discord',
-          },
-        ]}
-      />
     </>
   )
 }

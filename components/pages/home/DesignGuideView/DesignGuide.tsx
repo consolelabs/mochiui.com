@@ -3,12 +3,13 @@ import { LinkCircledSolid } from '@mochi-ui/icons'
 import PaperplaneCircle from '@mochi-ui/icons/solid/paperplane-circle'
 import clsx from 'clsx'
 import { DesignGuideCardItem } from './DesignGuideCardItem'
+import { DOCS_LINK, MOCHI_DISCORD_LINK } from '../../../../constants/url'
 
 export const DesignGuide = ({ className }: { className?: string }) => {
   return (
     <section className={clsx('px-4', className)}>
       <div className="section-container">
-        <Typography level="h3" className="mb-8 tracking-tight leading-tight">
+        <Typography level="h3" className="mb-8 -tracking-[2px] leading-tight">
           Design Guide
         </Typography>
 
@@ -30,7 +31,7 @@ export const DesignGuide = ({ className }: { className?: string }) => {
             }
             className="w-full sm:w-1/2"
             mediaClassName="bg-[#EFE7FE]"
-            href="https://ds.console.so"
+            href={DOCS_LINK}
           />
 
           <DesignGuideCardItem
@@ -46,16 +47,14 @@ export const DesignGuide = ({ className }: { className?: string }) => {
             description={
               <Typography level="p5" className="leading-6 !text-neutral-600">
                 Join support community or contact us via email{' '}
-                <a
-                  href="mailto:team@console.so"
-                  className="transition-colors font-medium duration-300 text-neutral-700 hover:text-neutral-800"
-                >
+                <span className="transition-colors font-medium duration-300 text-neutral-700 hover:text-neutral-800">
                   team@console.so
-                </a>
+                </span>
               </Typography>
             }
             className="w-full sm:w-1/2"
             mediaClassName="bg-blue-200"
+            href={MOCHI_DISCORD_LINK}
           />
         </div>
       </div>

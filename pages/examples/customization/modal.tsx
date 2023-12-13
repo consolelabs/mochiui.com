@@ -90,6 +90,7 @@ const MochiUIModal = () => {
                     color="info"
                     size="lg"
                     className="!p-2"
+                    label=""
                   >
                     {item.icon}
                   </IconButton>

@@ -29,12 +29,15 @@ export const GridContent = (props: GridContentProps) => {
                 <Typography
                   level="h6"
                   fontWeight="lg"
-                  className="!text-neutral-800"
+                  className="!text-neutral-800 tracking-tighter"
                 >
                   {d.title}
                 </Typography>
               </div>
-              <Typography level="p5" className="!text-neutral-600">
+              <Typography
+                level="p5"
+                className="!text-neutral-600 tracking-tight"
+              >
                 {d.body}
               </Typography>
             </div>

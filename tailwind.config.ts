@@ -13,6 +13,10 @@ const config: Config = {
       maxWidth: {
         '8xl': '1440px',
       },
+      letterSpacing: {
+        tight: '-0.2px',
+        tighter: '-0.4px',
+      },
     },
   },
   plugins: [mochiui()],

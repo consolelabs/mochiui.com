@@ -11,20 +11,17 @@ export const RichComponents = ({ className }: { className?: string }) => {
 
   const tabData = [
     {
-      title: 'Accordion',
-      content: <AccordionShowcase />,
-    },
-    {
-      title: 'Buttons',
-      content: <ButtonsShowcase />,
-    },
-    {
       title: 'Card',
       content: <CardShowcase />,
     },
     {
-      title: 'Checkbox',
-      content: <CheckboxShowcase />,
+      title: 'Modal',
+      content: (
+        <iframe
+          src="/examples/rich-components/modal"
+          className="w-full h-full"
+        />
+      ),
     },
     {
       title: 'Dropdown',
@@ -36,20 +33,23 @@ export const RichComponents = ({ className }: { className?: string }) => {
       ),
     },
     {
-      title: 'Modal',
-      content: (
-        <iframe
-          src="/examples/rich-components/modal"
-          className="w-full h-full"
-        />
-      ),
+      title: 'Accordion',
+      content: <AccordionShowcase />,
+    },
+    {
+      title: 'Buttons',
+      content: <ButtonsShowcase />,
+    },
+    {
+      title: 'Checkbox',
+      content: <CheckboxShowcase />,
     },
   ]
 
   return (
     <section className={clsx('px-4', className)}>
       <div className="section-container">
-        <Typography level="h3" className="mb-8 tracking-tight leading-tight">
+        <Typography level="h3" className="mb-8 -tracking-[2px] leading-tight">
           Various components
         </Typography>
         <div className="flex flex-col md:flex-row gap-4 md:gap-8 justify-stretch">
@@ -61,7 +61,7 @@ export const RichComponents = ({ className }: { className?: string }) => {
                 variant="outline"
                 color={index === idx ? 'primary' : 'neutral'}
                 className={clsx(
-                  '!h-max md:!h-[73px] !py-2 md:!py-6 !px-4 md:!px-6 !shadow-none !justify-start !font-medium !text-sm md:!text-lg !text-neutral-900',
+                  '!h-max md:!h-[73px] !py-2 md:!py-6 !px-4 md:!px-6 !shadow-none !justify-start !font-medium !text-sm md:!text-lg !text-neutral-800',
                   {
                     'bg-white': index !== idx,
                   },
