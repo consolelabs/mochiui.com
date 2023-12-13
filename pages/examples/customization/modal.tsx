@@ -19,41 +19,6 @@ import {
 } from '@mochi-ui/icons'
 import { useEffect, useState } from 'react'
 
-const socialAuths = [
-  {
-    name: 'discord',
-    icon: <DiscordColored className="w-7 h-7" />,
-  },
-  {
-    name: 'telegram',
-    icon: <TelegramColored className="w-7 h-7" />,
-  },
-  {
-    name: 'twitter',
-    icon: <X className="w-7 h-7" />,
-  },
-  {
-    name: 'gmail',
-    icon: <GoogleColored className="w-7 h-7" />,
-  },
-  {
-    name: 'facebook',
-    icon: <FacebookColored className="w-7 h-7" />,
-  },
-  {
-    name: 'slack',
-    icon: <SlackColored className="w-7 h-7" />,
-  },
-  {
-    name: 'github',
-    icon: <Github className="w-7 h-7" />,
-  },
-  {
-    name: 'mail',
-    icon: <MailLine className="w-7 h-7" />,
-  },
-]
-
 const MochiUIModal = () => {
   const [isSSR, setIsSSR] = useState(true)
 
@@ -110,5 +75,40 @@ const MochiUIModal = () => {
     </div>
   ) : null
 }
+
+const socialAuths = [
+  {
+    name: 'discord',
+    icon: <DiscordColored className="w-7 h-7" />,
+  },
+  {
+    name: 'telegram',
+    icon: <TelegramColored className="w-7 h-7" />,
+  },
+  {
+    name: 'twitter',
+    icon: <X className="w-7 h-7" />,
+  },
+  {
+    name: 'gmail',
+    icon: <GoogleColored className="w-7 h-7" />,
+  },
+  {
+    name: 'facebook',
+    icon: <FacebookColored className="w-7 h-7" />,
+  },
+  {
+    name: 'slack',
+    icon: <SlackColored className="w-7 h-7" />,
+  },
+  {
+    name: 'github',
+    icon: <Github className="w-7 h-7" />,
+  },
+  {
+    name: 'mail',
+    icon: <MailLine className="w-7 h-7" />,
+  },
+]
 
 export default MochiUIModal
