@@ -1,11 +1,5 @@
-import {
-  DesktopNav,
-  TopBar,
-  Button,
-  Badge,
-  MobileNav,
-  Skeleton,
-} from '@mochi-ui/core'
+import { DesktopNav, TopBar, Button, Badge, MobileNav } from '@mochi-ui/core'
+import { motion } from 'framer-motion'
 import clsx from 'clsx'
 import { useMemo } from 'react'
 import { useEffect, useState } from 'react'
@@ -125,13 +119,19 @@ export const Header = () => {
             <div className="flex items-center gap-4">
               <Logo />
               {latestVersion ? (
-                <Badge
-                  label={`v${latestVersion}`}
-                  className="!text-blue-300 !bg-blue-1000"
-                />
-              ) : (
-                <Skeleton className="!rounded-full h-[22px] w-14" />
-              )}
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    duration: 0.2,
+                  }}
+                >
+                  <Badge
+                    label={`v${latestVersion}`}
+                    className="!text-blue-300 !bg-blue-1000"
+                  />
+                </motion.div>
+              ) : null}
             </div>
           }
           rightSlot={

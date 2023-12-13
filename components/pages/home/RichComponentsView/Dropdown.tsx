@@ -43,13 +43,19 @@ export const DropdownShowcase = () => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="max-h-[645px] overflow-y-auto">
-        <DropdownMenuLabel leftIcon={<UserSolid />}>Profile</DropdownMenuLabel>
+        <DropdownMenuLabel
+          leftIcon={<UserSolid className="!text-neutral-800" />}
+        >
+          Profile
+        </DropdownMenuLabel>
 
         <DropdownMenuItem hasPaddingLeft>Overview</DropdownMenuItem>
 
         <DropdownMenuItem hasPaddingLeft>Settings</DropdownMenuItem>
 
-        <DropdownMenuItem leftIcon={<EyeShowSolid />}>
+        <DropdownMenuItem
+          leftIcon={<EyeShowSolid className="!text-neutral-800" />}
+        >
           View Options
         </DropdownMenuItem>
 
@@ -66,11 +72,15 @@ export const DropdownShowcase = () => {
 
         <DropdownMenuSeparator />
 
-        <DropdownMenuItem leftIcon={<AddUserSolid />}>
+        <DropdownMenuItem
+          leftIcon={<AddUserSolid className="!text-neutral-800" />}
+        >
           Invite Friends
         </DropdownMenuItem>
 
-        <DropdownMenuItem leftIcon={<ShieldDoneSolid />}>
+        <DropdownMenuItem
+          leftIcon={<ShieldDoneSolid className="!text-neutral-800" />}
+        >
           Terms and Policies
         </DropdownMenuItem>
       </DropdownMenuContent>

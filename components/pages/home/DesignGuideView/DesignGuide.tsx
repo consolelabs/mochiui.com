@@ -13,7 +13,7 @@ export const DesignGuide = ({ className }: { className?: string }) => {
           Design Guide
         </Typography>
 
-        <div className="flex flex-col sm:flex-row gap-4 md:gap-8">
+        <div className="flex flex-col sm:flex-row gap-4 md:gap-8 md:pb-8">
           <DesignGuideCardItem
             imgUrl="/img/select.png"
             title={

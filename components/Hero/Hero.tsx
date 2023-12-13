@@ -22,7 +22,7 @@ export const Hero = ({
   return (
     <section
       className={clsx(
-        'bg-black min-h-[500px] h-max relative flex justify-center items-center overflow-hidden',
+        'bg-neutral-900 min-h-[500px] h-max relative flex justify-center items-center overflow-hidden',
         className,
       )}
     >
