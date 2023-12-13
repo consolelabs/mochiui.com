@@ -8,7 +8,7 @@ import hljs from 'highlight.js/lib/common'
 const demoCode = `import { Card, Typography, IconButton, Button } from '@mochi-ui/core'
 import { WalletSolid, DiscordColored, TelegramColored, X, GoogleColored, FacebookColored, SlackColored, Github, MailLine } from '@mochi-ui/icons'
 
-export const CustomModalDemo = () => {
+export const CustomCardDemo = () => {
   return (
     <Card className="!p-6 max-w-[400px] lg:max-w-full shadow-lg">
       <Typography
@@ -104,7 +104,7 @@ export const CodeSnippet = () => {
             fontWeight="md"
             color="textTertiary"
           >
-            custom-modal.tsx
+            custom-card.tsx
           </Typography>
           <Tooltip
             content="Copied"
