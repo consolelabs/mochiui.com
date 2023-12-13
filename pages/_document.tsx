@@ -5,15 +5,31 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
-        <meta content="yes" name="apple-mobile-web-app-capable" />
-        <meta content="#E88B88" name="theme-color" />
-        <meta content="summary" name="twitter:card" />
-        <meta content="/img/thumbnail.png" property="og:image" />
-        <meta content="Mochi UI Kit" property="og:site_name" />
-        <meta content="Mochi UI Kit" property="og:title" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="theme-color" content="#E88B88" />
         <meta
-          content="Stunning and accessible React UI library for web3 application!"
           name="description"
+          content="Stunning and accessible React UI library for web3 application!"
+        />
+        <meta
+          name="keywords"
+          content="accessible, beautiful, ui, ui library, mochiui, radix ui"
+        />
+
+        <meta name="twitter:title" content="Mochi UI Kit" />
+        <meta
+          name="twitter:description"
+          content="Stunning and accessible React UI library for web3 application!"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:image:src" content="/img/thumbnail.png" />
+
+        <meta property="og:title" content="Mochi UI Kit" />
+        <meta property="og:site_name" content="Mochi UI Kit" />
+        <meta property="og:image" content="/img/thumbnail.png" />
+        <meta
+          property="og:description"
+          content="Stunning and accessible React UI library for web3 application!"
         />
 
         <link href="/img/logo.png" rel="icon" type="image/x-icon" />

@@ -5,61 +5,9 @@ import { useEffect } from 'react'
 
 import hljs from 'highlight.js/lib/common'
 
-const demoCode = `import {
-  Button,
-  IconButton,
-  Modal,
-  ModalContent,
-  ModalTrigger,
-  Typography,
-} from '@mochi-ui/core'
-import {
-  DiscordColored,
-  TelegramColored,
-  X,
-  GoogleColored,
-  FacebookColored,
-  SlackColored,
-  Github,
-  MailLine,
-  WalletSolid,
-} from '@mochi-ui/icons'
+const demoCode = `import { Button,  IconButton,  Modal,  ModalContent,  ModalTrigger,  Typography } from '@mochi-ui/core'
+import { DiscordColored,  TelegramColored,  X,  GoogleColored,  FacebookColored,  SlackColored,  Github,  MailLine,  WalletSolid } from '@mochi-ui/icons'
 import { useEffect, useState } from 'react'
-
-const socialAuths = [
-  {
-    name: 'discord',
-    icon: <DiscordColored className="w-7 h-7" />,
-  },
-  {
-    name: 'telegram',
-    icon: <TelegramColored className="w-7 h-7" />,
-  },
-  {
-    name: 'twitter',
-    icon: <X className="w-7 h-7" />,
-  },
-  {
-    name: 'gmail',
-    icon: <GoogleColored className="w-7 h-7" />,
-  },
-  {
-    name: 'facebook',
-    icon: <FacebookColored className="w-7 h-7" />,
-  },
-  {
-    name: 'slack',
-    icon: <SlackColored className="w-7 h-7" />,
-  },
-  {
-    name: 'github',
-    icon: <Github className="w-7 h-7" />,
-  },
-  {
-    name: 'mail',
-    icon: <MailLine className="w-7 h-7" />,
-  },
-]
 
 export const MochiUIModal = () => {
   return (
@@ -107,7 +55,42 @@ export const MochiUIModal = () => {
       </ModalContent>
     </Modal>
   )
-}`
+}
+
+const socialAuths = [
+  {
+    name: 'discord',
+    icon: <DiscordColored className="w-7 h-7" />,
+  },
+  {
+    name: 'telegram',
+    icon: <TelegramColored className="w-7 h-7" />,
+  },
+  {
+    name: 'twitter',
+    icon: <X className="w-7 h-7" />,
+  },
+  {
+    name: 'gmail',
+    icon: <GoogleColored className="w-7 h-7" />,
+  },
+  {
+    name: 'facebook',
+    icon: <FacebookColored className="w-7 h-7" />,
+  },
+  {
+    name: 'slack',
+    icon: <SlackColored className="w-7 h-7" />,
+  },
+  {
+    name: 'github',
+    icon: <Github className="w-7 h-7" />,
+  },
+  {
+    name: 'mail',
+    icon: <MailLine className="w-7 h-7" />,
+  },
+]`
 
 export const CodeSnippet = () => {
   const { onCopy, hasCopied } = useClipboard(demoCode)

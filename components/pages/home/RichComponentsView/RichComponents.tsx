@@ -33,16 +33,16 @@ export const RichComponents = ({ className }: { className?: string }) => {
       ),
     },
     {
-      title: 'Accordion',
-      content: <AccordionShowcase />,
-    },
-    {
-      title: 'Buttons',
+      title: 'Button',
       content: <ButtonsShowcase />,
     },
     {
       title: 'Checkbox',
       content: <CheckboxShowcase />,
+    },
+    {
+      title: 'Accordion',
+      content: <AccordionShowcase />,
     },
   ]
 
