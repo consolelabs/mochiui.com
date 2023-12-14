@@ -6,12 +6,12 @@ export const Roadmap = ({ className }: { className?: string }) => {
   return (
     <section
       className={clsx(
-        'bg-neutral-900 bg-contain sm:bg-height-4/5 bg-right-bottom bg-no-repeat',
+        'bg-neutral-900 bg-contain bg-right-bottom bg-no-repeat',
         className,
       )}
       style={{
-        backgroundImage: 'url("/img/gradient.png")',
-        backgroundAttachment: 'fixed',
+        backgroundImage:
+          'image-set(url("/img/gradient.png"), url("/img/gradient.webp"))',
       }}
     >
       <div className="section-container pl-4 xl:pl-0">
@@ -24,16 +24,16 @@ export const Roadmap = ({ className }: { className?: string }) => {
         </Typography>
       </div>
 
-      <div className="overflow-auto pl-0 sm:pl-4">
+      <div className="overflow-auto pl-6 sm:pl-4">
         <div
           className="overflow-visible pb-8 pt-4 sm:pt-8"
           style={{
-            maxWidth: 1200,
+            maxWidth: 1216,
             marginLeft: 'auto',
             marginRight: 'auto',
           }}
         >
-          <div className="flex flex-row-reverse sm:flex-col w-max pl-6 sm:pl-0">
+          <div className="flex flex-row-reverse sm:flex-col w-max">
             <div className="flex flex-col sm:flex-row w-max">
               <div className="relative w-24 h-12 sm:h-auto">
                 <div className="bg-blue-700 h-4 w-4 rounded-full absolute -left-[9px] sm:left-[unset] bottom-[unset] sm:-bottom-[9px] animate-ping" />

@@ -45,7 +45,8 @@ export const CardShowcase = () => {
         <div
           className="bg-cover h-[75px] relative"
           style={{
-            backgroundImage: 'url("/img/profile-background.png")',
+            backgroundImage:
+              'image-set(url("/img/profile-background.png"), url("/img/profile-background.webp"))',
           }}
         >
           <div className="absolute -bottom-[44px] left-4">

@@ -1,11 +1,12 @@
 import clsx from 'clsx'
-import Image from 'next/image'
 import { AnchorHTMLAttributes, ReactNode } from 'react'
+import { ImageWithFallback } from '../../../ImageWithFallback'
 
 type DesignGuideCardItemProps = Partial<
   Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'title'>
 > & {
   imgUrl?: string
+  fallbackImgUrl?: string
   title: ReactNode
   description: ReactNode
   mediaClassName?: string
@@ -14,6 +15,7 @@ type DesignGuideCardItemProps = Partial<
 export const DesignGuideCardItem = (props: DesignGuideCardItemProps) => {
   const {
     imgUrl,
+    fallbackImgUrl,
     title,
     description,
     className,
@@ -24,14 +26,21 @@ export const DesignGuideCardItem = (props: DesignGuideCardItemProps) => {
 
   const cardContent = (
     <article>
-      {imgUrl ? (
+      {imgUrl || fallbackImgUrl ? (
         <div
           className={clsx(
             'flex justify-center items-center px-4 py-2',
             mediaClassName,
           )}
         >
-          <Image src={imgUrl} alt="" width={170} height={170} priority />
+          <ImageWithFallback
+            src={imgUrl}
+            fallbackImgUrl={fallbackImgUrl}
+            alt=""
+            width={170}
+            height={170}
+            loading="lazy"
+          />
         </div>
       ) : null}
 

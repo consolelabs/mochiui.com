@@ -8,8 +8,8 @@ import {
 } from '@mochi-ui/core'
 import { SolidDotSolid } from '@mochi-ui/icons'
 import clsx from 'clsx'
-import Image from 'next/image'
 import { useState } from 'react'
+import { ImageWithFallback } from '../../../ImageWithFallback'
 
 export const ModalShowcase = () => {
   const [isOpened, setIsOpened] = useState(true)
@@ -30,8 +30,9 @@ export const ModalShowcase = () => {
       </ModalTrigger>
       <ModalContent className="space-y-2 text-center !p-4">
         <div className="mb-8">
-          <Image
+          <ImageWithFallback
             src="/img/macbook.png"
+            fallbackImgUrl="/img/macbook.webp"
             alt="Mochi UI Logo"
             width={350}
             height={200}

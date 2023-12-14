@@ -16,6 +16,7 @@ export const DesignGuide = ({ className }: { className?: string }) => {
         <div className="flex flex-col sm:flex-row gap-4 md:gap-8 md:pb-8">
           <DesignGuideCardItem
             imgUrl="/img/select.png"
+            fallbackImgUrl="/img/select.webp"
             title={
               <div className="flex gap-2 items-center">
                 <PaperplaneCircle className="text-purple-700 h-5 w-5 shrink-0" />
@@ -36,6 +37,7 @@ export const DesignGuide = ({ className }: { className?: string }) => {
 
           <DesignGuideCardItem
             imgUrl="/img/paperplane.png"
+            fallbackImgUrl="/img/paperplane.webp"
             title={
               <div className="flex gap-2 items-center">
                 <LinkCircledSolid className="text-blue-700 h-5 w-5 shrink-0" />

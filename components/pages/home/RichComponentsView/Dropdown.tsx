@@ -3,7 +3,6 @@ import {
   DropdownMenuTrigger,
   DropdownMenuContent,
   DropdownMenuItem,
-  Button,
   ProfileBadge,
   DropdownMenuLabel,
   DropdownMenuSeparator,
@@ -34,13 +33,12 @@ export const DropdownShowcase = () => {
   return (
     <DropdownMenu open={isOpened} onOpenChange={() => setIsOpened(!isOpened)}>
       <DropdownMenuTrigger asChild>
-        <Button variant="link" className="!px-0">
-          <ProfileBadge
-            avatar="/img/user-avatar.png"
-            name="Kathryn Murphy"
-            platform=""
-          />
-        </Button>
+        <ProfileBadge
+          avatar="/img/user-avatar.png"
+          name="Kathryn Murphy"
+          platform=""
+          className="h-max"
+        />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="max-h-[645px] overflow-y-auto">
         <DropdownMenuLabel
