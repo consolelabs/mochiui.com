@@ -49,7 +49,7 @@ export const CardShowcase = () => {
               'image-set(url("/img/profile-background.png") 2x, url("/img/profile-background.webp") 1x)',
           }}
         >
-          <div className="absolute -bottom-[44px] left-4">
+          <div className="absolute -bottom-[44px] left-2">
             <Avatar src="/img/user-avatar.png" size="xl" />
           </div>
         </div>
