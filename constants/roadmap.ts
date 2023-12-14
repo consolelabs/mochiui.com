@@ -8,7 +8,7 @@ export const ROADMAP = [
     ],
   },
   {
-    title: 'Enhance Documentation',
+    title: 'Enhance Document',
     checkList: [
       'Examples for popular frameworks',
       'New document website',
@@ -16,15 +16,16 @@ export const ROADMAP = [
     ],
   },
   {
-    title: 'Styling',
+    title: 'Upgrade Styling',
     checkList: ['Darkmode', 'Tailwind merge', 'Enhance responsiveness'],
   },
   {
     title: 'v1.0.0',
     isMajorChange: true,
+    checkList: ['Stable API Release', 'Community Feedback Integration'],
   },
   {
-    title: 'Web3',
+    title: 'Web3 Focus',
     checkList: ['New web3 components', 'New web3 utility packages'],
   },
 ]
