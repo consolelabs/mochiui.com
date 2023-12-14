@@ -1,7 +1,7 @@
 import { Typography } from '@mochi-ui/core'
 import clsx from 'clsx'
 import { CodeSnippet } from './CodeSnippet'
-import { CustomModalDemo } from './CustomModalDemo'
+import { CustomCardDemo } from './CustomCardDemo'
 
 export const EasyCustomization = ({ className }: { className?: string }) => {
   return (
@@ -11,7 +11,7 @@ export const EasyCustomization = ({ className }: { className?: string }) => {
           Customization seamlessly
         </Typography>
         <div className="flex h-max lg:h-[444px] flex-col lg:flex-row gap-4 lg:gap-8">
-          <CustomModalDemo />
+          <CustomCardDemo />
           <CodeSnippet />
         </div>
       </div>

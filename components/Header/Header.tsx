@@ -107,7 +107,7 @@ export const Header = () => {
         />
         <div
           className={clsx(
-            'h-full w-full bg-gradient-to-b from-gray-900 to-gray-900 absolute top-0 transition-opacity duration-300 z-50',
+            'h-full w-full bg-gray-900 absolute top-0 transition-opacity duration-300 z-50',
             {
               'opacity-0': !isScrolledToContent,
               'opacity-100': isScrolledToContent,

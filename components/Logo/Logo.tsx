@@ -1,16 +1,16 @@
-import Image from 'next/image'
-import { ImageProps } from 'next/image'
+import { ImageWithFallback, ImageWithFallbackProps } from '../ImageWithFallback'
 
-export const Logo = (props: Partial<ImageProps>) => {
-  const { src, ...rest } = props
+export const Logo = (props: Partial<ImageWithFallbackProps>) => {
+  const { src, fallbackImgUrl, ...rest } = props
 
   return (
-    <Image
+    <ImageWithFallback
       src={src ?? '/img/logo-with-text.png'}
-      alt="Mochi UI Logo"
+      fallbackImgUrl={fallbackImgUrl ?? '/img/logo-with-text.webp'}
       width={130}
       height={40}
       priority
+      alt="Mochi UI Logo"
       {...rest}
     />
   )
