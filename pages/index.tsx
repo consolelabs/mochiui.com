@@ -56,110 +56,112 @@ export default function Home() {
         />
       </Head>
 
-      <main className={inter.className}>
+      <div className={inter.className}>
         <Header />
 
-        <Hero
-          title="Mochi UI Kit"
-          description="Help designers and developers create eye-catching and adaptable products using different Web3 frameworks effortlessly."
-          actions={[
-            <a
-              key="get-started-action"
-              href={DOCS_LINK}
-              className="inline-block"
-            >
-              <Button>
-                Get Started <ArrowRightLine />
-              </Button>
-            </a>,
-            <a
-              key="preview-action"
-              href={COMPONENTS_LINK}
-              className="inline-block"
-            >
-              <Button color="white">Preview Online</Button>
-            </a>,
-          ]}
-        />
+        <main>
+          <Hero
+            title="Mochi UI Kit"
+            description="Help designers and developers create eye-catching and adaptable products using different Web3 frameworks effortlessly."
+            actions={[
+              <a
+                key="get-started-action"
+                href={DOCS_LINK}
+                className="inline-block"
+              >
+                <Button>
+                  Get Started <ArrowRightLine />
+                </Button>
+              </a>,
+              <a
+                key="preview-action"
+                href={COMPONENTS_LINK}
+                className="inline-block"
+              >
+                <Button color="white">Preview Online</Button>
+              </a>,
+            ]}
+          />
 
-        <GridContent
-          className="my-16 md:my-[88px] min-h-max md:min-h-[250px]"
-          data={[
-            {
-              icon: <TipColored className="w-10 h-10" />,
-              title: 'Optimized performance',
-              body: 'By optimizing component performance, developers can create smooth and engaging user experiences.',
-            },
-            {
-              icon: <ProfileShieldColored className="w-10 h-10" />,
-              title: 'Cross-platform',
-              body: 'Save time and enhance interoperability effortlessly by reusing code while keeping the consistency across platforms.',
-            },
-            {
-              icon: <BagColored className="w-10 h-10" />,
-              title: 'Customizable',
-              body: 'Simplify UI element modifications for changing design trends and user preferences.',
-            },
-            {
-              icon: <PayLinkColored className="w-10 h-10" />,
-              title: 'Easy integration',
-              body: 'Organizes code in a structure, making it easier to integrate with complex web3 apps.',
-            },
-          ]}
-        />
+          <GridContent
+            className="my-16 md:my-[88px] min-h-max md:min-h-[250px]"
+            data={[
+              {
+                icon: <TipColored className="w-10 h-10" />,
+                title: 'Optimized performance',
+                body: 'By optimizing component performance, developers can create smooth and engaging user experiences.',
+              },
+              {
+                icon: <ProfileShieldColored className="w-10 h-10" />,
+                title: 'Cross-platform',
+                body: 'Save time and enhance interoperability effortlessly by reusing code while keeping the consistency across platforms.',
+              },
+              {
+                icon: <BagColored className="w-10 h-10" />,
+                title: 'Customizable',
+                body: 'Simplify UI element modifications for changing design trends and user preferences.',
+              },
+              {
+                icon: <PayLinkColored className="w-10 h-10" />,
+                title: 'Easy integration',
+                body: 'Organizes code in a structure, making it easier to integrate with complex web3 apps.',
+              },
+            ]}
+          />
 
-        <RichComponents />
+          <RichComponents />
 
-        <Divider />
+          <Divider />
 
-        <EasyCustomization />
+          <EasyCustomization />
 
-        <Divider />
+          <Divider />
 
-        <DesignGuide className="pb-16 md:pb-[88px]" />
+          <DesignGuide className="pb-16 md:pb-[88px]" />
 
-        <Roadmap className="py-16 md:py-[88px]" />
+          <Roadmap className="py-16 md:py-[88px]" />
 
-        <CallToAction
-          className="my-16 md:my-[88px]"
-          title={
-            <Typography
-              level="h3"
-              fontWeight="md"
-              className="leading-tight tracking-tight !text-neutral-900"
-            >
-              Compatible, structured, and reusable components
-            </Typography>
-          }
-          description={
-            <Typography
-              level="p4"
-              fontWeight="sm"
-              className="!text-neutral-600"
-            >
-              Create stunning, user friendly and compatible with all platform
-              effortlessly.
-            </Typography>
-          }
-          actions={[
-            <a
-              key="get-started-action"
-              href={DOCS_LINK}
-              className="inline-block"
-            >
-              <Button>
-                Get Started <ArrowRightLine />
-              </Button>
-            </a>,
-            <a
-              key="preview-action"
-              href={COMPONENTS_LINK}
-              className="inline-block"
-            >
-              <Button color="white">Preview Online</Button>
-            </a>,
-          ]}
-        />
+          <CallToAction
+            className="my-16 md:my-[88px]"
+            title={
+              <Typography
+                level="h3"
+                fontWeight="md"
+                className="leading-tight tracking-tight !text-neutral-900"
+              >
+                Compatible, structured, and reusable components
+              </Typography>
+            }
+            description={
+              <Typography
+                level="p4"
+                fontWeight="sm"
+                className="!text-neutral-600"
+              >
+                Create stunning, user friendly and compatible with all platform
+                effortlessly.
+              </Typography>
+            }
+            actions={[
+              <a
+                key="get-started-action"
+                href={DOCS_LINK}
+                className="inline-block"
+              >
+                <Button>
+                  Get Started <ArrowRightLine />
+                </Button>
+              </a>,
+              <a
+                key="preview-action"
+                href={COMPONENTS_LINK}
+                className="inline-block"
+              >
+                <Button color="white">Preview Online</Button>
+              </a>,
+            ]}
+          />
+        </main>
 
         <Footer
           className="!pt-4"
@@ -202,7 +204,7 @@ export default function Home() {
             },
           ]}
         />
-      </main>
+      </div>
     </>
   )
 }

@@ -17,6 +17,9 @@ const config: Config = {
         tight: '-0.2px',
         tighter: '-0.4px',
       },
+      backgroundSize: {
+        'height-4/5': 'auto 80%',
+      },
     },
   },
   plugins: [mochiui()],
