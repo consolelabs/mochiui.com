@@ -17,7 +17,7 @@ export const Roadmap = ({ className }: { className?: string }) => {
       <div className="section-container pl-4 xl:pl-0">
         <Typography
           level="h3"
-          className="mb-8 -tracking-[2px] leading-tight"
+          className="mb-8 !text-[32px] md:!text-4.5xl -tracking-[2px] leading-tight"
           color="textContrast"
         >
           Roadmap

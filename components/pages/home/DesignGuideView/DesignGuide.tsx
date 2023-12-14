@@ -9,7 +9,10 @@ export const DesignGuide = ({ className }: { className?: string }) => {
   return (
     <section className={clsx('px-4', className)}>
       <div className="section-container">
-        <Typography level="h3" className="mb-8 -tracking-[2px] leading-tight">
+        <Typography
+          level="h3"
+          className="mb-8 !text-[32px] md:!text-4.5xl -tracking-[2px] leading-tight"
+        >
           Design Guide
         </Typography>
 

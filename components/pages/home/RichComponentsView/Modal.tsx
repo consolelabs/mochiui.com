@@ -69,12 +69,13 @@ export const ModalShowcase = () => {
         </div>
         <div className="grid gap-3 grid-cols-2 w-full min-w-[216px]">
           <ModalTrigger asChild>
-            <button
-              className="shrinl-0 !w-full border border-neutral-300 py-3 px-6 rounded-lg"
-              type="button"
+            <Button
+              className="shrinl-0 !w-full !h-[50px] !max-h-[unset] py-3 px-6 rounded-lg"
+              variant="outline"
+              color="white"
             >
               Cancel
-            </button>
+            </Button>
           </ModalTrigger>
           <ModalTrigger
             asChild

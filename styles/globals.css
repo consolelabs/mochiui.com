@@ -18,6 +18,17 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
+body footer {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+body footer > div {
+  max-width: 1008px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .section-container {
   max-width: 1008px !important;
   margin-left: auto;
