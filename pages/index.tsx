@@ -34,7 +34,6 @@ const inter = Inter({ subsets: ['latin'] })
 const previewRoutes = [
   '/examples/rich-components/dropdown',
   '/examples/rich-components/modal',
-  '/examples/customization/modal',
 ]
 
 export default function Home() {

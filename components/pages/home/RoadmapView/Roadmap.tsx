@@ -11,7 +11,7 @@ export const Roadmap = ({ className }: { className?: string }) => {
       )}
       style={{
         backgroundImage:
-          'image-set(url("/img/gradient.png"), url("/img/gradient.webp"))',
+          'image-set(url("/img/gradient.png") 2x, url("/img/gradient.webp") 1x)',
       }}
     >
       <div className="section-container pl-4 xl:pl-0">
