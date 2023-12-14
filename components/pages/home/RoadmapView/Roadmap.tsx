@@ -11,6 +11,7 @@ export const Roadmap = ({ className }: { className?: string }) => {
       )}
       style={{
         backgroundImage: 'url("/img/gradient.png")',
+        backgroundAttachment: 'fixed',
       }}
     >
       <div className="section-container pl-4 xl:pl-0">
@@ -25,40 +26,43 @@ export const Roadmap = ({ className }: { className?: string }) => {
 
       <div className="overflow-auto">
         <div
-          className="overflow-visible py-8"
+          className="overflow-visible pb-8 pt-0 sm:p-8"
           style={{
             maxWidth: 1200,
             marginLeft: 'auto',
             marginRight: 'auto',
           }}
         >
-          <div className="flex flex-col w-max pl-4 xl:pl-0">
-            <div className="flex w-max">
-              <div className="relative w-24">
-                <div className="bg-blue-700 h-4 w-4 rounded-full absolute -bottom-[9px] animate-ping" />
-                <div className="bg-blue-700 h-4 w-4 rounded-full absolute -bottom-[9px]" />
+          <div className="flex flex-row-reverse sm:flex-col w-max pl-6 sm:pl-4 xl:pl-0">
+            <div className="flex flex-col sm:flex-row w-max">
+              <div className="relative w-24 h-12 sm:h-auto">
+                <div className="bg-blue-700 h-4 w-4 rounded-full absolute -left-[9px] sm:left-[unset] bottom-[unset] sm:-bottom-[9px] animate-ping" />
+                <div className="bg-blue-700 h-4 w-4 rounded-full absolute -left-[9px] sm:left-[unset] bottom-[unset] sm:-bottom-[9px]" />
               </div>
 
               {ROADMAP.map((item) => (
                 <div
                   key={item.title}
-                  className="relative w-[280px] md:w-[300px] min-h-[180px] pb-6 pl-3"
+                  className="relative w-[280px] md:w-[300px] min-h-[140px] sm:min-h-[160px] pb-6 pl-6 sm:pl-3"
                 >
                   <div
-                    className={clsx('w-0.5 -left-0.5 rounded-full absolute', {
-                      'bg-[#E88B88] h-full': item?.isMajorChange,
-                      'bg-blue-600 h-[calc(100%-24px)] bottom-6':
-                        !item?.isMajorChange,
-                    })}
+                    className={clsx(
+                      'w-0.5 -left-0.5 rounded-full absolute hidden sm:block',
+                      {
+                        'bg-[#E88B88] h-full': item?.isMajorChange,
+                        'bg-blue-600 h-[calc(100%-24px)] bottom-6':
+                          !item?.isMajorChange,
+                      },
+                    )}
                   />
 
                   {item?.isMajorChange ? (
                     <Logo
-                      className="absolute -bottom-[18px] -left-[18px] box-content border-2 bg-[#E88B88] border-[#E88B88]"
+                      className="absolute bottom-[unset] sm:-bottom-[18px] -left-[19px] sm:-left-[18px] box-content border-2 bg-[#E88B88] border-[#E88B88]"
                       size="xs"
                     />
                   ) : (
-                    <div className="rounded-full absolute h-2 w-2 bottom-2 -left-[5px] bg-blue-600" />
+                    <div className="rounded-full absolute h-2 w-2 top-2 sm:top-[unset] bottom-[unset] sm:bottom-2 -left-[5px] bg-blue-600" />
                   )}
 
                   <div className="pr-6">
@@ -89,9 +93,9 @@ export const Roadmap = ({ className }: { className?: string }) => {
 
               <div className="w-24" />
             </div>
-            <div className="flex">
-              <div className="w-full h-0.5 bg-gradient-to-r from-blue-600 to-violet-500" />
-              <div className="w-24 h-0.5 bg-gradient-to-r from-violet-500 to-transparent" />
+            <div className="flex flex-col sm:flex-row">
+              <div className="w-0.5 sm:w-full h-full sm:h-0.5 bg-gradient-to-b sm:bg-gradient-to-r from-blue-600 to-violet-500" />
+              <div className="w-0.5 sm:w-24 h-24 sm:h-0.5 bg-gradient-to-b sm:bg-gradient-to-r from-violet-500 to-transparent" />
             </div>
           </div>
         </div>
