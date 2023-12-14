@@ -55,11 +55,15 @@ export const CardShowcase = () => {
         </div>
 
         <div className="p-2.5 pb-0">
-          <div className="flex justify-end items-center gap-4">
+          <div className="flex justify-end items-center gap-3">
             <IconButton variant="link" color="neutral" label="Info button">
-              <ThreeDotsLine className="text-2xl" />
+              <ThreeDotsLine className="text-lg" />
             </IconButton>
-            <Button variant="outline" size="sm" className="!px-2.5">
+            <Button
+              variant="outline"
+              size="sm"
+              className="!px-2.5 !py-0 text-xs"
+            >
               Edit profile
             </Button>
           </div>
@@ -69,24 +73,26 @@ export const CardShowcase = () => {
               fontWeight="md"
               level="p4"
               color="textPrimary"
-              className="!tracking-tight !leading-tight"
+              className="!tracking-tight !leading-tight !text-base"
             >
               Kathryn Murphy
             </Typography>
             <div className="flex items-center gap-0.5 mt-0.5">
               <Badge
+                className="!py-0 !px-1"
                 label={
-                  <>
+                  <div className="flex !text-xxs items-center gap-0.5">
                     <SolidDotSolid /> verified
-                  </>
+                  </div>
                 }
                 appearance="success"
               />
               <Badge
+                className="!py-0 !px-1"
                 label={
-                  <>
+                  <div className="flex !text-xxs items-center gap-0.5">
                     <SolidDotSolid /> smud
-                  </>
+                  </div>
                 }
                 appearance="warning"
               />
@@ -100,22 +106,26 @@ export const CardShowcase = () => {
               return (
                 <div
                   key={content.label}
-                  className="flex items-center justify-between py-2 gap-2"
+                  className="flex items-center justify-between py-1.5 gap-2"
                 >
                   <div className="truncate">
                     <Typography
                       level="p7"
-                      fontWeight="xl"
+                      fontWeight="lg"
                       color="textSecondary"
-                      className="uppercase truncate"
+                      className="uppercase truncate !text-[9px]"
                     >
                       {content.label}
                     </Typography>
-                    <Typography level="p5" fontWeight="lg" className="truncate">
+                    <Typography
+                      level="p5"
+                      fontWeight="lg"
+                      className="truncate !text-xs"
+                    >
                       {content.value}
                     </Typography>
                   </div>
-                  <div className="flex items-center gap-2 shrink-0">
+                  <div className="flex items-center gap-1.5 shrink-0">
                     {content?.action}
                     <IconButton
                       color="info"
