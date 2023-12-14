@@ -126,7 +126,7 @@ export default function Home() {
               <Typography
                 level="h3"
                 fontWeight="md"
-                className="leading-tight tracking-tight !text-neutral-900"
+                className="leading-tight !text-[32px] md:!text-4.5xl tracking-tight !text-neutral-900"
               >
                 Compatible, structured, and reusable components
               </Typography>

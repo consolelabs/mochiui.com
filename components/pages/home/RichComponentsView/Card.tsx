@@ -67,8 +67,9 @@ export const CardShowcase = () => {
           <div className="mt-3">
             <Typography
               fontWeight="md"
+              level="p4"
               color="textPrimary"
-              className="!text-xl tracking-tight !leading-tight"
+              className="!tracking-tight !leading-tight"
             >
               Kathryn Murphy
             </Typography>

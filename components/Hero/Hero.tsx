@@ -43,7 +43,7 @@ export const Hero = ({
         >
           <Typography
             level="h2"
-            className="text-white text-[64px] leading-tight drop-shadow-md -tracking-[2.5px]"
+            className="text-white !text-[32px] md:!text-[64px] leading-tight drop-shadow-md tracking-tight md:-tracking-[2.5px]"
             fontWeight="md"
           >
             {title}
@@ -51,7 +51,7 @@ export const Hero = ({
 
           <Typography
             level="p2"
-            className="font-[350] text-white drop-shadow-md tracking-tight"
+            className="font-[350] !text-base md:!text-xl text-white drop-shadow-md tracking-tight"
           >
             {description}
           </Typography>

@@ -49,7 +49,10 @@ export const RichComponents = ({ className }: { className?: string }) => {
   return (
     <section className={clsx('px-4', className)}>
       <div className="section-container">
-        <Typography level="h3" className="mb-8 -tracking-[2px] leading-tight">
+        <Typography
+          level="h3"
+          className="mb-8 !text-[32px] md:!text-4.5xl -tracking-[2px] leading-tight"
+        >
           Various components
         </Typography>
         <div className="flex flex-col md:flex-row gap-4 md:gap-8 justify-stretch">
