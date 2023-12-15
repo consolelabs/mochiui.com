@@ -56,11 +56,11 @@ const accordionData = [
 
 export const AccordionShowcase = () => {
   return (
-    <div className="h-full w-full flex p-4 md:p-6 justify-center items-center">
+    <div className="h-full w-full flex p-4 md:p-6 justify-center">
       <Accordion
         type="single"
         collapsible
-        className="bg-white !w-[250px]"
+        className="bg-white !w-[250px] h-max"
         defaultValue="2"
       >
         {accordionData.map((d, index) => (

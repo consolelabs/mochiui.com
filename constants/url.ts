@@ -1,4 +1,4 @@
-export const MOCHI_DISCORD_LINK = 'https://discord.gg/3d2FdBG2My'
+export const MOCHI_DISCORD_LINK = 'https://discord.gg/CGaNbsWAvA'
 
 export const MOCHI_GITHUB_LINK = 'https://github.com/consolelabs/mochi-ui'
 

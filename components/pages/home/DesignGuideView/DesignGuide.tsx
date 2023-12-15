@@ -60,6 +60,8 @@ export const DesignGuide = ({ className }: { className?: string }) => {
             className="w-full sm:w-1/2"
             mediaClassName="bg-blue-200"
             href={MOCHI_DISCORD_LINK}
+            target="_blank"
+            rel="noreferrer"
           />
         </div>
       </div>

@@ -1,6 +1,7 @@
-import { Logo, Typography } from '@mochi-ui/core'
+import { Typography } from '@mochi-ui/core'
 import clsx from 'clsx'
 import { ROADMAP } from '../../../../constants/roadmap'
+import { ImageWithFallback } from '../../../ImageWithFallback'
 
 export const Roadmap = ({ className }: { className?: string }) => {
   return (
@@ -57,9 +58,13 @@ export const Roadmap = ({ className }: { className?: string }) => {
                   />
 
                   {item?.isMajorChange ? (
-                    <Logo
-                      className="absolute bottom-[unset] sm:-bottom-[18px] -left-[19px] sm:-left-[19px] box-content border-2 bg-[#E88B88] border-[#E88B88]"
-                      size="xs"
+                    <ImageWithFallback
+                      src="/img/logo.png"
+                      fallbackImgUrl="/img/logo.png"
+                      className="absolute bottom-[unset] sm:-bottom-[18px] -left-[19px] sm:-left-[19px] box-content border-2 bg-[#E88B88] border-[#E88B88] rounded-full"
+                      height={32}
+                      width={32}
+                      alt="Mochi Logo"
                     />
                   ) : (
                     <div className="rounded-full absolute h-2 w-2 top-2 sm:top-[unset] bottom-[unset] sm:bottom-2 -left-[5px] bg-blue-600" />
