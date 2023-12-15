@@ -32,15 +32,20 @@ export const DropdownShowcase = () => {
 
   return (
     <DropdownMenu open={isOpened} onOpenChange={() => setIsOpened(!isOpened)}>
-      <DropdownMenuTrigger asChild>
-        <ProfileBadge
-          avatar="/img/user-avatar.png"
-          name="Kathryn Murphy"
-          platform=""
-          className="h-max"
-        />
-      </DropdownMenuTrigger>
-      <DropdownMenuContent className="max-h-[645px] overflow-y-auto">
+      <div className="w-[240px] h-max max-w-full flex justify-end">
+        <DropdownMenuTrigger asChild>
+          <ProfileBadge
+            avatar="/img/user-avatar.png"
+            name="Kathryn Murphy"
+            platform=""
+            className="h-max"
+          />
+        </DropdownMenuTrigger>
+      </div>
+      <DropdownMenuContent
+        className="max-h-[645px] overflow-y-auto"
+        align="end"
+      >
         <DropdownMenuLabel
           leftIcon={<UserSolid className="!text-neutral-800" />}
         >
