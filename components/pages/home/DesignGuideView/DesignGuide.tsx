@@ -53,7 +53,7 @@ export const DesignGuide = ({ className }: { className?: string }) => {
               <Typography level="p5" className="leading-6 !text-neutral-600">
                 Join support community or contact us via email{' '}
                 <span className="transition-colors font-medium duration-300 text-neutral-700 hover:text-neutral-800">
-                  team@console.so
+                  gm@console.so
                 </span>
               </Typography>
             }

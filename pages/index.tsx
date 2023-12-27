@@ -6,6 +6,7 @@ import {
   PayLinkColored,
   ProfileShieldColored,
   TipColored,
+  X,
 } from '@mochi-ui/icons'
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
@@ -27,6 +28,7 @@ import {
   MOCHI_GITHUB_BUG_REPORT_LINK,
   MOCHI_GITHUB_ISSUES_LINK,
   MOCHI_GITHUB_LINK,
+  MOCHI_X_LINK,
 } from '@/constants/url'
 import { Roadmap } from '@/components/pages/home/RoadmapView'
 
@@ -56,7 +58,12 @@ export default function Home() {
         />
       </Head>
 
-      <div className={clsx('bg-white', inter.className)}>
+      <div
+        className={clsx(
+          'bg-white h-[calc(100vh-56px)] overflow-y-auto mt-[56px]',
+          inter.className,
+        )}
+      >
         <Header />
 
         <main>
@@ -193,6 +200,11 @@ export default function Home() {
               href: MOCHI_DISCORD_LINK,
               Icon: Discord,
               title: 'Discord',
+            },
+            {
+              href: MOCHI_X_LINK,
+              Icon: X,
+              title: 'X',
             },
           ]}
         />

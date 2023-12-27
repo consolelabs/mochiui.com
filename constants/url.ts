@@ -1,5 +1,7 @@
 export const MOCHI_DISCORD_LINK = 'https://discord.gg/CGaNbsWAvA'
 
+export const MOCHI_X_LINK = 'https://twitter.com/console_labs'
+
 export const MOCHI_GITHUB_LINK = 'https://github.com/consolelabs/mochi-ui'
 
 export const MOCHI_GITHUB_ISSUES_LINK =

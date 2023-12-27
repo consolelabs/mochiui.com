@@ -1,8 +1,6 @@
 import { DesktopNav, TopBar, Button, Badge, MobileNav } from '@mochi-ui/core'
 import { motion } from 'framer-motion'
-import clsx from 'clsx'
 import { useMemo } from 'react'
-import { useEffect, useState } from 'react'
 import { COMPONENTS_LINK, DOCS_LINK, MOCHI_GITHUB_LINK } from '@/constants/url'
 import { useFetchNPMData } from '@/hooks/useFetchNPMData'
 import { Logo } from '@/components/Logo'
@@ -58,7 +56,7 @@ const mobileNavItems = [
 ]
 
 export const Header = () => {
-  const [isScrolledToContent, setIsScrolledToContent] = useState(false)
+  // const [isScrolledToContent, setIsScrolledToContent] = useState(false)
 
   const { data, isLoading } = useFetchNPMData()
 
@@ -72,76 +70,39 @@ export const Header = () => {
     return versions.length ? versions[versions.length - 1] : ''
   }, [data, isLoading])
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // height of the Hero
-      if (window.pageYOffset > 500) {
-        setIsScrolledToContent(true)
-      } else {
-        setIsScrolledToContent(false)
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
-
   return (
-    <div className="fixed top-0 z-50 w-full">
-      <div className="relative">
-        <div
-          className={clsx(
-            'h-24 pointer-events-none w-full bg-gradient-to-b from-gray-900 to-transparent absolute top-0 transition-opacity duration-300 z-50',
-            {
-              'opacity-0': isScrolledToContent,
-              'opacity-100': !isScrolledToContent,
-            },
-          )}
-        />
-        <div
-          className={clsx(
-            'h-full w-full bg-gray-900 absolute top-0 transition-opacity duration-300 z-50',
-            {
-              'opacity-0': !isScrolledToContent,
-              'opacity-100': isScrolledToContent,
-            },
-          )}
-        />
-        <TopBar
-          leftSlot={
-            <div className="flex items-center gap-4">
-              <Logo />
-              {latestVersion ? (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{
-                    duration: 0.2,
-                  }}
-                >
-                  <Badge
-                    label={`v${latestVersion}`}
-                    className="!text-blue-300 !bg-blue-1000"
-                  />
-                </motion.div>
-              ) : null}
-            </div>
-          }
-          rightSlot={
-            <>
-              <DesktopNav navItems={desktopNavItems} />
-              <MobileNav
-                navItems={mobileNavItems}
-                toggleIconClassName="!text-neutral-500"
-              />
-            </>
-          }
-          className="!bg-transparent !max-w-8xl w-full mx-auto !border-none absolute top-0 z-50"
-        />
-      </div>
+    <div className="fixed top-0 z-50 w-full bg-gray-900">
+      <TopBar
+        leftSlot={
+          <div className="flex items-center gap-4">
+            <Logo />
+            {latestVersion ? (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  duration: 0.2,
+                }}
+              >
+                <Badge
+                  label={`v${latestVersion}`}
+                  className="!text-blue-300 !bg-blue-1000"
+                />
+              </motion.div>
+            ) : null}
+          </div>
+        }
+        rightSlot={
+          <>
+            <DesktopNav navItems={desktopNavItems} />
+            <MobileNav
+              navItems={mobileNavItems}
+              toggleIconClassName="!text-neutral-500"
+            />
+          </>
+        }
+        className="!bg-transparent !max-w-8xl w-full mx-auto !border-none absolute top-0 z-50"
+      />
     </div>
   )
 }
