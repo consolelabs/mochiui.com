@@ -37,10 +37,9 @@ export const ModalShowcase = () => {
           <ImageWithFallback
             src="/img/macbook.png"
             fallbackImgUrl="/img/macbook.webp"
-            alt="Mochi UI Logo"
+            alt="Macbook"
             width={350}
             height={200}
-            priority
           />
           <Typography
             level="h6"

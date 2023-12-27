@@ -10,6 +10,7 @@ type DesignGuideCardItemProps = Partial<
   title: ReactNode
   description: ReactNode
   mediaClassName?: string
+  alt?: string
 }
 
 export const DesignGuideCardItem = (props: DesignGuideCardItemProps) => {
@@ -21,6 +22,7 @@ export const DesignGuideCardItem = (props: DesignGuideCardItemProps) => {
     className,
     mediaClassName,
     href,
+    alt,
     ...rest
   } = props
 
@@ -36,7 +38,7 @@ export const DesignGuideCardItem = (props: DesignGuideCardItemProps) => {
           <ImageWithFallback
             src={imgUrl}
             fallbackImgUrl={fallbackImgUrl}
-            alt=""
+            alt={alt}
             width={170}
             height={170}
             loading="lazy"

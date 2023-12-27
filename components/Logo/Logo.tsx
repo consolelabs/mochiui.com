@@ -12,7 +12,6 @@ export const Logo = (props: Partial<ImageWithFallbackProps>) => {
       fallbackImgUrl={fallbackImgUrl ?? '/img/logo-with-text.webp'}
       width={130}
       height={40}
-      priority
       alt="Mochi UI Logo"
       {...rest}
     />

@@ -1,7 +1,9 @@
-import Image, { ImageProps } from 'next/image'
-import { useState } from 'react'
+import { DetailedHTMLProps, ImgHTMLAttributes } from 'react'
 
-export type ImageWithFallbackProps = Omit<ImageProps, 'src'> & {
+export type ImageWithFallbackProps = Omit<
+  DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>,
+  'src'
+> & {
   src?: string
   fallbackImgUrl?: string
 }
@@ -9,22 +11,11 @@ export type ImageWithFallbackProps = Omit<ImageProps, 'src'> & {
 export const ImageWithFallback = (props: ImageWithFallbackProps) => {
   const { src, fallbackImgUrl, alt, ...rest } = props
 
-  const [imgSrc, setImgSrc] = useState(src)
-
   return (
-    <Image
-      {...rest}
-      alt={alt}
-      src={imgSrc || ''}
-      onLoad={(e) => {
-        // @ts-ignore
-        if (e?.target?.naturalWidth && e.target.naturalWidth === 0) {
-          setImgSrc(fallbackImgUrl || '')
-        }
-      }}
-      onError={() => {
-        setImgSrc(fallbackImgUrl || '')
-      }}
-    />
+    <picture>
+      <source media="(max-width: 767px)" srcSet={fallbackImgUrl} />
+      <source media="(min-width: 768px)" srcSet={src} />
+      <img src={fallbackImgUrl} alt={alt} {...rest} />
+    </picture>
   )
 }
