@@ -34,6 +34,7 @@ export const Hero = ({
         }}
         className="h-full w-full bg-cover bg-center absolute top-0 -right-24"
       />
+
       <div className="section-container w-full absolute p-4 xl:p-0">
         <div
           className={clsx(

@@ -56,7 +56,7 @@ export const RichComponents = ({ className }: { className?: string }) => {
           Various components
         </Typography>
         <div className="flex flex-col md:flex-row gap-4 md:gap-8 justify-stretch">
-          <div className="flex flex-row md:flex-col gap-2 overflow-auto w-full md:w-[280px] shrink-0 h-full">
+          <div className="flex flex-row md:flex-col gap-2 overflow-auto hide-scrollbar w-full md:w-[280px] shrink-0 h-full">
             {tabData.map((tab, index) => (
               <Button
                 key={tab.title}

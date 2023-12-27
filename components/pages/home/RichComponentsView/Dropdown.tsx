@@ -31,7 +31,11 @@ export const DropdownShowcase = () => {
   }, [])
 
   return (
-    <DropdownMenu open={isOpened} onOpenChange={() => setIsOpened(!isOpened)}>
+    <DropdownMenu
+      open={isOpened}
+      modal={false}
+      onOpenChange={(open) => setIsOpened(open)}
+    >
       <div className="w-[240px] h-max max-w-full flex justify-end">
         <DropdownMenuTrigger asChild>
           <ProfileBadge
@@ -45,6 +49,11 @@ export const DropdownShowcase = () => {
       <DropdownMenuContent
         className="max-h-[645px] overflow-y-auto"
         align="end"
+        onInteractOutside={(event) => {
+          if (event.type === 'dismissableLayer.focusOutside') {
+            event.preventDefault()
+          }
+        }}
       >
         <DropdownMenuLabel
           leftIcon={<UserSolid className="!text-neutral-800" />}

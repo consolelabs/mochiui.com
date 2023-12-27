@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import { AnchorHTMLAttributes, ReactNode } from 'react'
-import { ImageWithFallback } from '../../../ImageWithFallback'
+import { ImageWithFallback } from '@/components/ImageWithFallback'
 
 type DesignGuideCardItemProps = Partial<
   Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'title'>

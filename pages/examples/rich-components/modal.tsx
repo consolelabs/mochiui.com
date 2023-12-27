@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { ModalShowcase } from '../../../components/pages/home/RichComponentsView'
+import { ModalShowcase } from '@/components/pages/home/RichComponentsView'
 
 const MochiUIModal = () => {
   const [isSSR, setIsSSR] = useState(true)
@@ -9,7 +9,7 @@ const MochiUIModal = () => {
   }, [])
 
   return !isSSR ? (
-    <div className="h-[450px] md:h-[478px] p-4 md:p-6 flex justify-center items-center">
+    <div className="h-[450px] sm:h-[478px] p-4 sm:p-6 flex justify-center items-center bg-neutral-100">
       <ModalShowcase />
     </div>
   ) : null

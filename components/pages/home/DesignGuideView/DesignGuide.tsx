@@ -3,7 +3,7 @@ import { LinkCircledSolid } from '@mochi-ui/icons'
 import PaperplaneCircle from '@mochi-ui/icons/solid/paperplane-circle'
 import clsx from 'clsx'
 import { DesignGuideCardItem } from './DesignGuideCardItem'
-import { DOCS_LINK, MOCHI_DISCORD_LINK } from '../../../../constants/url'
+import { DOCS_LINK, MOCHI_DISCORD_LINK } from '@/constants/url'
 
 export const DesignGuide = ({ className }: { className?: string }) => {
   return (

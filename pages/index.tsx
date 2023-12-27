@@ -8,17 +8,18 @@ import {
   TipColored,
 } from '@mochi-ui/icons'
 import Head from 'next/head'
-import { Header } from '../components/Header'
-import { Hero } from '../components/Hero'
-import { GridContent } from '../components/GridContent'
-import { Divider } from '../components/Divider'
-import { RichComponents } from '../components/pages/home/RichComponentsView'
-import { EasyCustomization } from '../components/pages/home/EasyCustomizationView'
-import { DesignGuide } from '../components/pages/home/DesignGuideView'
-import { CallToAction } from '../components/CallToAction'
 import { Inter } from 'next/font/google'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+import clsx from 'clsx'
+import { Header } from '@/components/Header'
+import { Hero } from '@/components/Hero'
+import { GridContent } from '@/components/GridContent'
+import { Divider } from '@/components/Divider'
+import { RichComponents } from '@/components/pages/home/RichComponentsView'
+import { EasyCustomization } from '@/components/pages/home/EasyCustomizationView'
+import { DesignGuide } from '@/components/pages/home/DesignGuideView'
+import { CallToAction } from '@/components/CallToAction'
 import {
   COMPONENTS_LINK,
   DOCS_LINK,
@@ -26,8 +27,8 @@ import {
   MOCHI_GITHUB_BUG_REPORT_LINK,
   MOCHI_GITHUB_ISSUES_LINK,
   MOCHI_GITHUB_LINK,
-} from '../constants/url'
-import { Roadmap } from '../components/pages/home/RoadmapView'
+} from '@/constants/url'
+import { Roadmap } from '@/components/pages/home/RoadmapView'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -55,7 +56,7 @@ export default function Home() {
         />
       </Head>
 
-      <div className={inter.className}>
+      <div className={clsx('bg-white', inter.className)}>
         <Header />
 
         <main>
@@ -63,20 +64,12 @@ export default function Home() {
             title="Mochi UI Kit"
             description="Help designers and developers create eye-catching and adaptable products using different Web3 frameworks effortlessly."
             actions={[
-              <a
-                key="get-started-action"
-                href={DOCS_LINK}
-                className="inline-block"
-              >
+              <a key="get-started-action" href={DOCS_LINK}>
                 <Button>
-                  Get Started <ArrowRightLine />
+                  Get Started <ArrowRightLine className="h-3.5 w-3.5" />
                 </Button>
               </a>,
-              <a
-                key="preview-action"
-                href={COMPONENTS_LINK}
-                className="inline-block"
-              >
+              <a key="preview-action" href={COMPONENTS_LINK}>
                 <Button color="white">Preview Online</Button>
               </a>,
             ]}

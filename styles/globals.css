@@ -4,20 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-}
-
 body footer {
   padding-left: 16px !important;
   padding-right: 16px !important;
@@ -37,4 +23,14 @@ body footer > div {
 
 .hljs {
   background-color: transparent !important;
+}
+
+/* Scrollbar styles */
+
+.hide-scrollbar::-webkit-scrollbar {
+  /* Vertical scrollbar */
+  width: 0;
+
+  /* Horizontal scrollbar */
+  height: 0;
 }

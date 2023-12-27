@@ -9,7 +9,7 @@ import {
 import { SolidDotSolid } from '@mochi-ui/icons'
 import clsx from 'clsx'
 import { useState } from 'react'
-import { ImageWithFallback } from '../../../ImageWithFallback'
+import { ImageWithFallback } from '@/components/ImageWithFallback'
 
 export const ModalShowcase = () => {
   const [isOpened, setIsOpened] = useState(true)
@@ -24,7 +24,11 @@ export const ModalShowcase = () => {
   }
 
   return (
-    <Modal open={isOpened} onOpenChange={() => setIsOpened(!isOpened)}>
+    <Modal
+      open={isOpened}
+      modal={false}
+      onOpenChange={() => setIsOpened(!isOpened)}
+    >
       <ModalTrigger asChild>
         <Button>Open Modal</Button>
       </ModalTrigger>

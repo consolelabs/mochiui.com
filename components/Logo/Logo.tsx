@@ -1,4 +1,7 @@
-import { ImageWithFallback, ImageWithFallbackProps } from '../ImageWithFallback'
+import {
+  ImageWithFallback,
+  ImageWithFallbackProps,
+} from '@/components/ImageWithFallback'
 
 export const Logo = (props: Partial<ImageWithFallbackProps>) => {
   const { src, fallbackImgUrl, ...rest } = props

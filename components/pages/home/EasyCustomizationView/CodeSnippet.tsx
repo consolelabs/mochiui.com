@@ -102,7 +102,7 @@ export const CodeSnippet = () => {
             level="p6"
             className="!text-[13px]"
             fontWeight="md"
-            color="textTertiary"
+            color="textContrast"
           >
             custom-card.tsx
           </Typography>
@@ -114,9 +114,11 @@ export const CodeSnippet = () => {
             <CopySolid className="w-6 h-6 text-neutral-0" onClick={onCopy} />
           </Tooltip>
         </div>
-        <div className="h-full overflow-auto px-6 md:px-8">
+        <div className="h-full overflow-auto hide-scrollbar px-6 md:px-8">
           <pre className="!bg-transparent !m-0 !pt-0 !pb-2 !text-sm static language-javascript">
-            <code className="language-javascript !px-0">{demoCode}</code>
+            <code className="language-javascript !px-0 hide-scrollbar">
+              {demoCode}
+            </code>
           </pre>
         </div>
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { DropdownShowcase } from '../../../components/pages/home/RichComponentsView'
+import { DropdownShowcase } from '@/components/pages/home/RichComponentsView'
 
 const MochiUIModal = () => {
   const [isSSR, setIsSSR] = useState(true)
@@ -9,7 +9,7 @@ const MochiUIModal = () => {
   }, [])
 
   return !isSSR ? (
-    <div className="h-[450px] md:h-[478px] flex justify-center p-4 md:p-6 pt-12">
+    <div className="h-[450px] sm:h-[478px] flex justify-center p-4 sm:p-6 pt-8 sm:pt-12 bg-neutral-100">
       <DropdownShowcase />
     </div>
   ) : null

@@ -1,6 +1,6 @@
 import useSWR from 'swr'
-import { NPM_DATA_ENDPOINT } from '../constants/npm'
-import { NPMDataResponse } from '../types/npm'
+import { NPM_DATA_ENDPOINT } from '@/constants/npm'
+import { NPMDataResponse } from '@/types/npm'
 
 export const SWR_KEY_FETCH_NPM_DATA = 'SWR_KEY_FETCH_NPM_DATA'
 

@@ -3,13 +3,9 @@ import { motion } from 'framer-motion'
 import clsx from 'clsx'
 import { useMemo } from 'react'
 import { useEffect, useState } from 'react'
-import {
-  COMPONENTS_LINK,
-  DOCS_LINK,
-  MOCHI_GITHUB_LINK,
-} from '../../constants/url'
-import { useFetchNPMData } from '../../hooks/useFetchNPMData'
-import { Logo } from '../Logo'
+import { COMPONENTS_LINK, DOCS_LINK, MOCHI_GITHUB_LINK } from '@/constants/url'
+import { useFetchNPMData } from '@/hooks/useFetchNPMData'
+import { Logo } from '@/components/Logo'
 
 const desktopNavItems = [
   <a key="components-button" href={COMPONENTS_LINK}>

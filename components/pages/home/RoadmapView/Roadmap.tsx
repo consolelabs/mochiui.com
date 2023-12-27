@@ -1,7 +1,7 @@
 import { Typography } from '@mochi-ui/core'
 import clsx from 'clsx'
-import { ROADMAP } from '../../../../constants/roadmap'
-import { ImageWithFallback } from '../../../ImageWithFallback'
+import { ROADMAP } from '@/constants/roadmap'
+import { ImageWithFallback } from '@/components/ImageWithFallback'
 
 export const Roadmap = ({ className }: { className?: string }) => {
   return (
@@ -25,7 +25,7 @@ export const Roadmap = ({ className }: { className?: string }) => {
         </Typography>
       </div>
 
-      <div className="overflow-auto pl-6 sm:pl-4">
+      <div className="overflow-auto hide-scrollbar pl-6 sm:pl-4">
         <div
           className="overflow-visible pb-8 pt-4 sm:pt-8"
           style={{
