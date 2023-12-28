@@ -35,8 +35,7 @@ export const ModalShowcase = () => {
       <ModalContent className="space-y-2 text-center !p-4">
         <div className="mb-8">
           <ImageWithFallback
-            src="/img/macbook.png"
-            fallbackImgUrl="/img/macbook.webp"
+            src="/img/macbook.webp"
             alt="Macbook"
             width={350}
             height={200}

@@ -59,7 +59,6 @@ export const Roadmap = ({ className }: { className?: string }) => {
                   {item?.isMajorChange ? (
                     <ImageWithFallback
                       src="/img/logo.png"
-                      fallbackImgUrl="/img/logo.png"
                       className="absolute bottom-[unset] sm:-bottom-[18px] -left-[19px] sm:-left-[19px] box-content border-2 bg-[#E88B88] border-[#E88B88] rounded-full"
                       height={32}
                       width={32}

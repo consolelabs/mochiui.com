@@ -15,7 +15,7 @@ export const ImageWithFallback = (props: ImageWithFallbackProps) => {
     <>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        srcSet={`${fallbackImgUrl} 767px, ${src} 768px"`}
+        srcSet={`${fallbackImgUrl ?? src} 767px, ${src} 768px"`}
         sizes="(max-width: 767px) 767px, 768px"
         src={src}
         alt={alt}

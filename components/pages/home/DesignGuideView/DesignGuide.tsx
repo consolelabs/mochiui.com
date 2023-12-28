@@ -18,8 +18,7 @@ export const DesignGuide = ({ className }: { className?: string }) => {
 
         <div className="flex flex-col sm:flex-row gap-4 md:gap-8 md:pb-8">
           <DesignGuideCardItem
-            imgUrl="/img/select.png"
-            fallbackImgUrl="/img/select.webp"
+            imgUrl="/img/select.webp"
             alt="Documentation"
             title={
               <div className="flex gap-2 items-center">
@@ -42,8 +41,7 @@ export const DesignGuide = ({ className }: { className?: string }) => {
           />
 
           <DesignGuideCardItem
-            imgUrl="/img/paperplane.png"
-            fallbackImgUrl="/img/paperplane.webp"
+            imgUrl="/img/paperplane.webp"
             alt="Support"
             title={
               <div className="flex gap-2 items-center">

@@ -29,8 +29,7 @@ export const Hero = ({
       <div
         style={{
           backgroundImage:
-            heroImgUrl ??
-            'image-set(url("/img/hero-banner.png") 2x, url("/img/hero-banner.webp") 1x)',
+            heroImgUrl ?? 'image-set(url("/img/hero-banner.webp") 1x)',
         }}
         className="h-full w-full bg-cover bg-center absolute top-0 -right-24"
       />

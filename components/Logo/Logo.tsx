@@ -8,7 +8,7 @@ export const Logo = (props: Partial<ImageWithFallbackProps>) => {
 
   return (
     <ImageWithFallback
-      src={src ?? '/img/logo-with-text.png'}
+      src={src ?? '/img/logo-with-text.webp'}
       fallbackImgUrl={fallbackImgUrl ?? '/img/logo-with-text.webp'}
       width={130}
       height={40}
