@@ -6,7 +6,12 @@ import { useFetchNPMData } from '@/hooks/useFetchNPMData'
 import { Logo } from '@/components/Logo'
 
 const desktopNavItems = [
-  <a key="components-button" href={COMPONENTS_LINK}>
+  <a
+    key="components-button"
+    href={COMPONENTS_LINK}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <Button variant="link" className="!text-white !font-medium !pl-0 !pr-1">
       Components
     </Button>
@@ -24,7 +29,12 @@ const desktopNavItems = [
   <div key="divider">
     <div className="w-[1px] h-6 bg-neutral-800" />
   </div>,
-  <a key="get-started-button" href={DOCS_LINK}>
+  <a
+    key="get-started-button"
+    href={DOCS_LINK}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <Button variant="solid" className="!font-medium">
       Get Started
     </Button>
@@ -32,7 +42,13 @@ const desktopNavItems = [
 ]
 
 const mobileNavItems = [
-  <a key="components-button" href={COMPONENTS_LINK} className="block">
+  <a
+    key="components-button"
+    href={COMPONENTS_LINK}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block"
+  >
     <Button variant="link" color="neutral" className="!font-medium !pl-0 !pr-1">
       Components
     </Button>
@@ -48,7 +64,13 @@ const mobileNavItems = [
       GitHub
     </Button>
   </a>,
-  <a key="get-started-button" href={DOCS_LINK} className="w-full inline-block">
+  <a
+    key="get-started-button"
+    href={DOCS_LINK}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full inline-block"
+  >
     <Button variant="solid" className="!font-medium w-full">
       Get Started
     </Button>

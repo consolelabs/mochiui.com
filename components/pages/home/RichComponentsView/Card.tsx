@@ -45,12 +45,11 @@ export const CardShowcase = () => {
         <div
           className="bg-cover h-[75px] relative"
           style={{
-            backgroundImage:
-              'image-set(url("/img/profile-background.png") 2x, url("/img/profile-background.webp") 1x)',
+            backgroundImage: 'url("/img/profile-background.webp")',
           }}
         >
           <div className="absolute -bottom-[44px] left-2">
-            <Avatar src="/img/user-avatar.png" size="xl" />
+            <Avatar src="/img/user-avatar.webp" size="xl" />
           </div>
         </div>
 

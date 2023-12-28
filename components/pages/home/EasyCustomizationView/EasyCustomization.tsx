@@ -13,7 +13,7 @@ export const EasyCustomization = ({ className }: { className?: string }) => {
         >
           Customization seamlessly
         </Typography>
-        <div className="flex h-max lg:h-[444px] flex-col lg:flex-row gap-4 lg:gap-8">
+        <div className="flex justify-between h-max lg:h-[444px] flex-col lg:flex-row gap-4 lg:gap-8">
           <CustomCardDemo />
           <CodeSnippet />
         </div>

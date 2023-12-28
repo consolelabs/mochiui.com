@@ -37,6 +37,8 @@ export const DesignGuide = ({ className }: { className?: string }) => {
             className="w-full sm:w-1/2"
             mediaClassName="bg-[#EFE7FE]"
             href={DOCS_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
           />
 
           <DesignGuideCardItem
@@ -63,7 +65,7 @@ export const DesignGuide = ({ className }: { className?: string }) => {
             mediaClassName="bg-blue-200"
             href={MOCHI_DISCORD_LINK}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           />
         </div>
       </div>

@@ -39,7 +39,7 @@ export const DropdownShowcase = () => {
       <div className="w-[240px] h-max max-w-full flex justify-end">
         <DropdownMenuTrigger asChild>
           <ProfileBadge
-            avatar="/img/user-avatar.png"
+            avatar="/img/user-avatar.webp"
             name="Kathryn Murphy"
             platform=""
             className="h-max"

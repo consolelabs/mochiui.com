@@ -71,12 +71,22 @@ export default function Home() {
             title="Mochi UI Kit"
             description="Help designers and developers create eye-catching and adaptable products using different Web3 frameworks effortlessly."
             actions={[
-              <a key="get-started-action" href={DOCS_LINK}>
+              <a
+                key="get-started-action"
+                href={DOCS_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button>
                   Get Started <ArrowRightLine className="h-3.5 w-3.5" />
                 </Button>
               </a>,
-              <a key="preview-action" href={COMPONENTS_LINK}>
+              <a
+                key="preview-action"
+                href={COMPONENTS_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button color="white">Preview Online</Button>
               </a>,
             ]}
@@ -146,6 +156,8 @@ export default function Home() {
                 key="get-started-action"
                 href={DOCS_LINK}
                 className="inline-block"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Button>
                   Get Started <ArrowRightLine />
@@ -155,6 +167,8 @@ export default function Home() {
                 key="preview-action"
                 href={COMPONENTS_LINK}
                 className="inline-block"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Button color="white">Preview Online</Button>
               </a>,
@@ -173,12 +187,14 @@ export default function Home() {
                 {
                   href: COMPONENTS_LINK,
                   text: 'Components',
+                  newTab: true,
                 },
                 {
                   href: MOCHI_GITHUB_LINK,
                   text: 'GitHub',
+                  newTab: true,
                 },
-                { href: MOCHI_DISCORD_LINK, text: 'Community' },
+                { href: MOCHI_DISCORD_LINK, text: 'Community', newTab: true },
               ],
             },
             {
@@ -187,10 +203,12 @@ export default function Home() {
                 {
                   href: MOCHI_GITHUB_BUG_REPORT_LINK,
                   text: 'Bug Report',
+                  newTab: true,
                 },
                 {
                   href: MOCHI_GITHUB_ISSUES_LINK,
                   text: 'Issues',
+                  newTab: true,
                 },
               ],
             },

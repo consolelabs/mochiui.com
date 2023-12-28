@@ -12,10 +12,15 @@ export const ImageWithFallback = (props: ImageWithFallbackProps) => {
   const { src, fallbackImgUrl, alt, ...rest } = props
 
   return (
-    <picture>
-      <source media="(max-width: 767px)" srcSet={fallbackImgUrl} />
-      <source media="(min-width: 768px)" srcSet={src} />
-      <img src={fallbackImgUrl} alt={alt} {...rest} />
-    </picture>
+    <>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        srcSet={`${fallbackImgUrl} 767px, ${src} 768px"`}
+        sizes="(max-width: 767px) 767px, 768px"
+        src={src}
+        alt={alt}
+        {...rest}
+      />
+    </>
   )
 }

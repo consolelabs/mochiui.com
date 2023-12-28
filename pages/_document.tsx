@@ -7,6 +7,7 @@ export default function Document() {
         <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="theme-color" content="#E88B88" />
+        <meta name="title" content="Mochi UI Kit" />
         <meta
           name="description"
           content="Stunning and accessible React UI library for web3 application!"
@@ -16,21 +17,25 @@ export default function Document() {
           content="accessible, beautiful, ui, ui library, mochiui, radix ui"
         />
 
-        <meta name="twitter:title" content="Mochi UI Kit" />
+        {/* Social network */}
+        <meta property="twitter:title" content="Mochi UI Kit" />
         <meta
-          name="twitter:description"
+          property="twitter:description"
           content="Stunning and accessible React UI library for web3 application!"
         />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:image:src" content="/img/thumbnail.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://mochiui.com" />
+        <meta property="twitter:image" content="/img/thumbnail.png" />
 
+        {/* OG */}
         <meta property="og:title" content="Mochi UI Kit" />
-        <meta property="og:site_name" content="Mochi UI Kit" />
-        <meta property="og:image" content="/img/thumbnail.png" />
         <meta
           property="og:description"
           content="Stunning and accessible React UI library for web3 application!"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://mochiui.com" />
+        <meta property="og:image" content="/img/thumbnail.png" />
 
         <link href="/img/logo.png" rel="icon" type="image/x-icon" />
       </Head>
