@@ -31,6 +31,7 @@ import {
   MOCHI_X_LINK,
 } from '@/constants/url'
 import { Roadmap } from '@/components/pages/home/RoadmapView'
+import { getCurrentYear } from '../utils/time'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -178,7 +179,7 @@ export default function Home() {
 
         <Footer
           className="!pt-4"
-          copyrightText="Copyright © 2023 Console Labs, All rights reserved"
+          copyrightText={`Copyright © ${getCurrentYear()} Console Labs, All rights reserved`}
           logo={<Logo className="!h-9 !w-9" />}
           nav={[
             {
