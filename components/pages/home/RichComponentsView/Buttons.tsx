@@ -21,36 +21,42 @@ export const ButtonsShowcase = () => {
       <div>
         <div className="flex gap-4 flex-wrap items-center">
           {buttonVariants.map((variant) => (
-            <Button key={variant} variant={variant} className="capitalize">
+            <Button
+              aria-label={`${variant} button`}
+              key={variant}
+              variant={variant}
+              className="capitalize"
+            >
               {variant} Button
             </Button>
           ))}
         </div>
 
         <div className="mt-4 flex gap-4 flex-wrap items-center">
-          <IconButton label="Search button">
+          <IconButton aria-label="Search" label="Search button">
             <MagnifierLine />
           </IconButton>
-          <Button>
+          <Button aria-label="Search">
             <MagnifierLine /> Search
           </Button>
-          <IconButton label="Loading button" disabled>
+          <IconButton aria-label="Loading" label="Loading button" disabled>
             <ThreeDotLoading />
           </IconButton>
-          <Button disabled>
+          <Button aria-label="Loading" disabled>
             <ThreeDotLoading /> Loading
           </Button>
         </div>
 
         <div className="mt-4 flex gap-4 flex-wrap items-center">
-          {buttonColorVariants.map((variant) => (
+          {buttonColorVariants.map((color) => (
             <Button
-              key={variant}
-              color={variant}
+              aria-label={`${color} button`}
+              key={color}
+              color={color}
               variant="outline"
               className="capitalize"
             >
-              {variant}
+              {color}
             </Button>
           ))}
         </div>

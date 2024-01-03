@@ -12,7 +12,11 @@ const desktopNavItems = [
     target="_blank"
     rel="noopener noreferrer"
   >
-    <Button variant="link" className="!text-white !font-medium !pl-0 !pr-1">
+    <Button
+      aria-label="Go to Components"
+      variant="link"
+      className="!text-white !font-medium !pl-0 !pr-1"
+    >
       Components
     </Button>
   </a>,
@@ -22,7 +26,11 @@ const desktopNavItems = [
     target="_blank"
     rel="noopener noreferrer"
   >
-    <Button variant="link" className="!text-white !font-medium !pl-1 !pr-0">
+    <Button
+      aria-label="Go to GitHub"
+      variant="link"
+      className="!text-white !font-medium !pl-1 !pr-0"
+    >
       GitHub
     </Button>
   </a>,
@@ -35,7 +43,7 @@ const desktopNavItems = [
     target="_blank"
     rel="noopener noreferrer"
   >
-    <Button variant="solid" className="!font-medium">
+    <Button aria-label="Get started" variant="solid" className="!font-medium">
       Get Started
     </Button>
   </a>,
@@ -49,7 +57,12 @@ const mobileNavItems = [
     rel="noopener noreferrer"
     className="block"
   >
-    <Button variant="link" color="neutral" className="!font-medium !pl-0 !pr-1">
+    <Button
+      aria-label="Go to Components"
+      variant="link"
+      color="neutral"
+      className="!font-medium !pl-0 !pr-1"
+    >
       Components
     </Button>
   </a>,
@@ -60,7 +73,12 @@ const mobileNavItems = [
     target="_blank"
     rel="noopener noreferrer"
   >
-    <Button variant="link" color="neutral" className="!font-medium !px-0">
+    <Button
+      aria-label="Go to GitHub"
+      variant="link"
+      color="neutral"
+      className="!font-medium !px-0"
+    >
       GitHub
     </Button>
   </a>,
@@ -71,7 +89,11 @@ const mobileNavItems = [
     rel="noopener noreferrer"
     className="w-full inline-block"
   >
-    <Button variant="solid" className="!font-medium w-full">
+    <Button
+      aria-label="Get started"
+      variant="solid"
+      className="!font-medium w-full"
+    >
       Get Started
     </Button>
   </a>,

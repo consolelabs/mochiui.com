@@ -30,7 +30,7 @@ export const ModalShowcase = () => {
       onOpenChange={() => setIsOpened(!isOpened)}
     >
       <ModalTrigger asChild>
-        <Button>Open Modal</Button>
+        <Button aria-label="Open modal">Open Modal</Button>
       </ModalTrigger>
       <ModalContent className="space-y-2 text-center !p-4">
         <div className="mb-8">
@@ -87,6 +87,7 @@ export const ModalShowcase = () => {
             }}
           >
             <Button
+              aria-label="Confirm"
               className="shrinl-0 !w-full !h-[50px] !max-h-[unset] bg-primary-700 py-3 px-6 text-white rounded-lg"
               loading={isConfirming}
             >

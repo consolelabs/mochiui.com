@@ -59,6 +59,7 @@ export const RichComponents = ({ className }: { className?: string }) => {
           <div className="flex flex-row md:flex-col gap-2 overflow-auto hide-scrollbar w-full md:w-[280px] shrink-0 h-full">
             {tabData.map((tab, index) => (
               <Button
+                aria-label={`${tab.title} tab`}
                 key={tab.title}
                 onClick={() => setIdx(index)}
                 variant="outline"

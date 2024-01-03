@@ -78,7 +78,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button>
+                <Button aria-label="Get started">
                   Get Started <ArrowRightLine className="h-3.5 w-3.5" />
                 </Button>
               </a>,
@@ -88,7 +88,9 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button color="white">Preview Online</Button>
+                <Button aria-label="Preview online" color="white">
+                  Preview Online
+                </Button>
               </a>,
             ]}
           />
@@ -160,7 +162,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button>
+                <Button aria-label="Get started">
                   Get Started <ArrowRightLine />
                 </Button>
               </a>,
@@ -171,7 +173,9 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button color="white">Preview Online</Button>
+                <Button aria-label="Preview online" color="white">
+                  Preview Online
+                </Button>
               </a>,
             ]}
           />

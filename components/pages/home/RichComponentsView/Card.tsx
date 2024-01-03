@@ -59,6 +59,7 @@ export const CardShowcase = () => {
               <ThreeDotsLine className="text-lg" />
             </IconButton>
             <Button
+              aria-label="Edit profile"
               variant="outline"
               size="sm"
               className="!px-2.5 !py-0 text-xs"

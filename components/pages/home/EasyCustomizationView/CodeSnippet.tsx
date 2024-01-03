@@ -41,7 +41,7 @@ export const CustomCardDemo = () => {
         <Typography level="p5" color="neutral">
           Or connect with an extension wallet
         </Typography>
-        <Button size="lg">
+        <Button aria-label="Connect wallet" size="lg">
           <WalletSolid className="text-xl" />
           Connect Wallet
         </Button>
