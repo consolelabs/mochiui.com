@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="theme-color" content="#E88B88" />
+        <meta name="theme-color" content="#1DA1F2" />
         <meta name="title" content="Mochi UI Kit" />
         <meta
           name="description"
