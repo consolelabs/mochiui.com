@@ -4,40 +4,33 @@ import { useMemo } from 'react'
 import { COMPONENTS_LINK, DOCS_LINK, MOCHI_GITHUB_LINK } from '@/constants/url'
 import { useFetchNPMData } from '@/hooks/useFetchNPMData'
 import { Logo } from '@/components/Logo'
+import Link from 'next/link'
 
 const desktopNavItems = [
-  <a
+  <Link
     key="components-button"
     href={COMPONENTS_LINK}
     target="_blank"
     rel="noopener noreferrer"
+    className="text-white text-sm pr-1 font-medium hover:text-primary-plain-fg"
+    aria-label="Go to Components"
   >
-    <Button
-      aria-label="Go to Components"
-      variant="link"
-      className="!text-white !font-medium !pl-0 !pr-1 hover:!text-primary-plain-fg"
-    >
-      Components
-    </Button>
-  </a>,
-  <a
+    Components
+  </Link>,
+  <Link
     key="github-link"
     href={MOCHI_GITHUB_LINK}
     target="_blank"
     rel="noopener noreferrer"
+    className="text-white text-sm pl-1 font-medium hover:text-primary-plain-fg"
+    aria-label="Go to GitHub"
   >
-    <Button
-      aria-label="Go to GitHub"
-      variant="link"
-      className="!text-white !font-medium !pl-1 !pr-0 hover:!text-primary-plain-fg"
-    >
-      GitHub
-    </Button>
-  </a>,
+    GitHub
+  </Link>,
   <div key="divider">
     <div className="w-[1px] h-6 bg-neutral-800" />
   </div>,
-  <a
+  <Link
     key="get-started-button"
     href={DOCS_LINK}
     target="_blank"
@@ -46,43 +39,31 @@ const desktopNavItems = [
     <Button aria-label="Get started" variant="solid" className="!font-medium">
       Get Started
     </Button>
-  </a>,
+  </Link>,
 ]
 
 const mobileNavItems = [
-  <a
+  <Link
     key="components-button"
     href={COMPONENTS_LINK}
     target="_blank"
     rel="noopener noreferrer"
-    className="block"
+    className="block text-neutral-plain-fg hover:text-primary-plain-fg h-10"
+    aria-label="Go to Components"
   >
-    <Button
-      aria-label="Go to Components"
-      variant="link"
-      color="neutral"
-      className="!font-medium !pl-0 !pr-1 hover:!text-primary-plain-fg"
-    >
-      Components
-    </Button>
-  </a>,
-  <a
+    Components
+  </Link>,
+  <Link
     key="github-link"
     href={MOCHI_GITHUB_LINK}
-    className="block"
     target="_blank"
     rel="noopener noreferrer"
+    className="block text-neutral-plain-fg hover:text-primary-plain-fg h-10"
+    aria-label="Go to GitHub"
   >
-    <Button
-      aria-label="Go to GitHub"
-      variant="link"
-      color="neutral"
-      className="!font-medium !px-0 hover:!text-primary-plain-fg"
-    >
-      GitHub
-    </Button>
-  </a>,
-  <a
+    GitHub
+  </Link>,
+  <Link
     key="get-started-button"
     href={DOCS_LINK}
     target="_blank"
@@ -96,12 +77,10 @@ const mobileNavItems = [
     >
       Get Started
     </Button>
-  </a>,
+  </Link>,
 ]
 
 export const Header = () => {
-  // const [isScrolledToContent, setIsScrolledToContent] = useState(false)
-
   const { data, isLoading } = useFetchNPMData()
 
   const latestVersion = useMemo(() => {
