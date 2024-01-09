@@ -15,7 +15,7 @@ const desktopNavItems = [
     <Button
       aria-label="Go to Components"
       variant="link"
-      className="!text-white !font-medium !pl-0 !pr-1"
+      className="!text-white !font-medium !pl-0 !pr-1 hover:!text-primary-plain-fg"
     >
       Components
     </Button>
@@ -29,7 +29,7 @@ const desktopNavItems = [
     <Button
       aria-label="Go to GitHub"
       variant="link"
-      className="!text-white !font-medium !pl-1 !pr-0"
+      className="!text-white !font-medium !pl-1 !pr-0 hover:!text-primary-plain-fg"
     >
       GitHub
     </Button>
@@ -61,7 +61,7 @@ const mobileNavItems = [
       aria-label="Go to Components"
       variant="link"
       color="neutral"
-      className="!font-medium !pl-0 !pr-1"
+      className="!font-medium !pl-0 !pr-1 hover:!text-primary-plain-fg"
     >
       Components
     </Button>
@@ -77,7 +77,7 @@ const mobileNavItems = [
       aria-label="Go to GitHub"
       variant="link"
       color="neutral"
-      className="!font-medium !px-0"
+      className="!font-medium !px-0 hover:!text-primary-plain-fg"
     >
       GitHub
     </Button>
