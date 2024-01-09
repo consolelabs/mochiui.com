@@ -12,7 +12,7 @@ const desktopNavItems = [
     href={COMPONENTS_LINK}
     target="_blank"
     rel="noopener noreferrer"
-    className="text-white text-sm pr-1 font-medium hover:text-primary-plain-fg"
+    className="text-white text-sm pr-1 font-medium transition-colors duration-300 hover:text-primary-plain-fg"
     aria-label="Go to Components"
   >
     Components
@@ -22,7 +22,7 @@ const desktopNavItems = [
     href={MOCHI_GITHUB_LINK}
     target="_blank"
     rel="noopener noreferrer"
-    className="text-white text-sm pl-1 font-medium hover:text-primary-plain-fg"
+    className="text-white text-sm pl-1 font-medium transition-colors duration-300 hover:text-primary-plain-fg"
     aria-label="Go to GitHub"
   >
     GitHub
@@ -48,7 +48,7 @@ const mobileNavItems = [
     href={COMPONENTS_LINK}
     target="_blank"
     rel="noopener noreferrer"
-    className="block text-neutral-plain-fg hover:text-primary-plain-fg h-10"
+    className="block text-neutral-plain-fg transition-colors duration-300 hover:text-primary-plain-fg h-10"
     aria-label="Go to Components"
   >
     Components
@@ -58,7 +58,7 @@ const mobileNavItems = [
     href={MOCHI_GITHUB_LINK}
     target="_blank"
     rel="noopener noreferrer"
-    className="block text-neutral-plain-fg hover:text-primary-plain-fg h-10"
+    className="block text-neutral-plain-fg transition-colors duration-300 hover:text-primary-plain-fg h-10"
     aria-label="Go to GitHub"
   >
     GitHub
