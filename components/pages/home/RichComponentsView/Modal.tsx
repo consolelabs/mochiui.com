@@ -32,12 +32,12 @@ export const ModalShowcase = () => {
       <ModalTrigger asChild>
         <Button aria-label="Open modal">Open Modal</Button>
       </ModalTrigger>
-      <ModalContent className="space-y-2 text-center !p-4">
+      <ModalContent className="space-y-2 text-center !p-4 max-w-[356px]">
         <div className="mb-8">
           <ImageWithFallback
             src="/img/macbook.webp"
             alt="Macbook"
-            width={350}
+            width={340}
             height={200}
           />
           <Typography

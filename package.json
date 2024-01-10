@@ -13,16 +13,16 @@
     "postinstall": "npx husky install"
   },
   "dependencies": {
-    "@mochi-ui/core": "^0.11.1",
-    "@mochi-ui/icons": "^0.7.0",
-    "@mochi-ui/theme": "^0.12.1",
+    "@mochi-ui/core": "^0.13.2",
+    "@mochi-ui/icons": "^0.7.3",
+    "@mochi-ui/theme": "^0.15.0",
     "clsx": "^2.0.0",
+    "focus-visible": "^5.2.0",
     "highlight.js": "^11.9.0",
     "next": "14.0.3",
     "next-plausible": "^3.12.0",
     "react": "^18",
     "react-dom": "^18",
-    "focus-visible": "^5.2.0",
     "swr": "^2.2.4"
   },
   "devDependencies": {

@@ -16,13 +16,13 @@ type GridContentProps = {
 export const GridContent = (props: GridContentProps) => {
   const { data, className } = props
   return (
-    <section className={clsx('px-4', className)}>
-      <div className="section-container flex flex-col md:flex-row justify-between items-start gap-12">
+    <section className={clsx('landing-container', className)}>
+      <div className="flex flex-col md:flex-row justify-between items-start gap-12">
         {data.map((d, index) => {
           return (
             <div
               key={d?.id ?? index}
-              className="flex flex-col justify-center gap-3 p-0 w-full md:w-1/4 md:max-w-[216px] box-border"
+              className="flex flex-col justify-center gap-3 w-full md:w-1/4 md:max-w-[216px] box-border"
             >
               <div className="flex flex-row md:flex-col gap-3 md:gap-6 items-center md:items-start">
                 {d.icon}

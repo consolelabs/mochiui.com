@@ -34,7 +34,7 @@ export const Hero = ({
         className="h-full w-full bg-cover bg-center absolute top-0 -right-24"
       />
 
-      <div className="section-container w-full absolute p-4 xl:p-0">
+      <div className="landing-container w-full absolute">
         <div
           className={clsx(
             'max-w-[80%] w-[480px] md:max-w-[50%] flex flex-col gap-6 md:gap-8',

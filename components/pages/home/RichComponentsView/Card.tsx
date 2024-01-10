@@ -78,24 +78,16 @@ export const CardShowcase = () => {
               Kathryn Murphy
             </Typography>
             <div className="flex items-center gap-0.5 mt-0.5">
-              <Badge
-                className="!py-0 !px-1"
-                label={
-                  <div className="flex !text-xxs items-center gap-0.5">
-                    <SolidDotSolid /> verified
-                  </div>
-                }
-                appearance="success"
-              />
-              <Badge
-                className="!py-0 !px-1"
-                label={
-                  <div className="flex !text-xxs items-center gap-0.5">
-                    <SolidDotSolid /> smud
-                  </div>
-                }
-                appearance="warning"
-              />
+              <Badge className="!py-0 !px-1" appearance="success">
+                <div className="flex !text-xxs items-center gap-0.5">
+                  <SolidDotSolid /> verified
+                </div>
+              </Badge>
+              <Badge className="!py-0 !px-1" appearance="warning">
+                <div className="flex !text-xxs items-center gap-0.5">
+                  <SolidDotSolid /> smud
+                </div>
+              </Badge>
             </div>
           </div>
         </div>
