@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 import { mochiui } from '@mochi-ui/theme'
+import tailwindAnimate from 'tailwindcss-animate'
 
 const config: Config = {
   content: [
@@ -10,15 +11,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      maxWidth: {
-        '8xl': '1440px',
-      },
       letterSpacing: {
         tight: '-0.2px',
         tighter: '-0.4px',
       },
+
+      keyframes: {
+        'fade-in': {
+          '0%': { opacity: '0.3' },
+          '100%': { opacity: '1' },
+        },
+      },
+      animation: {
+        'fade-in': 'fade-in 0.3s ease-in-out',
+      },
     },
   },
-  plugins: [mochiui()],
+  plugins: [mochiui(), tailwindAnimate],
 }
 export default config

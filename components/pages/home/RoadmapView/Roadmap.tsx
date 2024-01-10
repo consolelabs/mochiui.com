@@ -14,7 +14,7 @@ export const Roadmap = ({ className }: { className?: string }) => {
         backgroundImage: 'url("/img/gradient.webp")',
       }}
     >
-      <div className="section-container pl-4 xl:pl-0">
+      <div className="landing-container">
         <Typography
           level="h3"
           className="mb-8 !text-[32px] md:!text-4.5xl -tracking-[2px] leading-tight"
@@ -28,7 +28,7 @@ export const Roadmap = ({ className }: { className?: string }) => {
         <div
           className="overflow-visible pb-8 pt-4 sm:pt-8"
           style={{
-            maxWidth: 1216,
+            maxWidth: 1440,
             marginLeft: 'auto',
             marginRight: 'auto',
           }}

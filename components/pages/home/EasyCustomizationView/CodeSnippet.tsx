@@ -93,7 +93,7 @@ export const CodeSnippet = () => {
   }, [])
 
   return (
-    <div className="w-full lg:flex-1 h-[500px] lg:h-auto lg:w-[calc(100%-32px-496px)]">
+    <div className="w-full lg:flex-1 h-[500px] lg:h-auto lg:w-[calc(100%-32px-600px)]">
       <div className="relative flex h-full flex-col rounded-2xl bg-neutral-800 py-6 md:py-8">
         <div className="absolute h-4 w-full left-0 top-14 md:top-16 bg-gradient-to-t from-transparent to-neutral-800" />
 

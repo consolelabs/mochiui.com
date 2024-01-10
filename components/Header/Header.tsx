@@ -1,5 +1,4 @@
 import { DesktopNav, TopBar, Button, Badge, MobileNav } from '@mochi-ui/core'
-import { motion } from 'framer-motion'
 import { useMemo } from 'react'
 import { COMPONENTS_LINK, DOCS_LINK, MOCHI_GITHUB_LINK } from '@/constants/url'
 import { useFetchNPMData } from '@/hooks/useFetchNPMData'
@@ -100,18 +99,9 @@ export const Header = () => {
           <div className="flex items-center gap-4">
             <Logo />
             {latestVersion ? (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  duration: 0.2,
-                }}
-              >
-                <Badge
-                  label={`v${latestVersion}`}
-                  className="!text-blue-300 !bg-blue-1000"
-                />
-              </motion.div>
+              <Badge className="!text-blue-300 !bg-blue-1000 animate-fade-in">
+                v{latestVersion}
+              </Badge>
             ) : null}
           </div>
         }
@@ -124,7 +114,7 @@ export const Header = () => {
             />
           </>
         }
-        className="!bg-transparent !max-w-8xl w-full mx-auto !border-none absolute top-0 z-50"
+        className="!bg-transparent w-full mx-auto !border-none absolute top-0 z-50"
       />
     </div>
   )

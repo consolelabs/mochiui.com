@@ -47,39 +47,37 @@ export const RichComponents = ({ className }: { className?: string }) => {
   ]
 
   return (
-    <section className={clsx('px-4', className)}>
-      <div className="section-container">
-        <Typography
-          level="h3"
-          className="mb-8 !text-[32px] md:!text-4.5xl -tracking-[2px] leading-tight"
-        >
-          Various components
-        </Typography>
-        <div className="flex flex-col md:flex-row gap-4 md:gap-8 justify-stretch">
-          <div className="flex flex-row md:flex-col gap-2 overflow-auto hide-scrollbar w-full md:w-[280px] shrink-0 h-full">
-            {tabData.map((tab, index) => (
-              <Button
-                aria-label={`${tab.title} tab`}
-                key={tab.title}
-                onClick={() => setIdx(index)}
-                variant="outline"
-                color={index === idx ? 'primary' : 'neutral'}
-                className={clsx(
-                  '!h-max md:!h-[73px] !py-2 md:!py-6 !px-4 md:!px-6 !shadow-none !justify-start !font-medium !text-sm md:!text-lg !text-neutral-800',
-                  {
-                    'bg-white': index !== idx,
-                  },
-                )}
-              >
-                {tab.title}
-              </Button>
-            ))}
-          </div>
+    <section className={clsx('landing-container', className)}>
+      <Typography
+        level="h3"
+        className="mb-8 !text-[32px] md:!text-4.5xl -tracking-[2px] leading-tight"
+      >
+        Various components
+      </Typography>
+      <div className="flex flex-col md:flex-row gap-4 md:gap-8 justify-stretch">
+        <div className="flex flex-row md:flex-col gap-2 overflow-auto hide-scrollbar w-full md:w-[280px] shrink-0 h-full">
+          {tabData.map((tab, index) => (
+            <Button
+              aria-label={`${tab.title} tab`}
+              key={tab.title}
+              onClick={() => setIdx(index)}
+              variant="outline"
+              color={index === idx ? 'primary' : 'neutral'}
+              className={clsx(
+                '!h-max md:!h-[73px] !py-2 md:!py-6 !px-4 md:!px-6 !shadow-none !justify-start !font-medium !text-sm md:!text-lg !text-neutral-800',
+                {
+                  'bg-white': index !== idx,
+                },
+              )}
+            >
+              {tab.title}
+            </Button>
+          ))}
+        </div>
 
-          <div className="flex-1 bg-neutral-100 rounded-lg overflow-hidden">
-            <div className="w-full h-[450px] md:h-[478px] overflow-auto">
-              {tabData[idx].content}
-            </div>
+        <div className="flex-1 bg-neutral-100 rounded-lg overflow-hidden">
+          <div className="w-full h-[450px] md:h-[478px] overflow-auto">
+            {tabData[idx].content}
           </div>
         </div>
       </div>
