@@ -10,9 +10,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      maxWidth: {
-        '8xl': '1440px',
-      },
       letterSpacing: {
         tight: '-0.2px',
         tighter: '-0.4px',
