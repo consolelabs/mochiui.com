@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 import { mochiui } from '@mochi-ui/theme'
+import tailwindAnimate from 'tailwindcss-animate'
 
 const config: Config = {
   content: [
@@ -26,6 +27,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [mochiui()],
+  plugins: [mochiui(), tailwindAnimate],
 }
 export default config
